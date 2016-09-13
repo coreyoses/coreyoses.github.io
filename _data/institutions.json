@@ -1,0 +1,260 @@
+{
+    "center_materials_genomics":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Center of Materials Genomics",
+                "Duke University"
+                ],
+            "city":"Durham",
+            "state":"North Carolina",
+            "zipcode":"27708",
+            "country":"United States"
+        }
+    },
+    "duke_mems":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of Mechanical Engineering and Materials Science",
+                "Duke University"
+                ],
+            "city":"Durham",
+            "state":"North Carolina",
+            "zipcode":"27708",
+            "country":"United States"
+        }
+    },
+    "stefano_duke":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Materials Science, Electrical Engineering, Physics and Chemistry",
+                "Duke University"
+                ],
+            "city":"Durham",
+            "state":"North Carolina",
+            "zipcode":"27708",
+            "country":"United States"
+        }
+    },
+    "unc_molecular_modeling":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Laboratory for Molecular Modeling, Division of Chemical Biology and Medicinal Chemistry",
+                "UNC Eshelman School of Pharmacy",
+                "University of North Carolina"
+                ],
+            "city":"Chapel Hill",
+            "state":"North Carolina",
+            "zipcode":"27599",
+            "country":"United States"
+        }
+    },
+    "central_michigan_physics":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of Physics",
+                "Central Michigan University"
+                ],
+            "city":"Mount Pleasant",
+            "state":"Michigan",
+            "zipcode":"48858",
+            "country":"United States"
+        }
+    },
+    "tel_aviv_u_physical_electronics":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of Physical Electronics, Faculty of Engineering",
+                "Tel Aviv University"
+                ],
+            "city":"Tel Aviv",
+            "state":"",
+            "zipcode":"69978",
+            "country":"Israel"
+        }
+    },
+    "nrl_comp_mat_sci":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Center for Computational Materials Science",
+                "Naval Research Laboratory"
+                ],
+            "city":"Washington DC",
+            "state":"",
+            "zipcode":"20375-5345",
+            "country":"United States"
+        }
+    },
+    "byu_physics_astronomy":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of Physics and Astronomy",
+                "Brigham Young University"
+                ],
+            "city":"Provo",
+            "state":"Utah",
+            "zipcode":"84602",
+            "country":"United States"
+        }
+    },
+    "u_north_tx_physics_chemistry":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of Physics and Department of Chemistry",
+                "University of North Texas"
+                ],
+            "city":"Denton",
+            "state":"Texas",
+            "zipcode":"76203",
+            "country":"United States"
+        }
+    },
+    "trinity_physics":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "School of Physics, AMBER and CRANN Institute",
+                "Trinity College"
+                ],
+            "city":"Dublin",
+            "state":"",
+            "zipcode":"2",
+            "country":"Ireland"
+        }
+    },
+    "ucsd_nanoengineering":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of NanoEngineering",
+                "University of California San Diego"
+                ],
+            "city":"La Jolla",
+            "state":"California",
+            "zipcode":"92093-0448",
+            "country":"United States"
+        }
+    },
+    "u_maryland_mat_sci":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of Materials Science and Engineering",
+                "University of Maryland"
+                ],
+            "city":"College Park",
+            "state":"Maryland",
+            "zipcode":"20742",
+            "country":"United States"
+        }
+    },
+    "nrcn_physics":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of Physics",
+                "NRCN",
+                "P.O. Box 9001"
+                ],
+            "city":"Beer-Sheva",
+            "state":"",
+            "zipcode":"84190",
+            "country":"Israel"
+        }
+    },
+    "uc_berkeley_mat_sci":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Department of Materials Science and Engineering",
+                "University of California, Berkeley",
+                "210 Hearst Memorial Mining Building"
+                ],
+            "city":"Berkeley",
+            "state":"California",
+            "zipcode":"94709",
+            "country":"United States"
+        }
+    },
+    "spacex":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "Space Exploration Technologies",
+                "1 Rocket Road"
+                ],
+            "city":"Hawthorne",
+            "state":"California",
+            "zipcode":"90250",
+            "country":"United States"
+        }
+    },
+    "cea_france":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "CEA, LITEN",
+                "17 Rue des Martyrs"
+                ],
+            "city":"Grenoble",
+            "state":"",
+            "zipcode":"38054",
+            "country":"France"
+        }
+    },
+    "tel_aviv_u_comp_mol_mat_sci":
+    {
+        "address":
+        {
+            "street_address":
+                [
+                "The Sackler Center for Computational Molecular and Materials Science",
+                "Tel Aviv University"
+                ],
+            "city":"Tel Aviv",
+            "state":"",
+            "zipcode":"69978",
+            "country":"Israel"
+        }
+    }
+}

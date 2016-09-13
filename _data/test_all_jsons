@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for json in *.json;
+do 
+    ./validate_json $json &>.output
+    if [ $? -eq 0 ];
+    then
+        echo "$json works"
+    else
+        echo "$json FAILED!"
+        cat .output
+    fi
+done
+rm .output
