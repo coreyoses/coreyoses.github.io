@@ -9,7 +9,7 @@ body {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     width: 100%;
     line-height: 0; /*this fixes space between objects*/
-    background-color: #80C3E8;
+    background-color: #8E93A4;
     /*max-width: 960px;*/
     /*margin: 0 auto;*/
 }
@@ -22,23 +22,23 @@ a:active {
 }
 
 .dark-gradient {
-    background: #3D6CA0; /* Old browsers */
-    background: -moz-linear-gradient(top, #3D6CA0 0%, #333465 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3D6CA0), color-stop(100%,#333465)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #3D6CA0 0%,#333465 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #3D6CA0 0%,#333465 100%); /* Opera 11.10+ */
-    background: linear-gradient(to bottom, #3D6CA0 0%,#333465 100%); /* W3C standard, IE10+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D6CA0', endColorstr='#333465',GradientType=0 ); /* IE6-9 */
+    background: #ABCBFB; /* Old browsers */
+    background: -moz-linear-gradient(top, #ABCBFB 0%, #3F59A9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ABCBFB), color-stop(100%,#3F59A9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ABCBFB 0%,#3F59A9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ABCBFB 0%,#3F59A9 100%); /* Opera 11.10+ */
+    background: linear-gradient(to bottom, #ABCBFB 0%,#3F59A9 100%); /* W3C standard, IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ABCBFB', endColorstr='#3F59A9',GradientType=0 ); /* IE6-9 */
 }
 
 .light-background {
-    background-color: #4B93B7; /* Old browsers */
-    /*background: -moz-linear-gradient(top, #4B93B7 0%, #B0C6D2 100%);*/ /* FF3.6+ */
-    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4B93B7), color-stop(100%,#B0C6D2));*/ /* Chrome,Safari4+ */
-    /*background: -webkit-linear-gradient(top, #4B93B7 0%,#B0C6D2 100%);*/ /* Chrome10+,Safari5.1+ */
-    /*background: -o-linear-gradient(top, #4B93B7 0%,#B0C6D2 100%);*/ /* Opera 11.10+ */
-    /*background: linear-gradient(to bottom, #4B93B7 0%,#B0C6D2 100%);*/ /* W3C standard, IE10+ */
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4B93B7', endColorstr='#B0C6D2',GradientType=0 );*/ /* IE6-9 */
+    background-color: #7A99DC; /* Old browsers */
+    /*background: -moz-linear-gradient(top, #7A99DC 0%, #97CFE2 100%);*/ /* FF3.6+ */
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7A99DC), color-stop(100%,#97CFE2));*/ /* Chrome,Safari4+ */
+    /*background: -webkit-linear-gradient(top, #7A99DC 0%,#97CFE2 100%);*/ /* Chrome10+,Safari5.1+ */
+    /*background: -o-linear-gradient(top, #7A99DC 0%,#97CFE2 100%);*/ /* Opera 11.10+ */
+    /*background: linear-gradient(to bottom, #7A99DC 0%,#97CFE2 100%);*/ /* W3C standard, IE10+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7A99DC', endColorstr='#97CFE2',GradientType=0 );*/ /* IE6-9 */
 }
 
 .vertical-align {
@@ -68,7 +68,7 @@ nav {
 }
 
 nav .titlename {
-    color: #FAFCFD;
+    color: #E0E3EB;
     font-size: 200%;
     float: left;
 }
@@ -88,20 +88,20 @@ nav a {
     /*display: block;*/
     width: 100%; 
     text-align: center;
-    color: #FAFCFD;
+    color: #E0E3EB;
 }
 
 nav .currentlink {
-    color: #80C3E8;
+    color: #8E93A4;
 }
 
 nav a:hover {
-    color: #B0C6D2;
+    color: #97CFE2;
 }
 
 /*nav a:active :not(.inactive) {*/
 nav a:active {
-    color: #80C3E8;
+    color: #7A99DC;
 }
 
 .nL2 {
@@ -155,7 +155,7 @@ background-color: #3e8e41;
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #3D6CA0;
+    background-color: #ABCBFB;
     /*min-width: 160px;*/
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     /*border-radius: 10px;*/    /*I want only bottom rounded*/
@@ -188,7 +188,7 @@ background-color: #3e8e41;
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    /*background-color: #333465;*/
+    /*background-color: #3F59A9;*/
     /*border-radius: 10px;*/
 }
 
@@ -240,7 +240,7 @@ user clicks on the dropdown button) */
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #333465;
+    color: #3F59A9;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -378,7 +378,7 @@ footer .copywrite {
     margin-top: 30px;
     /*position: absolute;
     bottom: 30px;*/
-text-align: center;
-width: 100%
+    text-align: center;
+    width: 100%
 }
 /* ---------------------------------    END: Footer    ----------------------------------*/
