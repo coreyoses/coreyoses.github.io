@@ -15,6 +15,8 @@
         <link href="../css/style.css" rel="stylesheet">
         <link href="../css/slide_show.css" rel="stylesheet">
         <script src="../js/slide_show.js"></script>
+        <script src="../js/dropdown_menu.js"></script>
+        <script src="../js/nav_collapse.js"></script>
         <!--[if lt IE 9]>
         <script src="html5shiv/dist/html5shiv.js"></script>
         <![endif]-->
@@ -26,16 +28,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 titlename vertical-align">
-                    <a href=""> Corey Oses </a>                
+                    <a href="javascript:void(0);"> Corey Oses </a>                
                 </div>
                 <div class="col-md-6 vertical-align">
                     <ul>
-                        <li> <a class="currentlink" href=""> home </a> </li>
-                        <li> <a href=""> about </a> </li>
-                        <li> <a href=""> research </a> </li>
-                        <li> <a href=""> publications </a> </li>
-                        <li> <a href=""> CV </a> </li>
-                        <li> <a href=""> contact </a> </li>
+                        <li class="nL1"> <a class="currentlink" href="javascript:void(0);">home</a> </li>
+                        <li> 
+                        <div class="dropdown">
+                            <a onclick="performDropDown()" class="dropbtn nL1">content</a>
+                            <a onclick="performDropDown()" class="dropbtn nL2">&#9776;</a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <ul>
+                                    <li class="nL2"> <a class="currentlink" href="javascript:void(0);">home</a> </li>
+                                    <li> <a href="javascript:void(0);">about</a> </li>
+                                    <li> <a href="javascript:void(0);">research</a> </li>
+                                    <li> <a href="javascript:void(0);">publications</a> </li>
+                                    <li> <a href="javascript:void(0);">CV</a> </li>
+                                    <li class="nL2"> <a href="javascript:void(0);">contact</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="nL1"> <a href="javascript:void(0);">contact</a> </li>
                     </ul>
                 </div>
             </div>
@@ -44,17 +58,17 @@
         <!---------- END:NAVIGATION_BAR ----------!>
 
         <!----------  START:SLIDE_SHOW  ----------!>
-        <div class="slideshow">
+        <div class="slideshow shadow">
             <div class="slideshow-container" onmouseenter="showSlidesAutomaticStop()" onmouseleave="showSlidesAutomaticStart()">
                 <div class="mySlides fade" style="display: block">
                     <div class="numbertext">1 / 2</div>
-                    <a href=""><img src="../pics/main/fingerprints_toc.png" style="width:50%"> </a>
+                    <a href="javascript:void(0);"><img src="../pics/main/fingerprints_toc.png" style="width:50%"> </a>
                     <!--<div class="text">Caption One</div>-->
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 2</div>
-                    <a href=""> <img src="../pics/main/pocc_toc.png" style="width:50%"> </a>
+                    <a href="javascript:void(0);"> <img src="../pics/main/pocc_toc.png" style="width:50%"> </a>
                     <!--<div class="text">Caption Two</div>-->
                 </div>
 
@@ -74,7 +88,7 @@
             About
         </div>
         <!----------  END:MAIN_CONTENT  ----------!>
-        
+
         <!--------------START:FOOTER--------------!>
         <footer class="dark-gradient">
         <div class="container">
@@ -109,4 +123,3 @@
 
     </body>
 </html>
-
