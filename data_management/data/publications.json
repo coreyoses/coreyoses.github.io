@@ -1,7 +1,6 @@
 {
     "coses:art0001":
     {
-        "count":1,
         "status":"published",
         "show_abstract":true,
         "title":"Materials Cartography: Representing and Mining Materials Space Using Structural and Electronic Fingerprints",
@@ -68,7 +67,7 @@
         "journal":"chem_mater",
         "volume":"27",
         "number":"3",
-        "pages":"735–743",
+        "pages":"735-743",
         "year":2015,
         "doi":"10.1021/cm503507h",
         "abstract":"As the proliferation of high-throughput approaches in materials science is increasing the wealth of data in the field, the gap between accumulated-information and derived-knowledge widens. We address the issue of scientific discovery in materials databases by introducing novel analytical approaches based on structural and electronic materials fingerprints. The framework is employed to (i) query large databases of materials using similarity concepts, (ii) map the connectivity of materials space (i.e., as a materials cartograms) for rapidly identifying regions with unique organizations/properties, and (iii) develop predictive Quantitative Materials Structure-Property Relationship models for guiding materials design. In this study, we test these fingerprints by seeking target material properties. As a quantitative example, we model the critical temperatures of known superconductors. Our novel materials fingerprinting and materials cartography approaches contribute to the emerging field of materials informatics by enabling effective computational tools to analyze, visualize, model, and design new materials.",
@@ -79,7 +78,6 @@
     },
     "coses:art0002":
     {
-        "count":2,
         "status":"published",
         "show_abstract":true,
         "title":"The AFLOW Standard for High-Throughput Materials Science Calculations",
@@ -187,7 +185,6 @@
     },
     "coses:art0003":
     {
-        "count":3,
         "status":"submitted",
         "show_abstract":false,
         "title":"Accelerated discovery of new magnets in the Heusler alloy family",
@@ -268,7 +265,7 @@
             },
             "scurtarolo":
             {
-                "order":11,
+                "order":10,
                 "institution":
                 [
                     "center_materials_genomics",
@@ -290,7 +287,6 @@
     },
     "coses:art0004":
     {
-        "count":4,
         "status":"published",
         "show_abstract":true,
         "title":"Modeling Off-Stoichiometry Materials with a High-Throughput Ab-Initio Approach",
@@ -334,7 +330,6 @@
     },
     "coses:art0005":
     {
-        "count":5,
         "status":"submitted",
         "show_abstract":true,
         "title":"A computational high-throughput search for new ternary superalloys",
@@ -400,7 +395,6 @@
     },
     "coses:art0006":
     {
-        "count":6,
         "status":"submitted",
         "show_abstract":false,
         "title":"Combining the {\\small AFLOW} {\\small GIBBS} and Elastic Libraries for efficiently and robustly screening thermo-mechanical properties of solids",
@@ -502,7 +496,6 @@
     },
     "coses:art0007":
     {
-        "count":7,
         "status":"submitted",
         "show_abstract":true,
         "title":"High throughput thermal conductivity of high temperature solid phases: The case of oxide and fluoride perovskites",
@@ -559,7 +552,6 @@
     },
     "coses:art0008":
     {
-        "count":8,
         "status":"submitted",
         "show_abstract":true,
         "title":"Universal Fragment Descriptors for Predicting Electronic Properties of Inorganic Crystals",
@@ -613,7 +605,6 @@
     },
     "coses:art0009":
     {
-        "count":9,
         "status":"draft",
         "show_abstract":false,
         "title":"The statistics of 6A non-metal binary and ternary structures -- what can we learn from nature?",

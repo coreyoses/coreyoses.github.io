@@ -1,0 +1,83 @@
+\documentclass{scrartcl}
+
+\reversemarginpar
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}}
+
+\usepackage[nochapters]{classicthesis}
+
+\usepackage[LabelsAligned]{currvita}
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
+
+\usepackage{hyperref}
+
+\hypersetup{colorlinks,breaklinks,urlcolor=Maroon,linkcolor=Maroon}
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011}
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0\parbox{\datebox}{\small\textit{#1}}\hspace{1.5em} #2 #3
+
+\vspace{0.5em}}
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
+
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{cv}{\spacedallcaps{Corey Oses}}\vspace{0.5em}
+
+\noindent\textit{Ph.D. Candidate in Materials Science,} Duke University
+
+\vspace{1.5em}
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em}
+
+\NewEntry{email}{\href{mailto:corey.oses@duke.edu}{corey.oses@duke.edu}}
+
+\NewEntry{website}{\href{http://www.coreyoses.com}{http://www.coreyoses.com}}
+
+\NewEntry{phone}{(W) +1 (919) 684 1553\ \ $\cdotp$\ \ (M) +1 (201) 674 1407}
+
+\vspace{0.5em}
+
+\noindent\spacedlowsmallcaps{Objective}\vspace{1em}
+
+\Description{To obtain a graduate degree and perform research relevant to Materials Science and Engineering in order to develop my technical and managerial skills and make significant contributions to Duke University.}
+
+\vspace{0em}
+
+\noindent\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2011-2012}{The University of California, Berkeley}
+
+\Description{\MarginText{Masters of Commerce}GPA: 8.0\ \ $\cdotp$\ \ \textit{First Class Honours}\ \ $\cdotp$\ \ School: Business and Administration\newline Thesis: \textit{Money Is The Root Of All Evil -- Or Is It?}\newline Description: This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.\newline Advisors: Prof.~James \textsc{Smith} \& Assoc. Prof.~Jane \textsc{Smith}}
+
+\vspace{0em}
+
+\noindent\spacedlowsmallcaps{Research}\vspace{1em}
+
+\NewEntry{2012--Present}{1\textsuperscript{st} Year Analyst, \textsc{Lehman Brothers}}
+
+\Description{\MarginText{Lehman Brothers}Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\ Reference: John \textsc{McDonald}\ \ $\cdotp$\ \  +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:john@lehman.com}{john@lehman.com}}
+
+\vspace{0em}
+
+\noindent\spacedlowsmallcaps{Publications}\vspace{1em}
+
+\NewEntry{January 2013}{Publication Title}
+
+\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
+
+\vspace{0em}
+
+
+
+
+
+\end{cv}
+
+\end{document}
