@@ -1,0 +1,22 @@
+{
+"duke_phd":{
+    "name":"Duke University",
+    "location":"Durham, North Carolina"
+    "duration":"2013-Present",
+    "GPA":"3.7/4.0",
+    "school":"Pratt School of Engineering",
+    "department":"Mechanical Engineering and Materials Science",
+    "thesis":"Advanced Techniques in High-Throughput Computational Materials Science",
+    "advisors":["scurtarolo"],
+    "honors":[
+        ""
+    ],
+    "view":
+},
+"cornell_bs":{
+
+}
+"bhs":{
+
+}
+}
