@@ -140,6 +140,23 @@ def getCountFromLabel(label,prefix=standard_label_prefix):
     except:
         generateError("Unknown label style, cannot extract count from "+str(label))
 
+def getFormattedPublication(abbrev_journal,volume,number,pages,year,view):
+    if not abbrev_journal:
+        generateError("No journal provided.")
+    if not volume:
+        generateError("No volume provided.")
+    #number not necessary
+    if not pages:
+        generateError("No pages provided.")
+    if not year:
+        generateError("No year provided.")
+    if view==_LATEX_:
+        outstring=abbrev_journal+" \\textbf{"+volume+"}"
+        if number:
+            outstring+="("+number+")"
+        outstring+=", "+pages+" ("+str(year)+")"
+        return outstring
+
 def getDuplicates(some_list):
     seen=set()
     duplicates=[]

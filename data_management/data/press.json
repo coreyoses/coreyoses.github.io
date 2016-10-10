@@ -49,10 +49,20 @@
             ""
         ]
     },
+    "materials_cartography_duke":{
+        "title":"Molecular Tornado",
+        "organization":"Duke University Research",
+        "order":6,
+        "date":"January 2015",
+        "url":"https://research.duke.edu/molecular-tornado",
+        "description":[
+            ""
+        ]
+    },
     "materials_cartography_guzik":{
         "title":"Materials Cartography: Representing and Mining Materials Space Using Structural and Electronic Fingerprints",
         "organization":"Computational Chemistry Highlights",
-        "order":6,
+        "order":7,
         "date":"January 2015",
         "url":"http://www.compchemhighlights.org/2015/01/materials-cartography-representing-and.html",
         "description":[
