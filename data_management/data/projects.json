@@ -1,0 +1,181 @@
+{
+    "meinig":{
+        "title":{
+            "latex":"Meinig Family Cornell National Scholars"
+        },
+        "institution":"cornell",
+        "order":1,
+        "advisors":[
+            "kmdeluca"
+        ],
+        "description":[
+            {
+                "latex":"Collaborated with MFCNS, scholarship fund director, and the Cornell Alumni Association for the 2009--2010 annual research project, Academic Integrity, culminating with group presentation and discussion with relevant Cornell faculty and professors."
+            }
+        ],
+        "duration":{
+            "latex":"2009--2010"
+        },
+        "presentations":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "cuair":{
+        "title":{
+            "latex":"Cornell University Autonomous Flight Team"
+        },
+        "institution":"cornell",
+        "order":2,
+        "advisors":[
+            "asaxena"
+        ],
+        "description":[
+            "Constructed an autonomous plane with capabilities to navigate waypoints, survey areas, and retrieve visual information about the surfaces below as part of a team effort for AUVSI's (Association for Unmanned Vehicle Systems International) Student Unmanned Air Systems Competition."
+        ],
+        "duration":{
+            "latex":"2009--2011"
+        },
+        "presentations":[
+            "cuair_auvsi_2010"
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "conductive_behavior_SrTiO3":{
+        "title":{
+            "latex":"Conductivity Behavior in Strontium Titanate"
+        },
+        "institution":"cornell_aep",
+        "order":3,
+        "advisors":[
+            "jbrock"
+        ],
+        "description":[
+            "Developed and supported a model that characterizes the conductivity of annealed Strontium Titanate samples.",
+            "Further investigated conductivity behavior of annealed Strontium Titanate samples under varying electric potentials."
+        ],
+        "duration":{
+            "latex":"Fall 2011--Spring 2012"
+        },
+        "presentations":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "synchrotron_optics_CHESS":{
+        "title":{
+            "latex":"Synchrotron Radiation Focusing Optics --- Capillary Beam Stop Design"
+        },
+        "institution":"chess",
+        "order":4,
+        "advisors":[
+            "efontes",
+            "rhuang"
+        ],
+        "description":[
+            "Designed and implemented a beam stop assembly to eliminate parasitic X-Ray beams and improve focusing capabilities of the ellipsoidal glass capillary optic."
+        ],
+        "duration":{
+            "latex":"Summer 2012"
+        },
+        "presentations":[
+            "emerging_researchers_conference_2013",
+            "lsamp_cornell"
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "pulsed_laser_simulation":{
+        "title":"Plume Propagation Simulation for Pulsed Laser Deposition",
+        "institution":"cornell_aep",
+        "order":5,
+        "advisors":[
+            "jbrock"
+        ],
+        "description":[
+            "Developed a robust, three-dimensional Monte-Carlo simulation of the Pulsed Laser Deposition material growth technique used at the Cornell High Energy Synchrotron Source."
+        ],
+        "duration":{
+            "latex":"Fall 2012--Spring 2013"
+        },
+        "presentations":[
+            "emerging_researchers_conference_2014",
+            "mrs_nc_state_2013",
+            "shpe_2013",
+            "mems_duke_retreat_2013"
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "materials_cartography":{
+        "title":"Materials Cartography",
+        "institution":"center_materials_genomics",
+        "order":6,
+        "advisors":[
+            "scurtarolo"
+        ],
+        "description":[
+            "Developed novel fingerprinting method for electronic properties of materials that enabled the construction of similarity maps.",
+            "Collaborative effort between UNC-Chapel Hill and Duke University."
+        ],
+        "duration":{
+            "latex":"2014"
+        },
+        "presentations":[
+            "byu_visit_2016",
+            "duke_mems_grad_seminar_2015",
+            "aps_2015"
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "pocc":{
+        "title":"Modeling Off-Stochiometry Materials",
+        "institution":"center_materials_genomics",
+        "order":7,
+        "advisors":[
+            "scurtarolo"
+        ],
+        "description":[
+            "Developed and implemented a robust framework for modeling off-stoichiometry and aperiodic materials in a high-throughput fashion."
+        ],
+        "duration":{
+            "latex":"2014--2016"
+        },
+        "presentations":[
+            "aps_2016"
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "phd_thesis":{
+        "title":"Advanced Techniques in High-Throughput Computational Materials Science",
+        "institution":"duke_mems",
+        "order":8,
+        "advisors":[
+            "scurtarolo"
+        ],
+        "description":[
+            ""
+        ],
+        "duration":{
+            "latex":"2015--2018"
+        },
+        "presentations":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    }
+}

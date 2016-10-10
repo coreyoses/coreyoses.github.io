@@ -1,83 +1,441 @@
-\documentclass{scrartcl}
+\documentclass[11pt]{article}
 
-\reversemarginpar
+%http://www.tug.org/mactex/fonts/LaTeX_Preamble-Font_Choices.html
+% Euler for math | Palatino for rm | Helvetica for ss | Courier for tt
+\renewcommand{\rmdefault}{ppl} % rm
+\linespread{1.05}        % Palatino needs more leading
+\usepackage[scaled]{helvet} % ss
+\usepackage{courier} % tt
+\usepackage{euler} % math
+\usepackage{soul}
+%\usepackage{eulervm} % a better implementation of the euler package (not in gwTeX)
+\normalfont
+\usepackage[T1]{fontenc}
 
-\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}}
-
-\usepackage[nochapters]{classicthesis}
-
-\usepackage[LabelsAligned]{currvita}
-
-\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
-
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{array}
 \usepackage{hyperref}
-
+\usepackage{enumitem}
 \hypersetup{colorlinks,breaklinks,urlcolor=Maroon,linkcolor=Maroon}
-
-\newlength{\datebox}\settowidth{\datebox}{Spring 2011}
-
-\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0\parbox{\datebox}{\small\textit{#1}}\hspace{1.5em} #2 #3
-
-\vspace{0.5em}}
-
-\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
-
-
+\hyphenpenalty=10000    %avoid hyphenation
 
 \begin{document}
+\hspace{2.5cm}\textcolor{Maroon}{\LARGE\textsc{\so{COREY OSES}}}
 
-\thispagestyle{empty}
+\vspace{0.15cm}
 
-\begin{cv}{\spacedallcaps{Corey Oses}}\vspace{0.5em}
+\hspace{2.5cm}\textit{Ph.D. Candidate in Materials Science,} Duke University
 
-\noindent\textit{Ph.D. Candidate in Materials Science,} Duke University
+\vspace{0.5cm}
 
-\vspace{1.5em}
+\hspace{2.5cm}\textcolor{black}{\textsc{\so{Personal Information}}}
 
-\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em}
+\vspace{-0.2cm}
 
-\NewEntry{email}{\href{mailto:corey.oses@duke.edu}{corey.oses@duke.edu}}
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{email}}
+ & &
+\href{mailto:corey.oses@duke.edu}{corey.oses@duke.edu} \\
+\end{tabular} \\
+\end{tabular}
+\end{center}
 
-\NewEntry{website}{\href{http://www.coreyoses.com}{http://www.coreyoses.com}}
+\vspace{-0.75cm}
 
-\NewEntry{phone}{(W) +1 (919) 684 1553\ \ $\cdotp$\ \ (M) +1 (201) 674 1407}
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{website}}
+ & &
+\href{http://www.coreyoses.com}{http://www.coreyoses.com} \\
+\end{tabular} \\
+\end{tabular}
+\end{center}
 
-\vspace{0.5em}
+\vspace{-0.75cm}
 
-\noindent\spacedlowsmallcaps{Objective}\vspace{1em}
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{phone}}
+ & &
+(M) +1 (201) 674 1407\ \ $\cdotp$\ \ (W) +1 (919) 684 1553 \\
+\end{tabular} \\
+\end{tabular}
+\end{center}
 
-\Description{To obtain a graduate degree and perform research relevant to Materials Science and Engineering in order to develop my technical and managerial skills and make significant contributions to Duke University.}
+
+\hspace{2.5cm}\textcolor{black}{\textsc{\so{Objective}}}
+
+\vspace{-0.75cm}
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+ & &
+ \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{To obtain a graduate degree and perform research relevant to Materials Science and Engineering in order to develop my technical and managerial skills and make significant contributions to Duke University.}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
 
 \vspace{0em}
 
-\noindent\spacedlowsmallcaps{Education}\vspace{1em}
+\hspace{2.5cm}\textcolor{black}{\textsc{\so{Education}}}
 
-\NewEntry{2011-2012}{The University of California, Berkeley}
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Doctor of Philosophy}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{2013--Present}}
+ & &
+Duke University \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{\mbox{GPA: 3.7/4.0}\ \ $\cdotp$\ \ \mbox{Department: Mechanical Engineering and Materials Science}\newline Thesis: \textit{Advanced Techniques in High-Throughput Computational Materials Science}\newline Advisor: Stefano Curtarolo}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
 
-\Description{\MarginText{Masters of Commerce}GPA: 8.0\ \ $\cdotp$\ \ \textit{First Class Honours}\ \ $\cdotp$\ \ School: Business and Administration\newline Thesis: \textit{Money Is The Root Of All Evil -- Or Is It?}\newline Description: This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.\newline Advisors: Prof.~James \textsc{Smith} \& Assoc. Prof.~Jane \textsc{Smith}}
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Bachelor of Science}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{2009--2013}}
+ & &
+Cornell University \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{\mbox{GPA: 3.3/4.0}\ \ $\cdotp$\ \ \mbox{Department: Applied and Engineering Physics}\newline Thesis: \textit{Plume Propagation Simulation for Pulsed Laser Deposition}\newline Advisor: Joel Brock}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
 
-\vspace{0em}
-
-\noindent\spacedlowsmallcaps{Research}\vspace{1em}
-
-\NewEntry{2012--Present}{1\textsuperscript{st} Year Analyst, \textsc{Lehman Brothers}}
-
-\Description{\MarginText{Lehman Brothers}Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\ Reference: John \textsc{McDonald}\ \ $\cdotp$\ \  +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:john@lehman.com}{john@lehman.com}}
-
-\vspace{0em}
-
-\noindent\spacedlowsmallcaps{Publications}\vspace{1em}
-
-\NewEntry{January 2013}{Publication Title}
-
-\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
-
-\vspace{0em}
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{High School Diploma}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{2005-2009}}
+ & &
+Bloomfield High School \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{\mbox{GPA: 3.9/4.0}\ \ $\cdotp$\ \ \mbox{\textit{Graduated fifth in class of 428}}\newline }}
+\end{tabular} \\
+\end{tabular}
+\end{center}
 
 
+\hspace{2.5cm}\textcolor{black}{\textsc{\so{Research}}}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Duke University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{2015--2018}}
+ & &
+Advanced Techniques in High-Throughput Computational Materials Science \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Advisor: Stefano Curtarolo}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Duke University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{2014--2016}}
+ & &
+Modeling Off-Stochiometry Materials \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Developed and implemented a robust framework for modeling off-stoichiometry and aperiodic materials in a high-throughput fashion.\begin{itemize}[leftmargin=*] \item Presented at APS March Meeting 2016. \end{itemize} Advisor: Stefano Curtarolo}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Duke University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{2014}}
+ & &
+Materials Cartography \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Developed novel fingerprinting method for electronic properties of materials that enabled the construction of similarity maps.\ \ $\cdotp$\ \ Collaborative effort between UNC-Chapel Hill and Duke University.\begin{itemize}[leftmargin=*] \item Presented at BYU Condensed Matter Physics Seminar --- February 18, 2016. \item Presented at Duke MEMS Department Graduate Student Seminar --- September 25, 2015. \item Presented at APS March Meeting 2015. \end{itemize} Advisor: Stefano Curtarolo}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Cornell University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Fall 2012--Spring 2013}}
+ & &
+Plume Propagation Simulation for Pulsed Laser Deposition \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Developed a robust, three-dimensional Monte-Carlo simulation of the Pulsed Laser Deposition material growth technique used at the Cornell High Energy Synchrotron Source.\begin{itemize}[leftmargin=*] \item Presented at NSF / AAAS / EHR Emerging Researchers National Conference 2014. \item Technical poster presentation, MRS / ASM / AVS / AReMS Meeting at NC State University --- November 15, 2013. \item \textcolor{NavyBlue}{Technical Poster and Paper Finalist}, SHPE Conference 2013. \item \textcolor{NavyBlue}{Best Presentation Award}, Duke MEMS Department Retreat 2013. \end{itemize} Advisor: Joel Brock}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Cornell High Energy Synchrotron Source}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Summer 2012}}
+ & &
+Synchrotron Radiation Focusing Optics --- Capillary Beam Stop Design \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Designed and implemented a beam stop assembly to eliminate parasitic X-Ray beams and improve focusing capabilities of the ellipsoidal glass capillary optic.\begin{itemize}[leftmargin=*] \item \textcolor{NavyBlue}{First Place} in Nanoscience and Physics Research Presentation, NSF / AAAS / EHR Emerging Researchers National Conference 2013. \item Technical poster and research presentation, Cornell University LSAMP Research Symposium --- August 7, 2012. \end{itemize} Advisors: Ernest Fontes \& Rong Huang}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Cornell University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Fall 2011--Spring 2012}}
+ & &
+Conductivity Behavior in Strontium Titanate \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Developed and supported a model that characterizes the conductivity of annealed Strontium Titanate samples.\ \ $\cdotp$\ \ Further investigated conductivity behavior of annealed Strontium Titanate samples under varying electric potentials.\newline Advisor: Joel Brock}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Cornell University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{2009--2011}}
+ & &
+Cornell University Autonomous Flight Team \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Constructed an autonomous plane with capabilities to navigate waypoints, survey areas, and retrieve visual information about the surfaces below as part of a team effort for AUVSI's (Association for Unmanned Vehicle Systems International) Student Unmanned Air Systems Competition.\begin{itemize}[leftmargin=*] \item Served as \textcolor{NavyBlue}{team's safety officer} and \textcolor{NavyBlue}{head system manager}, AUVSI Student Unmanned Air System (SUAS) 2010 Competition. \item \textcolor{NavyBlue}{Won a \$1,000 grant}, AUVSI Student Unmanned Air System (SUAS) 2010 Competition. \end{itemize} Advisor: Ashutosh Saxena}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Cornell University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{2009--2010}}
+ & &
+Meinig Family Cornell National Scholars \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Collaborated with MFCNS, scholarship fund director, and the Cornell Alumni Association for the 2009--2010 annual research project, Academic Integrity, culminating with group presentation and discussion with relevant Cornell faculty and professors.\newline Advisor: Kristine M. DeLuca}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+
+\hspace{2.5cm}\textcolor{black}{\textsc{\so{Teaching Experience}}}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Teaching Assistant}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Fall 2014--Spring 2015}}
+ & &
+ME 221:  Structure and Properties of Solids, Duke University \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Introduction to materials science and engineering, emphasizing the relationships between the structure of a solid and its properties. Atomic and molecular origins of electrical, mechanical, and chemical behavior are treated in some detail for metals, alloys, polymers, ceramics, glasses, and composite materials.\begin{itemize}[leftmargin=*] \item \textcolor{NavyBlue}{Best Spring Teaching Assistant Award} 2015 \end{itemize} }}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+
+\hspace{2.5cm}\textcolor{black}{\textsc{\so{Press and News Releases}}}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Computational Chemistry Highlights}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{January 2015}}
+ & &
+\textit{``Materials Cartography: Representing and Mining Materials Space Using Structural and Electronic Fingerprints''} \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{``This paper is a \textcolor{NavyBlue}{\textit{tour de force}} for computational materials science'' --- Prof. Al\'{a}n Aspuru-Guzik, Harvard University.\href{http://www.compchemhighlights.org/2015/01/materials-cartography-representing-and.html}{http://www.compchemhighlights.org/2015/01/materials-cartography-representing-and.html}}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Duke University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{June 2014}}
+ & &
+\textit{``Pratt Profiles: Corey Oses''} \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{\href{http://pratt.duke.edu/graduate/diversity/pratt-profiles-corey-oses}{http://pratt.duke.edu/graduate/diversity/pratt-profiles-corey-oses}}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{New York Kiwanis}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{February 2013}}
+ & &
+\textit{``New York Kiwanis Mid-Winter Conference 2013''} \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{\href{http://www.kiwanis-ny.org/1213/midyear.htm}{http://www.kiwanis-ny.org/1213/midyear.htm}}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{New York Kiwanis}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{June 2012}}
+ & &
+\textit{``K-Kids Show Talent for Fundraising''} \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{\href{http://www.kiwanis-ny.org/1213/midyear.htm}{http://www.kiwanis-ny.org/1213/midyear.htm}}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{New York Kiwanis}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{March 2012}}
+ & &
+\textit{``Past Circle K Governors Help Celebrate 50th Convention''} \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Elected Governor of New York Circle K.\href{http://www.kiwanis-ny.org/news/view\_news.php?nid=618}{http://www.kiwanis-ny.org/news/view\_news.php?nid=618}}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Cornell University}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{March 2011}}
+ & &
+\textit{``Undergraduate Student of the Month''} \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{\href{https://www.engineering.cornell.edu/diversity/about/honors/students/2011-03.cfm}{https://www.engineering.cornell.edu/diversity/about/honors/students/2011-03.cfm}}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+
+\hspace{2.5cm}\textcolor{black}{\textsc{\so{Work Experience and Skills}}}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Internship}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Summer 2013}}
+ & &
+Cornell High Energy Sychrotron Source (BioSAXS on F2 and G Beamlines) \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Supervisors: Richard Edward Gillilan \& Ernest Fontes}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Graduate}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{May 2011}}
+ & &
+\textit{The LeaderShape Institute} \\
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Student Employee}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Summer 2011}}
+ & &
+ILR Budget Office, Cornell University \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Supervisor: Renee Laree Monroe}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Technician License}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{July 2010}}
+ & &
+American Radio Relay League (ARRL) \\
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Internship}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{March 2010}}
+ & &
+Supreme Court of New York \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Supervisors: Ariel E. Belen \& Allen Hurkin-Torres}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Math Tutor}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Fall 2008}}
+ & &
+Graduate Record Exam (GRE) \\
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Office Assistant}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Summer 2008}}
+ & &
+SOS Security, LLC in Parsippany, NJ \\
+\multicolumn{3}{@{}p{5.3in}@{}}{\vspace{-0.1in}\footnotesize{Supervisor: James Flanagan}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Proficient Coder}}}
+ & & 
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+\textit{\small{Present}}
+ & &
+Python, \LaTeX, C++, Matlab, and R \\
+\end{tabular} \\
+\end{tabular}
+\end{center}
 
 
 
-\end{cv}
 
 \end{document}

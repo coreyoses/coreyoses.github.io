@@ -1,22 +1,74 @@
 {
 "duke_phd":{
+    "order":3,
     "name":"Duke University",
-    "location":"Durham, North Carolina"
-    "duration":"2013-Present",
-    "GPA":"3.7/4.0",
+    "degree":"Doctor of Philosophy",
+    "location":"Durham, North Carolina",
+    "duration":{
+        "latex":"2013--Present"
+    },
+    "gpa":"3.7/4.0",
     "school":"Pratt School of Engineering",
     "department":"Mechanical Engineering and Materials Science",
-    "thesis":"Advanced Techniques in High-Throughput Computational Materials Science",
-    "advisors":["scurtarolo"],
+    "theses":[
+        "phd_thesis"
+    ],
+    "advisors":[
+        "scurtarolo"
+    ],
     "honors":[
         ""
     ],
-    "view":
+    "view":[
+        ""
+    ]
 },
 "cornell_bs":{
-
-}
+    "order":2,
+    "name":"Cornell University",
+    "degree":"Bachelor of Science",
+    "location":"Ithaca, New York",
+    "duration":{
+        "latex":"2009--2013"
+    },
+    "gpa":"3.3/4.0",
+    "school":"College of Engineering",
+    "department":"Applied and Engineering Physics",
+    "theses":[
+        "pulsed_laser_simulation"
+    ],
+    "advisors":[
+        "jbrock"
+    ],
+    "honors":[
+        ""
+    ],
+    "view":[
+        ""
+    ]
+},
 "bhs":{
-
+    "order":1,
+    "name":"Bloomfield High School",
+    "degree":"High School Diploma",
+    "location":"Bloomfield, New Jersey",
+    "duration":{
+        "latex":"2005-2009"
+    },
+    "gpa":"3.9/4.0",
+    "school":"",
+    "department":"",
+    "theses":[
+        ""
+    ],
+    "advisors":[
+        ""
+    ],
+    "honors":[
+        "Graduated fifth in class of 428"
+    ],
+    "view":[
+        ""
+    ]
 }
 }
