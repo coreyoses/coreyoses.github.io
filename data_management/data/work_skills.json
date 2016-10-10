@@ -3,7 +3,7 @@
         "title":"Proficient Coder",
         "order":0,
         "organization":{
-            "latex":"Python, \\LaTeX, C++, Matlab, and R"
+            "latex":"\\texttt{Python}, \\LaTeX, \\texttt{C++}, \\texttt{Matlab}, \\& \\texttt{R}"
         },
         "duration":"Present",
         "description":[
@@ -126,6 +126,21 @@
         "supervisors":[
             "regillilan",
             "efontes"
+        ]
+    },
+    "mlss":{
+        "title":"Graduate",
+        "order":8,
+        "organization":"Machine Learning Summer School at the University of Texas, Austin",
+        "duration":"January 2015",
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ],
+        "supervisors":[
+            ""
         ]
     }
 }

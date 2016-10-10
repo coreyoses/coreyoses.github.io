@@ -8,9 +8,12 @@ from full_generator import _LATEX_
 from full_generator import _ORDINALS_
 from full_generator import uniqueEndingJoin
 from full_generator import getPresentationItems
+from full_generator import getCountFromLabel
+from full_generator import getFormattedPublication
 
 _DOT_DELIMITER_="\\ \\ $\\cdotp$\\ \\ "
 _DEFAULT_INDENTATION_="2.5cm"
+_DOI_PREFIX_="http://dx.doi.org/"
 #HIGHLIGHT_COLOR="NavyBlue"
 
 def keepStringTogether(in_string):
@@ -68,6 +71,10 @@ def getResumeContent():
     teach_obj=data_file("data/teaching.json")
     press_obj=data_file("data/press.json")
     work_obj=data_file("data/work_skills.json")
+    activities_obj=data_file("data/activities.json")
+    honors_obj=data_file("data/honors.json")
+    pubs_obj=data_file("data/publications.json")
+    journals_obj=data_file("data/journals.json")
     
     def getHeader():
         header=[]
@@ -85,7 +92,7 @@ def getResumeContent():
         header.append("\\normalfont")
         header.append("\\usepackage[T1]{fontenc}")
         header.append("")
-        header.append("\\usepackage[margin=0.5in]{geometry}")
+        header.append("\\usepackage[top=0.5in,left=0.5in,right=0.5in,bottom=1in]{geometry}")
         header.append("\\usepackage[dvipsnames]{xcolor}")
         header.append("\\usepackage{array}")
         header.append("\\usepackage{hyperref}")
@@ -108,7 +115,17 @@ def getResumeContent():
         output.append("}}}")
         return "".join(output)
 
-    def getEntry(margin="",date="",title="",description=""):
+    def getYearHeader(year,indent=_DEFAULT_INDENTATION_):
+        output=[]
+        output.append("\\hspace{")
+        output.append(indent)
+        output.append("}")
+        output.append("{\\Large")
+        output.append(str(year))
+        output.append("}")
+        return "".join(output)
+
+    def getEntry(margin="",date="",title="",description="",large_title=False):
         output=[]
         output.append("\\begin{center}")
         output.append("\\begin{tabular}{>{\\centering\\arraybackslash}m{0.75in}m{0.25in}c}")
@@ -116,10 +133,13 @@ def getResumeContent():
             output.append("".join(["\\raggedleft{\\textit{\\small{",margin,"}}}"]))
         output.append(" & & ")
         output.append("\\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}")
-        if date:
-            output.append("".join(["\\textit{\\small{",date,"}}"]))
-        output.append(" & &")
-        output.append(" ".join([title,"\\\\"]))
+        if large_title:
+            output.append("".join(["\\multicolumn{3}{@{}p{5.3in}@{}}{",title,"} \\\\"]))
+        else:
+            if date:
+                output.append("".join(["\\textit{\\small{",date,"}}"]))
+            output.append(" & &")
+            output.append(" ".join([title,"\\\\"]))
         if description:
             #output.append("".join(["\\multicolumn{3}{@{}p{5.1in}@{}}{\\vspace{-0.1in}\\footnotesize{",description,"}}"]))
             output.append("".join(["\\multicolumn{3}{@{}p{5.3in}@{}}{\\vspace{-0.1in}\\footnotesize{",description,"}}"]))
@@ -188,18 +208,22 @@ def getResumeContent():
 
         return content
     
-    def getAdvisors(advisors,title="Advisor"):
-        if len(advisors)==1:
-            return title+": "+uniqueEndingJoin(advisors,", "," \\& ")
-        else:
-            return title+"s: "+uniqueEndingJoin(advisors,", "," \\& ")
+    def getAdvisors(advisors,title="Advisor",show_title=True):
+        outstring=""
+        if show_title:
+            if len(advisors)==1:
+                outstring+="\\textbf{"+title+"}: "#+uniqueEndingJoin(advisors,", "," \\& ")
+            else:
+                outstring+="\\textbf{"+title+"s}: "#+uniqueEndingJoin(advisors,", "," \\& ")
+        outstring+=uniqueEndingJoin(advisors,", "," \\& ")
+        return outstring
 
     def getEducation():
         content=[]
         content.append(getSectionHeader("Education"))
         content.append("")
         
-        schools=sorted(edu_obj.data.keys(),key=lambda school: edu_obj.data[school]['order'],reverse=True)
+        schools=sorted(edu_obj.data.keys(),key=lambda school: edu_obj.getNodeData([school,'order']),reverse=True)
         for school in schools:
             entry_margin=edu_obj.getNodeData([school,"degree"],_LATEX_)
             entry_date=edu_obj.getNodeData([school,"duration"],_LATEX_)
@@ -246,7 +270,7 @@ def getResumeContent():
         content.append(getSectionHeader("Research"))
         content.append("")
         
-        experiences=sorted(proj_obj.data.keys(),key=lambda experience: proj_obj.data[experience]['order'],reverse=True)
+        experiences=sorted(proj_obj.data.keys(),key=lambda experience: proj_obj.getNodeData([experience,'order']),reverse=True)
         for experience in experiences:
             entry_margin=inst_obj.getNodeData([proj_obj.getNodeData([experience,"institution"]),"name"],_LATEX_)
             entry_date=proj_obj.getNodeData([experience,"duration"],_LATEX_)
@@ -279,7 +303,7 @@ def getResumeContent():
         content.append(getSectionHeader("Teaching Experience"))
         content.append("")
 
-        experiences=sorted(teach_obj.data.keys(),key=lambda experience: teach_obj.data[experience]['order'],reverse=True)
+        experiences=sorted(teach_obj.data.keys(),key=lambda experience: teach_obj.getNodeData([experience,'order']),reverse=True)
         for experience in experiences:
             entry_margin=teach_obj.getNodeData([experience,"title"],_LATEX_)#
             entry_date=teach_obj.getNodeData([experience,"duration"],_LATEX_)
@@ -304,7 +328,7 @@ def getResumeContent():
         content.append(getSectionHeader("Press and News Releases"))
         content.append("")
 
-        releases=sorted(press_obj.data.keys(),key=lambda release: press_obj.data[release]['order'],reverse=True)
+        releases=sorted(press_obj.data.keys(),key=lambda release: press_obj.getNodeData([release,'order']),reverse=True)
         for release in releases:
             entry_margin=press_obj.getNodeData([release,"organization"],_LATEX_)
             entry_date=press_obj.getNodeData([release,"date"],_LATEX_)
@@ -313,10 +337,10 @@ def getResumeContent():
             descriptions=[ getViewSpecificNode(description,_LATEX_) for description in press_obj.getNodeData([release,"description"],_LATEX_) if description ]
             if descriptions:
                 entry_description+=_DOT_DELIMITER_.join(descriptions)
+                entry_description+="\\newline "
             url=press_obj.getNodeData([release,"url"],_LATEX_)
             if url:
                 entry_description+=getLatexHyperlink(fixStringLatex(url))
-                #entry_description+="\\newline "
             content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
             content.append("")
 
@@ -327,7 +351,7 @@ def getResumeContent():
         content.append(getSectionHeader("Work Experience and Skills"))
         content.append("")
 
-        experiences=sorted(work_obj.data.keys(),key=lambda experience: work_obj.data[experience]['order'],reverse=True)
+        experiences=sorted(work_obj.data.keys(),key=lambda experience: work_obj.getNodeData([experience,'order']),reverse=True)
         for experience in experiences:
             entry_margin=work_obj.getNodeData([experience,"title"],_LATEX_)
             entry_date=work_obj.getNodeData([experience,"duration"],_LATEX_)
@@ -351,48 +375,123 @@ def getResumeContent():
             content.append("")
 
         return content
-
-    def getAwards():
+    
+    #COME BACK AND FILL IN CONFERENCES FROM PAST, LIKE KC, MUN, FBLA, ETC.
+    def getActivities():
         content=[]
-        content.append(getSectionHeader("Education"))
-        content.append(getTitle("2011-2012","The University of California, Berkeley"))
-        misc=""
-        misc+="GPA: 8.0\\ \\ $\\cdotp$\\ \\ \\textit{First Class Honours}\\ \\ $\\cdotp$\\ \\ "
-        misc+="School: Business and Administration\\newline Thesis: \\textit{Money Is The Root Of All Evil -- Or Is It?}\\newline "
-        misc+="Description: This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. "
-        misc+="I found that it has, in fact, not.\\newline "
-        misc+="Advisors: Prof.~James \\textsc{Smith} \\& Assoc. Prof.~Jane \\textsc{Smith}"
-        content.append(getDescription("Masters of Commerce",misc))
+        content.append(getSectionHeader("Activities and Outreach"))
+        content.append("")
+
+        activities=sorted(activities_obj.data.keys(),key=lambda activity: activities_obj.getNodeData([activity,'order']),reverse=True)
+        for activity in activities:
+            entry_margin=""
+            positions=[ getViewSpecificNode(position,_LATEX_) for position in activities_obj.getNodeData([activity,"positions"],_LATEX_) if position ]
+            if positions:
+                entry_margin=positions[0]
+                #too long, just fix here 
+                if "New York District" in entry_margin and "Distinguished Past Governor" in entry_margin:
+                    entry_margin="\\textcolor{NavyBlue}{Distinguished Past Governor}"
+            entry_date=activities_obj.getNodeData([activity,"duration"],_LATEX_)
+            entry_title=activities_obj.getNodeData([activity,"title"],_LATEX_)
+            entry_description=""
+            descriptions=[ getViewSpecificNode(description,_LATEX_) for description in activities_obj.getNodeData([activity,"description"],_LATEX_) if description ]
+            if descriptions:
+                entry_description+=_DOT_DELIMITER_.join(descriptions)
+                #entry_description+="\\newline "
+            highlights=[ getViewSpecificNode(highlight,_LATEX_) for highlight in activities_obj.getNodeData([activity,"highlights"],_LATEX_) if highlight ]
+            if highlights:
+                entry_description+=createBullets(highlights)+" "
+            if len(positions)>1:
+                if description and not highlights:
+                    entry_description+="\\newline "
+                entry_description+=getAdvisors(positions,title="Position")
+            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
+            content.append("")
 
         return content
 
-    def getActivities():
-        #qualify as professional, outreach, extra curricular
+    def getAwards():
         content=[]
-        content.append(getSectionHeader("Education"))
-        content.append(getTitle("2011-2012","The University of California, Berkeley"))
-        misc=""
-        misc+="GPA: 8.0\\ \\ $\\cdotp$\\ \\ \\textit{First Class Honours}\\ \\ $\\cdotp$\\ \\ "
-        misc+="School: Business and Administration\\newline Thesis: \\textit{Money Is The Root Of All Evil -- Or Is It?}\\newline "
-        misc+="Description: This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. "
-        misc+="I found that it has, in fact, not.\\newline "
-        misc+="Advisors: Prof.~James \\textsc{Smith} \\& Assoc. Prof.~Jane \\textsc{Smith}"
-        content.append(getDescription("Masters of Commerce",misc))
+        content.append(getSectionHeader("Honors and Awards"))
+        content.append("")
+
+        honors=sorted(honors_obj.data.keys(),key=lambda honor: honors_obj.getNodeData([honor,'order']),reverse=True)
+        for honor in honors:
+            entry_margin=honors_obj.getNodeData([honor,"type"],_LATEX_)
+            entry_date=honors_obj.getNodeData([honor,"date"],_LATEX_)
+            entry_title=honors_obj.getNodeData([honor,"title"],_LATEX_)
+            organization=honors_obj.getNodeData([honor,"organization"],_LATEX_)
+            if organization:
+                entry_title=", ".join([entry_title,organization])
+            entry_description=""
+            descriptions=[ getViewSpecificNode(description,_LATEX_) for description in honors_obj.getNodeData([honor,"description"],_LATEX_) if description ]
+            if descriptions:
+                entry_description+=_DOT_DELIMITER_.join(descriptions)
+                #entry_description+="\\newline "
+            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
+            content.append("")
 
         return content
 
     def getPublications():
-
         content=[]
         content.append(getSectionHeader("Publications"))
-        content.append(getTitle("January 2013","Publication Title"))
-        misc=""
-        misc+="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing "
-        misc+="sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus "
-        misc+="commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat "
-        misc+="id adipiscing et, elementum eu sem.\\\\ Authors: John \\textsc{Smith}, ~James "
-        misc+="\\textsc{Smith}"
-        content.append(getDescription("Full Journal Name",misc))
+        content.append("")
+
+        current_year=0
+
+        pubs=sorted(pubs_obj.data.keys(),key=lambda pub: getCountFromLabel(pub),reverse=True)
+        for pub in pubs:
+            #figure out date stuff first
+            date=pubs_obj.getNodeData([pub,"year"],_LATEX_)
+            if date!=current_year:
+                content.append("")
+                if not current_year:
+                    content.append("\\vspace{0.5cm}")
+                content.append(getYearHeader(date))
+                content.append("")
+                current_year=date
+            status=pubs_obj.getNodeData([pub,"status"],_LATEX_)
+            entry_title="\\textit{"+pubs_obj.getNodeData([pub,"title"],_LATEX_)+"}"
+            entry_description=""
+            _authors=[ " ".join( [ people_obj.getNodeData([author,name],_LATEX_) for name in ["first_name","middle_name","last_name"] if people_obj.getNodeData([author,name],_LATEX_) ] ) for author in sorted(pubs_obj.getNodeData([pub,"authors"]).keys(),key=lambda a: pubs_obj.getNodeData([pub,"authors",a,"order"])) if author ]
+            authors=[]
+            for a in _authors:
+                if a=="Corey Oses":
+                    a="\\textcolor{NavyBlue}{Corey Oses}"
+                authors.append(a)
+            if status=="published":
+                entry_margin=journals_obj.getNodeData([pubs_obj.getNodeData([pub,"journal"]),"name"],_LATEX_)
+                entry_title+=" \\newline "
+                #entry_title+="\\small{"+getAdvisors(authors,title="Author",show_title=False)+"} \\newline "
+                entry_title+=getFormattedPublication(\
+                        journals_obj.getNodeData([pubs_obj.getNodeData([pub,"journal"]),"abbreviation"],_LATEX_),\
+                        pubs_obj.getNodeData([pub,"volume"],_LATEX_),\
+                        pubs_obj.getNodeData([pub,"number"],_LATEX_),\
+                        pubs_obj.getNodeData([pub,"pages"],_LATEX_),\
+                        pubs_obj.getNodeData([pub,"year"],_LATEX_),\
+                        _LATEX_)+" "#+" \\newline "+\
+            elif status=="submitted":
+                entry_margin="Submitted"
+            else:
+                entry_margin="In Preparation"
+            entry_date=""#str(pubs_obj.getNodeData([pub,"year"],_LATEX_))
+            if authors:
+                entry_description+=getAdvisors(authors,title="Author")+" \\newline "
+            show_abstract=pubs_obj.getNodeData([pub,"show_abstract"],_LATEX_)
+            abstract=pubs_obj.getNodeData([pub,"abstract"],_LATEX_)
+            if show_abstract:
+                entry_description+="\\textbf{Abstract}: "+abstract+" \\newline "
+            #highlights=[ getViewSpecificNode(highlight,_LATEX_) for highlight in pubs_obj.getNodeData([experience,"highlights"],_LATEX_) if highlight ]
+            #if highlights:
+            #    entry_description+=createBullets(highlights)+" "
+            if status=="published":
+                doi=pubs_obj.getNodeData([pub,"doi"],_LATEX_)
+                if not doi:
+                    generateError("No doi found for "+pubs_obj.getNodeData([pub,"title"],_LATEX_))
+                entry_description+="\\textbf{DOI}: "+getLatexHyperlink(_DOI_PREFIX_+doi,display=fixStringLatex(doi))
+            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description,large_title=True))
+            content.append("")
 
         return content
 
@@ -424,6 +523,11 @@ def getResumeContent():
     content.append("")
     content+=getWorkExperienceAndSkills()
     content.append("")
+    content+=getActivities()
+    content.append("")
+    content+=getAwards()
+    content.append("")
+    content+=getPublications()
     #content.append("\\vspace{"+str(spacing)+"em}")
     """
     content+=getPublications()

@@ -1,23 +1,23 @@
 {
-"duke_phd":{
-    "order":3,
-    "name":"Duke University",
-    "degree":"Doctor of Philosophy",
-    "location":"Durham, North Carolina",
+"bhs":{
+    "order":1,
+    "name":"Bloomfield High School",
+    "degree":"High School Diploma",
+    "location":"Bloomfield, New Jersey",
     "duration":{
-        "latex":"2013--Present"
+        "latex":"2005-2009"
     },
-    "gpa":"3.7/4.0",
-    "school":"Pratt School of Engineering",
-    "department":"Mechanical Engineering and Materials Science",
+    "gpa":"3.9/4.0",
+    "school":"",
+    "department":"",
     "theses":[
-        "phd_thesis"
+        ""
     ],
     "advisors":[
-        "scurtarolo"
+        ""
     ],
     "honors":[
-        ""
+        "Graduated fifth in class of 428"
     ],
     "view":[
         ""
@@ -47,25 +47,25 @@
         ""
     ]
 },
-"bhs":{
-    "order":1,
-    "name":"Bloomfield High School",
-    "degree":"High School Diploma",
-    "location":"Bloomfield, New Jersey",
+"duke_phd":{
+    "order":3,
+    "name":"Duke University",
+    "degree":"Doctor of Philosophy",
+    "location":"Durham, North Carolina",
     "duration":{
-        "latex":"2005-2009"
+        "latex":"2013--Present"
     },
-    "gpa":"3.9/4.0",
-    "school":"",
-    "department":"",
+    "gpa":"3.7/4.0",
+    "school":"Pratt School of Engineering",
+    "department":"Mechanical Engineering and Materials Science",
     "theses":[
-        ""
+        "phd_thesis"
     ],
     "advisors":[
-        ""
+        "scurtarolo"
     ],
     "honors":[
-        "Graduated fifth in class of 428"
+        ""
     ],
     "view":[
         ""

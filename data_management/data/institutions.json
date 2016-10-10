@@ -308,7 +308,9 @@
             "street_address":
                 [
                 "Kings County Supreme Court",
-                "360 Adams St #4"
+                {
+                    "latex":"360 Adams St \\#4"
+                }
                 ],
             "location":"nyc_supreme_court_kings"
         }
