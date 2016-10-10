@@ -12,6 +12,26 @@ _VIEWS_[_LATEX_]="latex"
 
 _VIEWS_INVERTED_={ v:k for k,v in _VIEWS_.items() }
 
+_ORDINALS_={}
+_ORDINALS_[1]="Primary"
+_ORDINALS_[2]="Secondary"
+_ORDINALS_[3]="Tertiary"
+_ORDINALS_[4]="Quaternary"
+_ORDINALS_[5]="Quinary"
+_ORDINALS_[6]="Senary"
+_ORDINALS_[7]="Septenary"
+_ORDINALS_[8]="Octonary"
+_ORDINALS_[9]="Nonary"
+_ORDINALS_[10]="Denary"
+_ORDINALS_[11]="11-nary"
+_ORDINALS_[12]="Duodenary"
+
+def uniqueEndingJoin(_list,delim1,delim2):
+    if len(_list)==1:
+        return _list[0]
+    else:
+        return delim2.join([delim1.join(_list[:-1]),_list[-1]])
+
 def generateError(_message):
     message="".join(["ERROR - ",_message])
     sys.exit(message)
@@ -28,6 +48,47 @@ def getViewSpecificNode(node,_view):
             generateError("Node does not contain desired view ("+str(_view)+"): "+str(node))
     else:
         return node
+
+def getPresentationItems(node,view):
+    def getPresentationItem(title,view,organization,show_date,date):
+        if title:
+            output_string=", ".join([getViewSpecificNode(title,view),getViewSpecificNode(organization,view)])
+        else:
+            output_string=" ".join(["Presented at",getViewSpecificNode(organization,view)])
+        if show_date:
+            if view==_LATEX_:
+                output_string=" --- ".join([output_string,getViewSpecificNode(date,view)])
+        return output_string+"."
+
+    #precedence:  results, title, "Presentated at"
+    try:
+        results=[ r for r in node["results"] if r ]
+    except:
+        generateError("Presentation node does not contain ''results'': "+str(node))
+    try:
+        title=node["title"]
+    except:
+        generateError("Presentation node does not contain ''title'': "+str(node))
+    try:
+        organization=node["organization"]
+    except:
+        generateError("Presentation node does not contain ''organization'': "+str(node))
+    try:
+        show_date=node["show_date"]
+    except:
+        generateError("Presentation node does not contain ''show_date'': "+str(node))
+    try:
+        date=node["date"]
+    except:
+        generateError("Presentation node does not contain ''date'': "+str(node))
+    output=[]
+    if results:
+        for r in results:
+            output.append(getPresentationItem(r,view,organization,show_date,date))
+    else:
+        output.append(getPresentationItem(title,view,organization,show_date,date))
+
+    return output
 
 class data_file:
     """

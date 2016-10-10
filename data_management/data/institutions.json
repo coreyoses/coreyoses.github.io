@@ -1,6 +1,7 @@
 {
     "center_materials_genomics":
     {
+        "name":"Duke University",
         "address":
         {
             "street_address":
@@ -8,14 +9,12 @@
                 "Center of Materials Genomics",
                 "Duke University"
                 ],
-            "city":"Durham",
-            "state":"North Carolina",
-            "zipcode":"27708",
-            "country":"United States"
+            "location":"duke"
         }
     },
     "duke_mems":
     {
+        "name":"Duke University",
         "address":
         {
             "street_address":
@@ -23,14 +22,63 @@
                 "Department of Mechanical Engineering and Materials Science",
                 "Duke University"
                 ],
-            "city":"Durham",
-            "state":"North Carolina",
-            "zipcode":"27708",
-            "country":"United States"
+            "location":"duke"
+        }
+    },
+    "duke":
+    {
+        "name":"Duke University",
+        "address":
+        {
+            "street_address":
+                [
+                "Duke University"
+                ],
+            "location":"duke"
+        }
+    },
+    "cornell_aep":
+    {
+        "name":"Cornell University",
+        "address":
+        {
+            "street_address":
+                [
+                "School of Applied and Engineering Physics",
+                "Cornell University"
+                ],
+            "location":"cornell"
+        }
+    },
+    "cornell":
+    {
+        "name":"Cornell University",
+        "address":
+        {
+            "street_address":
+                [
+                "Cornell University"
+                ],
+            "location":"cornell"
+        }
+    },
+    "chess":
+    {
+        "name":"Cornell High Energy Synchrotron Source",
+        "address":
+        {
+            "street_address":
+                [
+                "CHESS/Wilson Lab",
+                "Cornell University",
+                "161 Synchrotron Drive"
+                ],
+            "location":"cornell"
         }
     },
     "stefano_duke":
     {
+        "name":"Duke University",
         "address":
         {
             "street_address":
@@ -38,14 +86,12 @@
                 "Materials Science, Electrical Engineering, Physics and Chemistry",
                 "Duke University"
                 ],
-            "city":"Durham",
-            "state":"North Carolina",
-            "zipcode":"27708",
-            "country":"United States"
+            "location":"duke"
         }
     },
     "unc_molecular_modeling":
     {
+        "name":"University of North Carolina, Chapel Hill",
         "address":
         {
             "street_address":
@@ -54,14 +100,12 @@
                 "UNC Eshelman School of Pharmacy",
                 "University of North Carolina"
                 ],
-            "city":"Chapel Hill",
-            "state":"North Carolina",
-            "zipcode":"27599",
-            "country":"United States"
+            "location":"chapel_hill"
         }
     },
     "central_michigan_physics":
     {
+        "name":"Central Michigan University",
         "address":
         {
             "street_address":
@@ -69,14 +113,12 @@
                 "Department of Physics",
                 "Central Michigan University"
                 ],
-            "city":"Mount Pleasant",
-            "state":"Michigan",
-            "zipcode":"48858",
-            "country":"United States"
+            "location":"cmu"
         }
     },
     "tel_aviv_u_physical_electronics":
     {
+        "name":"Tel Aviv University",
         "address":
         {
             "street_address":
@@ -84,14 +126,12 @@
                 "Department of Physical Electronics, Faculty of Engineering",
                 "Tel Aviv University"
                 ],
-            "city":"Tel Aviv",
-            "state":"",
-            "zipcode":"69978",
-            "country":"Israel"
+            "location":"tel_aviv_u"
         }
     },
     "nrl_comp_mat_sci":
     {
+        "name":"Naval Research Laboratory",
         "address":
         {
             "street_address":
@@ -99,14 +139,12 @@
                 "Center for Computational Materials Science",
                 "Naval Research Laboratory"
                 ],
-            "city":"Washington DC",
-            "state":"",
-            "zipcode":"20375-5345",
-            "country":"United States"
+            "location":"nrl"
         }
     },
     "byu_physics_astronomy":
     {
+        "name":"Brigham Young University",
         "address":
         {
             "street_address":
@@ -114,14 +152,12 @@
                 "Department of Physics and Astronomy",
                 "Brigham Young University"
                 ],
-            "city":"Provo",
-            "state":"Utah",
-            "zipcode":"84602",
-            "country":"United States"
+            "location":"byu"
         }
     },
     "u_north_tx_physics_chemistry":
     {
+        "name":"University of North Texas",
         "address":
         {
             "street_address":
@@ -129,14 +165,12 @@
                 "Department of Physics and Department of Chemistry",
                 "University of North Texas"
                 ],
-            "city":"Denton",
-            "state":"Texas",
-            "zipcode":"76203",
-            "country":"United States"
+            "location":"u_north_tx"
         }
     },
     "trinity_physics":
     {
+        "name":"Trinity College",
         "address":
         {
             "street_address":
@@ -144,29 +178,25 @@
                 "School of Physics, AMBER and CRANN Institute",
                 "Trinity College"
                 ],
-            "city":"Dublin",
-            "state":"",
-            "zipcode":"2",
-            "country":"Ireland"
+            "location":"trinity"
         }
     },
     "ucsd_nanoengineering":
     {
+        "name":"University of California, San Diego",
         "address":
         {
             "street_address":
                 [
                 "Department of NanoEngineering",
-                "University of California San Diego"
+                "University of California, San Diego"
                 ],
-            "city":"La Jolla",
-            "state":"California",
-            "zipcode":"92093-0448",
-            "country":"United States"
+            "location":"ucsd"
         }
     },
     "u_maryland_mat_sci":
     {
+        "name":"University of Maryland",
         "address":
         {
             "street_address":
@@ -174,14 +204,12 @@
                 "Department of Materials Science and Engineering",
                 "University of Maryland"
                 ],
-            "city":"College Park",
-            "state":"Maryland",
-            "zipcode":"20742",
-            "country":"United States"
+            "location":"u_maryland"
         }
     },
     "nrcn_physics":
     {
+        "name":"NRCN-Israel",
         "address":
         {
             "street_address":
@@ -190,14 +218,12 @@
                 "NRCN",
                 "P.O. Box 9001"
                 ],
-            "city":"Beer-Sheva",
-            "state":"",
-            "zipcode":"84190",
-            "country":"Israel"
+            "location":"nrcn"
         }
     },
     "uc_berkeley_mat_sci":
     {
+        "name":"University of California, Berkeley",
         "address":
         {
             "street_address":
@@ -206,14 +232,12 @@
                 "University of California, Berkeley",
                 "210 Hearst Memorial Mining Building"
                 ],
-            "city":"Berkeley",
-            "state":"California",
-            "zipcode":"94709",
-            "country":"United States"
+            "location":"berkeley"
         }
     },
     "spacex":
     {
+        "name":"Space Exploration Technologies",
         "address":
         {
             "street_address":
@@ -221,14 +245,12 @@
                 "Space Exploration Technologies",
                 "1 Rocket Road"
                 ],
-            "city":"Hawthorne",
-            "state":"California",
-            "zipcode":"90250",
-            "country":"United States"
+            "location":"spacex"
         }
     },
     "cea_france":
     {
+        "name":"CEA-Grenoble",
         "address":
         {
             "street_address":
@@ -236,14 +258,12 @@
                 "CEA, LITEN",
                 "17 Rue des Martyrs"
                 ],
-            "city":"Grenoble",
-            "state":"",
-            "zipcode":"38054",
-            "country":"France"
+            "location":"cea_france"
         }
     },
     "tel_aviv_u_comp_mol_mat_sci":
     {
+        "name":"Tel Aviv University",
         "address":
         {
             "street_address":
@@ -251,10 +271,59 @@
                 "The Sackler Center for Computational Molecular and Materials Science",
                 "Tel Aviv University"
                 ],
-            "city":"Tel Aviv",
-            "state":"",
-            "zipcode":"69978",
-            "country":"Israel"
+            "location":"tel_aviv_u"
+        }
+    },
+    "sos_security":
+    {
+        "name":"SOS Security, LLC",
+        "address":
+        {
+            "street_address":
+                [
+                "SOS Security, LLC",
+                "1915 US-46"
+                ],
+            "location":"sos_security"
+        }
+    },
+    "nyc_supreme_court_appellate":
+    {
+        "name":"Supreme Court of New York, Appellate Division",
+        "address":
+        {
+            "street_address":
+                [
+                "Supreme Court of New York, Appellate Division",
+                "27 Madison Avenue"
+                ],
+            "location":"nyc_supreme_court_appellate"
+        }
+    },
+    "nyc_supreme_court_kings":
+    {
+        "name":"Kings County Supreme Court",
+        "address":
+        {
+            "street_address":
+                [
+                "Kings County Supreme Court",
+                "360 Adams St #4"
+                ],
+            "location":"nyc_supreme_court_kings"
+        }
+    },
+    "ilr_budget":
+    {
+        "name":"Cornell University ILR School",
+        "address":
+        {
+            "street_address":
+                [
+                "Cornell University ILR School",
+                "397 Ives Hall"
+                ],
+            "location":"cornell2"
         }
     }
 }

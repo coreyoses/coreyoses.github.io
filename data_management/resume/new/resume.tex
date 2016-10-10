@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+
+%http://www.tug.org/mactex/fonts/LaTeX_Preamble-Font_Choices.html
+% Euler for math | Palatino for rm | Helvetica for ss | Courier for tt
+\renewcommand{\rmdefault}{ppl} % rm
+\linespread{1.05}        % Palatino needs more leading
+\usepackage[scaled]{helvet} % ss
+\usepackage{courier} % tt
+\usepackage{euler} % math
+\usepackage{soul}
+%\usepackage{eulervm} % a better implementation of the euler package (not in gwTeX)
+\normalfont
+\usepackage[T1]{fontenc}
+
+
+
+%\usepackage[nochapters]{classicthesis}  %fonts!
+%\usepackage{multirow}
+
+%\usepackage[scaled]{beramono}
+%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+%\usepackage[T1]{fontenc}
+
+%\usepackage[scaled]{helvet}
+%\renewcommand\familydefault{\sfdefault} 
+%\usepackage[T1]{fontenc}
+%\usepackage{longtable}
+%\usepackage{tabularx}
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+
+\hyphenpenalty=10000    %avoid hyphenation
+
+%http://tex.stackexchange.com/questions/84400/table-layout-with-tabularx-column-widths-502525
+\newcolumntype{d}{X}                    %default
+\newcolumntype{h}{>{\hsize=.25\hsize}X} %header
+\newcolumntype{i}{>{\hsize=.2\hsize}X}  %indented
+
+%\def\tabularxcolumn#1{m{#1}}
+
+\begin{document}
+
+
+%\hspace{2.5cm}\textcolor{Maroon}{\LARGE\spacedallcaps{Corey Oses}}
+\hspace{2.5cm}\textcolor{Maroon}{\LARGE\textsc{\so{COREY OSES}}}
+
+\vspace{0.15cm}
+
+\hspace{2.5cm}\textit{Ph.D. Candidate in Materials Science,} Duke University
+
+\vspace{0.5cm}
+
+\hspace{2.5cm}\textcolor{black}{\textsc{\so{Personal Information}}}
+
+\vspace{0.15cm}
+
+%http://tex.stackexchange.com/questions/155658/specifying-vertical-alignment-in-a-table-column-by-column
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{1in}|m{0.25in}|c|}
+    \hline
+    A &  &
+    \begin{tabular}{@{}p{0.5in}|p{0.25in}|p{4in}@{}}
+    Line 1 \newline Line 2 \newline Line 3 & 
+     &
+    \lipsum*[75]
+    \\
+    \hline
+    %\lipsum*[56] & \lipsum*[56]
+    \multicolumn{3}{@{}p{5.1in}@{}}{\lipsum*[65]}
+  \end{tabular} \\
+    \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Doctor of Philosophy}}} &  &
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+    \textit{\small{Fall 2012--Spring 2013}} & &
+    Duke University Duke University Duke University Duke University Duke University Duke University \\%[0.75in]
+    %\hline
+    \multicolumn{3}{@{}p{5.1in}@{}}{\vspace{-0.1in}\footnotesize{Thesis: Advanced Techniques in High-Throughput Computational Materials Science \newline Thesis: Advanced Techniques in High-Throughput Computational Materials Science}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}m{0.75in}m{0.25in}c}
+\raggedleft{\textit{\small{Doctor of Philosophy}}} &  &
+\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}
+    \textit{\small{2012--2013}} & &
+    Duke University \\%[0.75in]
+    %\hline
+    \multicolumn{3}{@{}p{5.1in}@{}}{\vspace{-0.1in}\footnotesize{Thesis: Advanced Techniques in High-Throughput Computational Materials Science \newline Thesis: Advanced Techniques in High-Throughput Computational Materials Science}}
+\end{tabular} \\
+\end{tabular}
+\end{center}
+
+\iffalse
+\begin{tabular}{|m{1in}|p{0.25in}|p{0.5in}|p{0.25in}|p{4in}|} 
+\hline
+\raggedleft{\textit{\small{Doctor of Philosophy}}} &  & \textit{\small{2013--Present 2013--Present 2013--Present}} &  & Duke University \\
+\hline
+\end{tabular}
+\fi
+\iffalse
+\begin{tabularx}{\textwidth}{|h|@{\hskip 1cm}|i|@{\hskip 0.5cm}|d|}
+\multirow{2}{*}{\raggedleft{\textit{\small{Doctor of Philosophy}}}} & \textit{\small{2013--Present 2013--Present 2013--Present}} & Duke University Duke University Duke University Duke University  \\[1cm] \hline
+ & \multicolumn{2}{l}{Multi-column}
+\end{tabularx}
+\fi
+
+\end{document}

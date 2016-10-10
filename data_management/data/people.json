@@ -71,6 +71,56 @@
             "stefano_duke"
         ]
     },
+    "jbrock":
+    {
+        "first_name":"Joel",
+        "middle_name":"",
+        "last_name":"Brock",
+        "institution":
+        [
+            "cornell_aep"
+        ]
+    },
+    "asaxena":
+    {
+        "first_name":"Ashutosh",
+        "middle_name":"",
+        "last_name":"Saxena",
+        "institution":
+        [
+            "cornell"
+        ]
+    },
+    "kmdeluca":
+    {
+        "first_name":"Kristine",
+        "middle_name":"M.",
+        "last_name":"DeLuca",
+        "institution":
+        [
+            "cornell"
+        ]
+    },
+    "efontes":
+    {
+        "first_name":"Ernest",
+        "middle_name":"",
+        "last_name":"Fontes",
+        "institution":
+        [
+            "chess"
+        ]
+    },
+    "rhuang":
+    {
+        "first_name":"Rong",
+        "middle_name":"",
+        "last_name":"Huang",
+        "institution":
+        [
+            "chess"
+        ]
+    },
     "cecalderon":
     {
         "first_name":"Camilo",
@@ -364,6 +414,56 @@
         "institution":
         [
             "tel_aviv_u_physical_electronics"
+        ]
+    },
+    "jflanagan":
+    {
+        "first_name":"James",
+        "middle_name":"",
+        "last_name":"Flanagan",
+        "institution":
+        [
+            "sos_security"
+        ]
+    },
+    "aebelen":
+    {
+        "first_name":"Ariel",
+        "middle_name":"E.",
+        "last_name":"Belen",
+        "institution":
+        [
+            "nyc_supreme_court_appellate"
+        ]
+    },
+    "ahurkintorres":
+    {
+        "first_name":"Allen",
+        "middle_name":"",
+        "last_name":"Hurkin-Torres",
+        "institution":
+        [
+            "nyc_supreme_court_kings"
+        ]
+    },
+    "rlmonroe":
+    {
+        "first_name":"Renee",
+        "middle_name":"Laree",
+        "last_name":"Monroe",
+        "institution":
+        [
+            "ilr_budget"
+        ]
+    },
+    "regillilan":
+    {
+        "first_name":"Richard",
+        "middle_name":"Edward",
+        "last_name":"Gillilan",
+        "institution":
+        [
+            "chess"
         ]
     }
 }

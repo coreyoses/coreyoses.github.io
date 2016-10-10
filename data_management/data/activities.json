@@ -1,0 +1,100 @@
+{
+    "tkd":{
+        "title":"Tae Kwon Do",
+        "order":1,
+        "duration":"2002--2006",
+        "positions":[
+            "Black belt"
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "bowling":{
+        "title":"Bowling Team",
+        "order":2,
+        "duration":"2005--2006",
+        "positions":[
+            ""
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "latin_club":{
+        "title":"Latin Club",
+        "order":3,
+        "duration":"2005--2008",
+        "positions":[
+            ""
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "library_tutor":{
+        "title":"Tutor at the Library",
+        "order":4,
+        "duration":"2006--2009",
+        "positions":[
+            ""
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "astronomy_club":{
+        "title":"Astronomy Club",
+        "order":6,
+        "duration":"2008--2009",
+        "positions":[
+            "President"
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "weight_lifting_team":{
+        "title":"Weight Lifting Team",
+        "order":5,
+        "duration":"2006--2009",
+        "positions":[
+            ""
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    },
+    "weight_lifting_team":{
+        "title":"Weight Lifting Team",
+        "order":5,
+        "duration":"2006--2009",
+        "positions":[
+            ""
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ]
+    }
+}
