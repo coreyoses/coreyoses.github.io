@@ -6,9 +6,19 @@ sys.path.insert(0,"functions")
 from data_structures import *
 
 _DOT_DELIMITER_="\\ \\ $\\cdotp$\\ \\ "
-_DEFAULT_INDENTATION_="2.5cm"
+_DEFAULT_INDENTATION_="0cm"
+#_DEFAULT_INDENTATION_="0.125in"
 _DOI_PREFIX_="http://dx.doi.org/"
+_ARXIV_PREFIX_="http://arxiv.org/abs/"
 #HIGHLIGHT_COLOR="NavyBlue"
+_PAGE_WIDTH_=8.5
+_DEBUG_HLINES=False
+
+_ENTRY_COL_1=1.00#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*0.75/6.0
+_ENTRY_COL_2=0.25#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*0.25/6.0
+_ENTRY_COL_3=0.85#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*0.85/6.0
+_ENTRY_COL_4=0.15#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*0.15/6.0
+_ENTRY_COL_5=(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)-(_ENTRY_COL_1+_ENTRY_COL_2+_ENTRY_COL_3+_ENTRY_COL_4)#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*4.00/6.0
 
 def keepStringTogether(in_string):
     return "".join(["\\mbox{",in_string,"}"])
@@ -22,11 +32,13 @@ def getPhoneNumber(numbers):
     #should have 4 parts
     return " ".join(["+"+str(numbers[0]),"("+str(numbers[1])+")",str(numbers[2]),str(numbers[3])])
 
-def createBullets(_list):
+def createBullets(_list,remove_extra_line=False):
     output=[]
-    output.append("\\begin{itemize}[leftmargin=*]")
+    output.append("\\noindent\\begin{itemize}[leftmargin=*]")
     for l in _list:
         output.append(" ".join(["\\item",l]))
+    if remove_extra_line:
+        output.append("\\vspace*{-\\baselineskip}")
     output.append("\\end{itemize}")
     return " ".join(output)
 
@@ -60,30 +72,32 @@ def getResumeContent():
         header=[]
         header.append("\\documentclass[11pt]{article}")
         header.append("")
-        header.append("%http://www.tug.org/mactex/fonts/LaTeX_Preamble-Font_Choices.html")
-        header.append("% Euler for math | Palatino for rm | Helvetica for ss | Courier for tt")
-        header.append("\\renewcommand{\\rmdefault}{ppl} % rm")
-        header.append("\\linespread{1.05}        % Palatino needs more leading")
-        header.append("\\usepackage[scaled]{helvet} % ss")
-        header.append("\\usepackage{courier} % tt")
-        header.append("\\usepackage{euler} % math")
+        #http://www.tug.org/mactex/fonts/LaTeX_Preamble-Font_Choices.html
+        #Euler for math | Palatino for rm | Helvetica for ss | Courier for tt
+        header.append("\\renewcommand{\\rmdefault}{ppl}")   #rm
+        header.append("\\linespread{1.05}")                 #Palatino needs more leading
+        header.append("\\usepackage[scaled]{helvet}")       #ss
+        header.append("\\usepackage{courier}")              #tt
+        header.append("\\usepackage{euler}")                #math
         header.append("\\usepackage{soul}")
-        header.append("%\\usepackage{eulervm} % a better implementation of the euler package (not in gwTeX)")
+        header.append("%\\usepackage{eulervm}")             #a better implementation of the euler package (not in gwTeX)
         header.append("\\normalfont")
         header.append("\\usepackage[T1]{fontenc}")
         header.append("")
-        header.append("\\usepackage[top=0.5in,left=0.5in,right=0.5in,bottom=1in]{geometry}")
+        header.append("\\usepackage[top="+str(TOP_MARGIN)+"in,left="+str(LEFT_RIGHT_MARGIN)+"in,right="+str(LEFT_RIGHT_MARGIN)+"in,bottom="+str(BOTTOM_MARGIN)+"in]{geometry}")
         header.append("\\usepackage[dvipsnames]{xcolor}")
         header.append("\\usepackage{array}")
         header.append("\\usepackage{hyperref}")
         header.append("\\usepackage{enumitem}")
         header.append("\\hypersetup{colorlinks,breaklinks,urlcolor=Maroon,linkcolor=Maroon}")
-        header.append("\\hyphenpenalty=10000    %avoid hyphenation")
+        header.append("\\hyphenpenalty=10000")      #avoid hyphenation
+        #header.append("\\def\\arraystretch{0}")     #remove all vertical padding from tables
+        header.append("\\setlength{\\tabcolsep}{0pt}")     #remove all horizontal padding around tables
         return header
 
     def getSectionHeader(header,indent=_DEFAULT_INDENTATION_,color="black",large=False):
         output=[]
-        output.append("\\hspace{")
+        output.append("\\noindent\\hspace{")
         output.append(indent)
         output.append("}\\textcolor{")
         output.append(color)
@@ -97,7 +111,7 @@ def getResumeContent():
 
     def getYearHeader(year,indent=_DEFAULT_INDENTATION_):
         output=[]
-        output.append("\\hspace{")
+        output.append("\\noindent\\hspace{")
         output.append(indent)
         output.append("}")
         output.append("{\\Large")
@@ -108,22 +122,38 @@ def getResumeContent():
     def getEntry(margin="",date="",title="",description="",large_title=False):
         output=[]
         output.append("\\begin{center}")
-        output.append("\\begin{tabular}{>{\\centering\\arraybackslash}m{0.75in}m{0.25in}c}")
-        if margin:
-            output.append("".join(["\\raggedleft{\\textit{\\small{",margin,"}}}"]))
-        output.append(" & & ")
-        output.append("\\begin{tabular}{@{}p{0.85in}p{0.05in}p{4.1in}@{}}")
-        if large_title:
-            output.append("".join(["\\multicolumn{3}{@{}p{5.3in}@{}}{",title,"} \\\\"]))
+        #if margin:
+        if _DEBUG_HLINES:
+            output.append("\\begin{tabular}{|m{"+str(_ENTRY_COL_1)+"in}|m{"+str(_ENTRY_COL_2)+"in}|c|}")
         else:
-            if date:
-                output.append("".join(["\\textit{\\small{",date,"}}"]))
-            output.append(" & &")
-            output.append(" ".join([title,"\\\\"]))
+            output.append("\\begin{tabular}{m{"+str(_ENTRY_COL_1)+"in}m{"+str(_ENTRY_COL_2)+"in}c}")
+        row=[]
+        row.append("".join(["\\raggedleft{\\textit{\\small{",margin,"}}}"]))
+        row.append(" & & ")
+        output.append("".join(row))
+        if _DEBUG_HLINES:
+            output.append("\\begin{tabular}{|m{"+str(_ENTRY_COL_3)+"in}|m{"+str(_ENTRY_COL_4)+"in}|m{"+str(_ENTRY_COL_5)+"in}|}")
+        else:
+            output.append("\\begin{tabular}{m{"+str(_ENTRY_COL_3)+"in}m{"+str(_ENTRY_COL_4)+"in}m{"+str(_ENTRY_COL_5)+"in}}")
+        row=[]
+        if title or date:
+            if large_title:
+                if _DEBUG_HLINES:
+                    row.append("".join(["\\multicolumn{3}{|p{",str(_ENTRY_COL_3+_ENTRY_COL_4+_ENTRY_COL_5),"in}|}{",title,"} \\\\ "]))
+                else:
+                    row.append("".join(["\\multicolumn{3}{p{",str(_ENTRY_COL_3+_ENTRY_COL_4+_ENTRY_COL_5),"in}}{",title,"} \\\\ "]))
+            else:
+                if date:
+                    row.append("".join(["\\textit{\\small{",date,"}}"]))
+                row.append(" & & ")
+                row.append(" ".join([title,"\\\\ "]))
         if description:
-            #output.append("".join(["\\multicolumn{3}{@{}p{5.1in}@{}}{\\vspace{-0.1in}\\footnotesize{",description,"}}"]))
-            output.append("".join(["\\multicolumn{3}{@{}p{5.3in}@{}}{\\vspace{-0.1in}\\footnotesize{",description,"}}"]))
-        output.append("\\end{tabular} \\\\")
+            if _DEBUG_HLINES:
+                row.append("".join(["\\multicolumn{3}{|p{"+str(_ENTRY_COL_3+_ENTRY_COL_4+_ENTRY_COL_5)+"in}|}{\\footnotesize{",description,"}} "]))
+            else:
+                row.append("".join(["\\multicolumn{3}{p{"+str(_ENTRY_COL_3+_ENTRY_COL_4+_ENTRY_COL_5)+"in}}{\\footnotesize{",description,"}} "]))
+        output.append("".join(row))
+        output.append("\\end{tabular} \\\\ ")
         output.append("\\end{tabular}")
         output.append("\\end{center}")
         
@@ -133,31 +163,35 @@ def getResumeContent():
         content=[]
         content.append(getSectionHeader(" ".join([ data_obj["personal_info"].getNodeData(name,MODE_LATEX).upper() for name in ["first_name","last_name"] if data_obj["personal_info"].getNodeData(name,MODE_LATEX) ]),color="Maroon",large=True))
         content.append("")
-        content.append("\\vspace{0.15cm}")
-        content.append("")
+        
+        #content.append("\\vspace{0.15cm}")
+        #%content.append("")
         titles=data_obj["personal_info"].getNodeData("titles")
         for title in titles:
-            content.append("\\hspace{2.5cm}\\textit{"+getViewSpecificNode(title["title"],MODE_LATEX)+\
+            content.append("\\noindent\\hspace{"+_DEFAULT_INDENTATION_+"}\\textit{"+getViewSpecificNode(title["title"],MODE_LATEX)+\
                            ",} "+getViewSpecificNode(title["location"],MODE_LATEX))
         content.append("")
         content.append("\\vspace{0.5cm}")
         content.append("")
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_PERSONAL_INFO]))
         content.append("")
-        content.append("\\vspace{-0.2cm}")
-        content.append("")
+        #content.append("\\vspace{-0.2cm}")
+        #content.append("")
+        
+        _content=[]
+        
         entry_date="email"
         entry_title=getLatexHyperlink("mailto:"+data_obj["personal_info"].getNodeData("email",MODE_LATEX),data_obj["personal_info"].getNodeData("email",MODE_LATEX))
-        content.append(getEntry(date=entry_date,title=entry_title))
-        content.append("")
-        content.append("\\vspace{-0.75cm}")
-        content.append("")
+        _content.append(getEntry(date=entry_date,title=entry_title))
+        #content.append("")
+        #content.append("\\vspace{-0.75cm}")
+        #content.append("")
         entry_date="website"
         entry_title=getLatexHyperlink(data_obj["personal_info"].getNodeData("homepage",MODE_LATEX))
-        content.append(getEntry(date=entry_date,title=entry_title))
-        content.append("")
-        content.append("\\vspace{-0.75cm}")
-        content.append("")
+        _content.append(getEntry(date=entry_date,title=entry_title))
+        #content.append("")
+        #content.append("\\vspace{-0.75cm}")
+        #content.append("")
         entry_date="phone"
         entry_title=""
         #add flag for mobile
@@ -169,16 +203,19 @@ def getResumeContent():
         entry_title+="(W) "
         work_phone=data_obj["personal_info"].getNodeData("work_phone")
         entry_title+=getPhoneNumber(work_phone)
-        content.append(getEntry(date=entry_date,title=entry_title))
-        
+        _content.append(getEntry(date=entry_date,title=entry_title))
+       
+        d_list=["","\\vspace{-0.75cm}",""]
+        content+=joinLists(_content,d_list)
+
         return content
 
     def getObjective():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_OBJECTIVE]))
         content.append("")
-        content.append("\\vspace{-0.75cm}")
-        content.append("")
+        #content.append("\\vspace{-0.75cm}")
+        #content.append("")
         
         #make flag for type of resume
         if True:
@@ -204,11 +241,13 @@ def getResumeContent():
         content.append("")
         
         schools=sorted(data_obj["education"].data.keys(),key=lambda school: data_obj["education"].getNodeData([school,'order']),reverse=True)
+        
+        _content=[]
         for school in schools:
             entry_margin=data_obj["education"].getNodeData([school,"degree"],MODE_LATEX)
             entry_date=data_obj["education"].getNodeData([school,"duration"],MODE_LATEX)
             entry_title=data_obj["education"].getNodeData([school,"name"],MODE_LATEX)
-            entry_description=""
+            entry_description=[]
             join_w_dots=[]
             gpa=data_obj["education"].getNodeData([school,"gpa"],MODE_LATEX)
             if gpa:
@@ -224,24 +263,23 @@ def getResumeContent():
             department=data_obj["education"].getNodeData([school,"department"],MODE_LATEX)
             if department:
                 join_w_dots.append(keepStringTogether("Department: "+department))
-            entry_description+=_DOT_DELIMITER_.join(join_w_dots)
-            entry_description+="\\newline "
+            entry_description.append(_DOT_DELIMITER_.join(join_w_dots))
             theses=[ data_obj["projects"].getNodeData([thesis,"title"],MODE_LATEX) for thesis in data_obj["education"].getNodeData([school,"theses"]) if thesis ]
             if theses:
                 if len(theses)>1:
                     for i,thesis in enumerate(theses):
-                        entry_description+=ORDINALS[i]+" Thesis: \\textit{"+thesis+"}"
-                        entry_description+="\\newline "
+                        entry_description.append(ORDINALS[i]+" Thesis: \\textit{"+thesis+"}")
                 else:
-                    entry_description+="Thesis: \\textit{"+theses[0]+"}"
-                    entry_description+="\\newline "
+                    entry_description.append("Thesis: \\textit{"+theses[0]+"}")
             #no description, do in research section
             advisors=[ " ".join( [ data_obj["people"].getNodeData([advisor,name],MODE_LATEX) for name in ["first_name","middle_name","last_name"] if data_obj["people"].getNodeData([advisor,name],MODE_LATEX) ] ) for advisor in data_obj["education"].getNodeData([school,"advisors"]) if advisor ]
             if advisors:
-                entry_description+=getAdvisors(advisors)
-            #content.append(getDescription(data_obj["education"].getNodeData([school,"degree"],MODE_LATEX),misc))
-            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
-            content.append("")
+                entry_description.append(getAdvisors(advisors))
+            _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
+            #content.append("")
+
+        d_list=[""]
+        content+=joinLists(_content,d_list)
 
         return content
 
@@ -251,11 +289,13 @@ def getResumeContent():
         content.append("")
         
         experiences=sorted(data_obj["projects"].data.keys(),key=lambda experience: data_obj["projects"].getNodeData([experience,'order']),reverse=True)
+        
+        _content=[]
         for experience in experiences:
             entry_margin=data_obj["institutions"].getNodeData([data_obj["projects"].getNodeData([experience,"institution"]),"name"],MODE_LATEX)
             entry_date=data_obj["projects"].getNodeData([experience,"duration"],MODE_LATEX)
             entry_title=data_obj["projects"].getNodeData([experience,"title"],MODE_LATEX)
-            entry_description=""
+            entry_description=[]
             descriptions=[ getViewSpecificNode(description,MODE_LATEX) for description in data_obj["projects"].getNodeData([experience,"description"],MODE_LATEX) if description ]
             presentation_nodes=[ data_obj["presentations"].data[presentation] for presentation in data_obj["projects"].getNodeData([experience,"presentations"],MODE_LATEX) if presentation ]
             presentations=[]
@@ -263,19 +303,27 @@ def getResumeContent():
                 presentations+=getPresentationItems(node,MODE_LATEX)
             highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["projects"].getNodeData([experience,"highlights"],MODE_LATEX) if highlight ]
             advisors=[ " ".join( [ data_obj["people"].getNodeData([advisor,name],MODE_LATEX) for name in ["first_name","middle_name","last_name"] if data_obj["people"].getNodeData([advisor,name],MODE_LATEX) ] ) for advisor in data_obj["projects"].getNodeData([experience,"advisors"]) if advisor ]
+            misc=[]
             if descriptions:
-                entry_description+=_DOT_DELIMITER_.join(descriptions)
+                misc.append(_DOT_DELIMITER_.join(descriptions))
             if presentations:
-                entry_description+=createBullets(presentations)+" "
+                misc.append(createBullets(presentations))
             if highlights:
-                entry_description+=createBullets(highlights)+" "
+                misc.append(createBullets(highlights))
+            if misc:
+                entry_description.append(" ".join(misc))
             if advisors:
-                if description and not (presentations or highlights):
-                    entry_description+="\\newline "
-                entry_description+=getAdvisors(advisors)
-            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
-            content.append("")
+                entry_description.append(getAdvisors(advisors))
+            #do not add \\newline if ends with bullets
+            if presentations or highlights:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" ".join(entry_description)))
+            else:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
+            #content.append("")
         
+        d_list=[""]
+        content+=joinLists(_content,d_list)
+
         return content
 
     def getTeachingExperience():
@@ -284,22 +332,24 @@ def getResumeContent():
         content.append("")
 
         experiences=sorted(data_obj["teaching"].data.keys(),key=lambda experience: data_obj["teaching"].getNodeData([experience,'order']),reverse=True)
+        
+        _content=[]
         for experience in experiences:
             entry_margin=data_obj["teaching"].getNodeData([experience,"title"],MODE_LATEX)#
             entry_date=data_obj["teaching"].getNodeData([experience,"duration"],MODE_LATEX)
             entry_title=", ".join([data_obj["teaching"].getNodeData([experience,"course"],MODE_LATEX),data_obj["institutions"].getNodeData([data_obj["teaching"].getNodeData([experience,"institution"]),"name"],MODE_LATEX)])
-            entry_description=""
+            entry_description=[]
             descriptions=[ getViewSpecificNode(description,MODE_LATEX) for description in data_obj["teaching"].getNodeData([experience,"description"],MODE_LATEX) if description ]
             if descriptions:
-                entry_description+=_DOT_DELIMITER_.join(descriptions)
+                entry_description.append(_DOT_DELIMITER_.join(descriptions))
             highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["teaching"].getNodeData([experience,"highlights"],MODE_LATEX) if highlight ]
             if highlights:
-                entry_description+=createBullets(highlights)+" "
-            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
-            content.append("")
+                entry_description.append(createBullets(highlights,remove_extra_line=True))
+            _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" ".join(entry_description)))
+            #content.append("")
         
-        #need to add -vspace
-        #content.append()
+        d_list=[""]
+        content+=joinLists(_content,d_list)
 
         return content
 
@@ -309,20 +359,25 @@ def getResumeContent():
         content.append("")
 
         releases=sorted(data_obj["press"].data.keys(),key=lambda release: data_obj["press"].getNodeData([release,'order']),reverse=True)
+        
+        _content=[]
         for release in releases:
             entry_margin=data_obj["press"].getNodeData([release,"organization"],MODE_LATEX)
             entry_date=data_obj["press"].getNodeData([release,"date"],MODE_LATEX)
             entry_title="\\textit{``"+data_obj["press"].getNodeData([release,"title"],MODE_LATEX)+"''}"
-            entry_description=""
+            entry_description=[]
             descriptions=[ getViewSpecificNode(description,MODE_LATEX) for description in data_obj["press"].getNodeData([release,"description"],MODE_LATEX) if description ]
             if descriptions:
-                entry_description+=_DOT_DELIMITER_.join(descriptions)
-                entry_description+="\\newline "
+                entry_description.append(_DOT_DELIMITER_.join(descriptions))
+                #entry_description+="\\newline "
             url=data_obj["press"].getNodeData([release,"url"],MODE_LATEX)
             if url:
-                entry_description+=getLatexHyperlink(fixStringLatex(url))
-            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
-            content.append("")
+                entry_description.append(getLatexHyperlink(fixStringLatex(url)))
+            _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
+            #content.append("")
+
+        d_list=["","\\vspace{-0.75cm}",""]
+        content+=joinLists(_content,d_list)
 
         return content
 
@@ -332,6 +387,8 @@ def getResumeContent():
         content.append("")
 
         experiences=sorted(data_obj["work_skills"].data.keys(),key=lambda experience: data_obj["work_skills"].getNodeData([experience,'order']),reverse=True)
+        
+        _content=[]
         for experience in experiences:
             entry_margin=data_obj["work_skills"].getNodeData([experience,"title"],MODE_LATEX)
             entry_date=data_obj["work_skills"].getNodeData([experience,"duration"],MODE_LATEX)
@@ -339,20 +396,28 @@ def getResumeContent():
             #if not entry_title:
             #    entry_title=entry_margin
             #    entry_margin=""
-            entry_description=""
+            entry_description=[]
+            misc=[]
             descriptions=[ getViewSpecificNode(description,MODE_LATEX) for description in data_obj["work_skills"].getNodeData([experience,"description"],MODE_LATEX) if description ]
-            if descriptions:
-                entry_description+=_DOT_DELIMITER_.join(descriptions)
             highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["work_skills"].getNodeData([experience,"highlights"],MODE_LATEX) if highlight ]
-            if highlights:
-                entry_description+=createBullets(highlights)+" "
             supervisors=[ " ".join( [ data_obj["people"].getNodeData([supervisor,name],MODE_LATEX) for name in ["first_name","middle_name","last_name"] if data_obj["people"].getNodeData([supervisor,name],MODE_LATEX) ] ) for supervisor in data_obj["work_skills"].getNodeData([experience,"supervisors"]) if supervisor ]
+            if descriptions:
+                misc.append(_DOT_DELIMITER_.join(descriptions))
+            if highlights:
+                misc.append(createBullets(highlights))
+            if misc:
+                entry_description.append(" ".join(misc))
             if supervisors:
-                if description and not highlights:
-                    entry_description+="\\newline "
-                entry_description+=getAdvisors(supervisors,title="Supervisor")
-            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
-            content.append("")
+                entry_description.append(getAdvisors(supervisors,title="Supervisor"))
+            #do not add \\newline if ends with bullets
+            if highlights:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" ".join(entry_description)))
+            else:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
+            #content.append("")
+
+        d_list=["","\\vspace{-0.75cm}",""]
+        content+=joinLists(_content,d_list)
 
         return content
     
@@ -363,6 +428,8 @@ def getResumeContent():
         content.append("")
 
         activities=sorted(data_obj["activities"].data.keys(),key=lambda activity: data_obj["activities"].getNodeData([activity,'order']),reverse=True)
+        
+        _content=[]
         for activity in activities:
             entry_margin=""
             positions=[ getViewSpecificNode(position,MODE_LATEX) for position in data_obj["activities"].getNodeData([activity,"positions"],MODE_LATEX) if position ]
@@ -373,20 +440,27 @@ def getResumeContent():
                     entry_margin="\\textcolor{NavyBlue}{Distinguished Past Governor}"
             entry_date=data_obj["activities"].getNodeData([activity,"duration"],MODE_LATEX)
             entry_title=data_obj["activities"].getNodeData([activity,"title"],MODE_LATEX)
-            entry_description=""
+            entry_description=[]
+            misc=[]
             descriptions=[ getViewSpecificNode(description,MODE_LATEX) for description in data_obj["activities"].getNodeData([activity,"description"],MODE_LATEX) if description ]
-            if descriptions:
-                entry_description+=_DOT_DELIMITER_.join(descriptions)
-                #entry_description+="\\newline "
             highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["activities"].getNodeData([activity,"highlights"],MODE_LATEX) if highlight ]
+            if descriptions:
+                misc.append(_DOT_DELIMITER_.join(descriptions))
             if highlights:
-                entry_description+=createBullets(highlights)+" "
+                misc.append(createBullets(highlights))
+            if misc:
+                entry_description.append(" ".join(misc))
             if len(positions)>1:
-                if description and not highlights:
-                    entry_description+="\\newline "
-                entry_description+=getAdvisors(positions,title="Position")
-            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
-            content.append("")
+                entry_description.append(getAdvisors(positions,title="Position"))
+            #do not add \\newline if ends with bullets
+            if highlights:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" ".join(entry_description)))
+            else:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
+            #content.append("")
+
+        d_list=["","\\vspace{-0.75cm}",""]
+        content+=joinLists(_content,d_list)
 
         return content
 
@@ -396,6 +470,8 @@ def getResumeContent():
         content.append("")
 
         honors=sorted(data_obj["honors"].data.keys(),key=lambda honor: data_obj["honors"].getNodeData([honor,'order']),reverse=True)
+        
+        _content=[]
         for honor in honors:
             entry_margin=data_obj["honors"].getNodeData([honor,"type"],MODE_LATEX)
             entry_date=data_obj["honors"].getNodeData([honor,"date"],MODE_LATEX)
@@ -408,8 +484,11 @@ def getResumeContent():
             if descriptions:
                 entry_description+=_DOT_DELIMITER_.join(descriptions)
                 #entry_description+="\\newline "
-            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
-            content.append("")
+            _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
+            #content.append("")
+
+        d_list=["","\\vspace{-0.75cm}",""]
+        content+=joinLists(_content,d_list)
 
         return content
 
@@ -421,19 +500,23 @@ def getResumeContent():
         current_year=0
 
         pubs=sorted(data_obj["publications"].data.keys(),key=lambda pub: getCountFromLabel(pub),reverse=True)
+        
+        _content=[]
         for pub in pubs:
             #figure out date stuff first
             date=data_obj["publications"].getNodeData([pub,"year"],MODE_LATEX)
             if date!=current_year:
-                content.append("")
+                #content.append("")
                 if not current_year:
-                    content.append("\\vspace{0.5cm}")
-                content.append(getYearHeader(date))
-                content.append("")
+                    _content.append("\\vspace{0.5cm}")
+                _content.append(getYearHeader(date))
+                #content.append("")
                 current_year=date
             status=data_obj["publications"].getNodeData([pub,"status"],MODE_LATEX)
             entry_title="\\textit{"+data_obj["publications"].getNodeData([pub,"title"],MODE_LATEX)+"}"
-            entry_description=""
+            entry_description=[]
+            misc=[]     
+            misc2=[]    #need to join authors, abstract, highlights with " ", not newline
             _authors=[ " ".join( [ data_obj["people"].getNodeData([author,name],MODE_LATEX) for name in ["first_name","middle_name","last_name"] if data_obj["people"].getNodeData([author,name],MODE_LATEX) ] ) for author in sorted(data_obj["publications"].getNodeData([pub,"authors"]).keys(),key=lambda a: data_obj["publications"].getNodeData([pub,"authors",a,"order"])) if author ]
             authors=[]
             for a in _authors:
@@ -458,21 +541,36 @@ def getResumeContent():
                 entry_margin="In Preparation"
             entry_date=""#str(data_obj["publications"].getNodeData([pub,"year"],MODE_LATEX))
             if authors:
-                entry_description+=getAdvisors(authors,title="Author")+" \\newline "
-            show_abstract=data_obj["publications"].getNodeData([pub,"show_abstract"],MODE_LATEX)
+                misc.append(getAdvisors(authors,title="Author"))
             abstract=data_obj["publications"].getNodeData([pub,"abstract"],MODE_LATEX)
-            if True or show_abstract:
-                entry_description+="\\textbf{Abstract}: "+abstract+" \\newline "
-            #highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["publications"].getNodeData([experience,"highlights"],MODE_LATEX) if highlight ]
-            #if highlights:
-            #    entry_description+=createBullets(highlights)+" "
+            arxiv=data_obj["publications"].getNodeData([pub,"arxiv"],MODE_LATEX)
+            if True or arxiv:
+                misc.append("\\textbf{Abstract}: "+abstract)
+            if misc:
+                misc2.append(" \\newline ".join(misc))
+            misc=[]
+            highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["publications"].getNodeData([pub,"highlights"],MODE_LATEX) if highlight ]
+            if highlights:
+                misc2.append(createBullets(highlights))
+            if misc2:
+                entry_description.append(" ".join(misc2))
             if status=="published":
                 doi=data_obj["publications"].getNodeData([pub,"doi"],MODE_LATEX)
                 if not doi:
                     generateError("No doi found for "+data_obj["publications"].getNodeData([pub,"title"],MODE_LATEX))
-                entry_description+="\\textbf{DOI}: "+getLatexHyperlink(_DOI_PREFIX_+doi,display=fixStringLatex(doi))
-            content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description,large_title=True))
-            content.append("")
+                misc.append("\\textbf{DOI}: "+getLatexHyperlink(_DOI_PREFIX_+doi,display=fixStringLatex(doi)))
+            elif arxiv:
+                misc.append("\\textbf{arXiv}: "+getLatexHyperlink(_ARXIV_PREFIX_+arxiv,display=fixStringLatex("arxiv:"+arxiv)))
+            if misc:
+                entry_description.append(" ".join(misc))
+            if highlights:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" ".join(entry_description),large_title=True))
+            else:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description),large_title=True))
+            #content.append("")
+
+        d_list=[""]
+        content+=joinLists(_content,d_list)
 
         return content
 
@@ -499,9 +597,9 @@ def getResumeContent():
         if not SECTION_SHOW[section]:
             continue
         content+=section_generator[section]()
-        if section==SECTION_OBJECTIVE:
-            content.append("")
-            content.append("\\vspace{"+str(spacing)+"em}")
+        #if section==SECTION_OBJECTIVE:
+        #    content.append("")
+        #    content.append("\\vspace{"+str(spacing)+"em}")
         if i<(len(SECTIONS_ORDERED)-1):
             content.append("")
 

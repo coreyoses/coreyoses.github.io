@@ -168,3 +168,11 @@ def getFormattedPublication(abbrev_journal,volume,number,pages,year,view,pub_sta
             outstring+="\\textbf{in press} "
         outstring+="("+str(year)+")"
         return outstring
+
+def joinLists(_list,d_list):
+    out_list=[]
+    for i,l in enumerate(_list):
+        out_list.append(l)
+        if i<(len(_list)-1):
+            out_list+=d_list
+    return out_list
