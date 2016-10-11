@@ -8,5 +8,10 @@
 {
     "name":"Computational Materials Science",
     "abbreviation":"Comput. Mater. Sci."
+},
+"acta_mater":
+{
+    "name":"Acta Materialia",
+    "abbreviation":"Acta Mater."
 }
 }

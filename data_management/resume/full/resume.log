@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 OCT 2016 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 OCT 2016 09:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,28 +519,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 246--247
  []
 
 [2]
-Overfull \hbox (6.34665pt too wide) in paragraph at lines 259--260
- []|\T1/ppl/m/it/10 Computational
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 264--265
-[]|\T1/ppl/m/it/10.95 ``Materials Car-tog-ra-phy: Rep-re-sent-ing and Min-ing M
-a-te-ri-als
- []
-
-[3]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 458.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 364.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (3.03658pt too wide) in paragraph at lines 493--494
+Overfull \hbox (3.03658pt too wide) in paragraph at lines 399--400
  []|[]\T1/ppl/m/it/10 Distinguished
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--512
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
 []|\T1/ppl/m/n/10.95 Meinig Fam-ily Cor-nell Na-tional Schol-ars, Cor-nell
+ []
+
+[3]
+Overfull \hbox (6.34665pt too wide) in paragraph at lines 613--614
+ []|\T1/ppl/m/it/10 Computational
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 618--619
+[]|\T1/ppl/m/it/10.95 ``Materials Car-tog-ra-phy: Rep-re-sent-ing and Min-ing M
+a-te-ri-als
  []
 
 [4]
@@ -582,14 +582,9 @@ Underfull \hbox (badness 3209) in paragraph at lines 977--978
  []
 
 [6]
-
-LaTeX Warning: Citation `Sato_Science_2006' on page 7 undefined on input line 1
-099.
-
-[7]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 1109.
-
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 1098.
+ [7]
 Underfull \hbox (badness 1817) in paragraph at lines 1110--1110
 \T1/ppl/m/n/9 by means of a su-per-cell ap-proach re-quires the ex-haus-tive co
 n-sid-er-a-tion of all pos-si-ble
@@ -602,32 +597,33 @@ e con-trary, the use of
  []
 
 
+Underfull \hbox (badness 1454) in paragraph at lines 1121--1121
+\T1/ppl/b/n/9 Abstract\T1/ppl/m/n/9 : Mag-netic ma-te-ri-als un-der-pin mod-ern
+ tech-nolo-gies, rang-ing from data stor-age
+ []
+
+[8]
 Overfull \hbox (6.34665pt too wide) in paragraph at lines 1131--1132
  []|\T1/ppl/m/it/10 Computational
  []
 
-[8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1153.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1153.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1151.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1151.
  (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1153.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1153.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1151.
 
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1153.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1151.
  ) 
 Here is how much of TeX's memory you used:
- 6696 strings out of 493089
- 97220 string characters out of 6134842
- 210718 words of memory out of 5000000
+ 6698 strings out of 493089
+ 97226 string characters out of 6134842
+ 209718 words of memory out of 5000000
  10078 multiletter control sequences out of 15000+600000
- 36284 words of font info for 77 fonts, out of 8000000 for 9000
+ 38565 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,17n,35p,1913b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -640,7 +636,7 @@ texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on resume.pdf (9 pages, 115992 bytes).
+Output written on resume.pdf (9 pages, 118770 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  77 compressed objects within 1 object stream
