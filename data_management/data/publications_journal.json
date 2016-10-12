@@ -71,17 +71,19 @@
         "doi":"10.1021/cm503507h",
         "arxiv":"1412.4096",
         "abstract":{
-            "latex":"As the proliferation of high-throughput approaches in materials science is increasing the wealth of data in the field, the gap between accumulated-information and derived-knowledge widens. We address the issue of scientific discovery in materials databases by introducing novel analytical approaches based on structural and electronic materials fingerprints. The framework is employed to (i) query large databases of materials using similarity concepts, (ii) map the connectivity of materials space (i.e., as a materials cartograms) for rapidly identifying regions with unique organizations / properties, and (iii) develop predictive Quantitative Materials Structure-Property Relationship models for guiding materials design. In this study, we test these fingerprints by seeking target material properties. As a quantitative example, we model the critical temperatures of known superconductors. Our novel materials fingerprinting and materials cartography approaches contribute to the emerging field of materials informatics by enabling effective computational tools to analyze, visualize, model, and design new materials."
+            "latex":"As the proliferation of high-throughput approaches in materials science is increasing the wealth of data in the field, the gap between accumulated-information and derived-knowledge widens. We address the issue of scientific discovery in materials databases by introducing novel analytical approaches based on structural and electronic materials fingerprints. The framework is employed to \\textit{(i)} query large databases of materials using similarity concepts, \\textit{(ii)} map the connectivity of materials space (\\textit{i.e.}, as a materials cartograms) for rapidly identifying regions with unique organizations / properties, and \\textit{(iii)} develop predictive Quantitative Materials Structure-Property Relationship models for guiding materials design. In this study, we test these fingerprints by seeking target material properties. As a quantitative example, we model the critical temperatures of known superconductors. Our novel materials fingerprinting and materials cartography approaches contribute to the emerging field of materials informatics by enabling effective computational tools to analyze, visualize, model, and design new materials."
         },
         "highlights":
         [
-            "This paper was selected for Editor's Choice."
+            "This paper was selected for \\textcolor{NavyBlue}{Editor's Choice}."
         ]
     },
     "coses:art0002":
     {
         "status":"published",
-        "title":"The AFLOW Standard for High-Throughput Materials Science Calculations",
+        "title":{
+            "latex":"The {\\small AFLOW} Standard for High-Throughput Materials Science Calculations"
+        },
         "authors":
         {
             "cecalderon":
@@ -180,17 +182,17 @@
         "doi":"10.1016/j.commatsci.2015.07.019",
         "arxiv":"1506.00303",
         "abstract":{
-            "latex":"The Automatic-Flow (AFLOW) standard for the high-throughput construction of materials science electronic structure databases is described. Electronic structure calculations of solid state materials depend on a large number of parameters which must be understood by researchers, and must be reported by originators to ensure reproducibility and enable collaborative database expansion. We therefore describe standard parameter values for k-point grid density, basis set plane wave kinetic energy cut-off, exchange-correlation functionals, pseudopotentials, DFT+U parameters, and convergence criteria used in AFLOW calculations."
+            "latex":"The Automatic-Flow ({\\small AFLOW}) standard for the high-throughput construction of materials science electronic structure databases is described. Electronic structure calculations of solid state materials depend on a large number of parameters which must be understood by researchers, and must be reported by originators to ensure reproducibility and enable collaborative database expansion. We therefore describe standard parameter values for $k$-point grid density, basis set plane wave kinetic energy cut-off, exchange-correlation functionals, pseudopotentials, DFT$+U$ parameters, and convergence criteria used in {\\small AFLOW} calculations."
         },
         "highlights":
         [
-            "This paper was selected for Editor's Choice"
+            "This paper was selected for \\textcolor{NavyBlue}{Editor's Choice}."
         ]
     },
     "coses:art0003":
     {
         "status":"submitted",
-        "title":"Accelerated discovery of new magnets in the Heusler alloy family",
+        "title":"Accelerated Discovery of New Magnets in the Heusler Alloy Family",
         "authors":
         {
             "ssanvito":
@@ -329,7 +331,7 @@
         "doi":"10.1021/acs.chemmater.6b01449",
         "arxiv":"1511.04373",
         "abstract":{
-            "latex":"Predicting material properties of off-stoichiometry systems remains a long-standing and formidable challenge in rational materials design. A proper analysis of such systems by means of a supercell approach requires the exhaustive consideration of all possible superstructures, which can be a time-consuming process. On the contrary, the use of quasirandom approximants, although very computationally effective, implicitly bias the analysis toward disordered states with the lowest site correlations. Here, we propose a novel framework designed specifically to investigate stoichiometrically driven trends of disordered systems (i.e., having partial occupation and/or disorder in the atomic sites). At the heart of the approach is the identification and analysis of unique supercells of a virtually equivalent stoichiometry to the disordered material. We employ Boltzmann statistics to resolve system-wide properties at a high-throughput (HT) level. To maximize efficiency and accessibility, we integrated the method within the automatic HT computational framework \\textsc{Aflow}. As proof of concept, we apply our approach to three systems of interest, a zinc chalcogenide (ZnS$_{1-x}$Se$_{x}$), a wide-gap oxide semiconductor (Mg$_{x}$Zn$_{1-x}$O), and an iron alloy (Fe$_{1-x}$Cu$_{x}$), at various stoichiometries. These systems exhibit properties that are highly tunable as a function of composition, characterized by optical bowing and linear ferromagnetic behavior. Not only are these qualities successfully predicted, but additional insight into underlying physical mechanisms is revealed."
+            "latex":"Predicting material properties of off-stoichiometry systems remains a long-standing and formidable challenge in rational materials design. A proper analysis of such systems by means of a supercell approach requires the exhaustive consideration of all possible superstructures, which can be a time-consuming process. On the contrary, the use of quasirandom approximants, although very computationally effective, implicitly bias the analysis toward disordered states with the lowest site correlations. Here, we propose a novel framework designed specifically to investigate stoichiometrically driven trends of disordered systems (\\textit{i.e.}, having partial occupation and/or disorder in the atomic sites). At the heart of the approach is the identification and analysis of unique supercells of a virtually equivalent stoichiometry to the disordered material. We employ Boltzmann statistics to resolve system-wide properties at a high-throughput (HT) level. To maximize efficiency and accessibility, we integrated the method within the automatic HT computational framework {\\small AFLOW}. As proof of concept, we apply our approach to three systems of interest, a zinc chalcogenide (ZnS$_{1-x}$Se$_{x}$), a wide-gap oxide semiconductor (Mg$_{x}$Zn$_{1-x}$O), and an iron alloy (Fe$_{1-x}$Cu$_{x}$), at various stoichiometries. These systems exhibit properties that are highly tunable as a function of composition, characterized by optical bowing and linear ferromagnetic behavior. Not only are these qualities successfully predicted, but additional insight into underlying physical mechanisms is revealed."
         },
         "highlights":
         [
@@ -339,7 +341,7 @@
     "coses:art0005":
     {
         "status":"press",
-        "title":"A computational high-throughput search for new ternary superalloys",
+        "title":"A Computational High-Throughput Search for New Ternary Superalloys",
         "authors":
         {
             "cnyshadham":
@@ -406,7 +408,9 @@
     "coses:art0006":
     {
         "status":"submitted",
-        "title":"Combining the {\\small AFLOW} {\\small GIBBS} and Elastic Libraries for efficiently and robustly screening thermo-mechanical properties of solids",
+        "title":{
+            "latex":"Combining the {\\small AFLOW} {\\small GIBBS} and Elastic Libraries for Efficiently and Robustly Screening Thermo-Mechanical Properties of Solids"
+        },
         "authors":
         {
             "chtoher":
@@ -499,7 +503,7 @@
         "doi":"",
         "arxiv":"",
         "abstract":{
-            "latex":"Thorough characterization of the thermo-mechanical properties of materials requires difficult and time-consuming experiments. This severely limits the availability of data and it is one of the main obstacles for the development of effective accelerated materials design strategies. The rapid screening of new potential systems requires highly integrated, sophisticated and robust computational approaches. We tackled the challenge by surveying more than 3,000 crystalline solids within the {\\small AFLOW}\\ framework with the newly developed ``Automatic Elasticity Library'' combined with the previously implemented {\\small GIBBS}\\ method. The first extracts the mechanical properties from automatic self-consistent stress-strain calculations, while the latter employs those mechanical properties to evaluate the thermodynamics within the Debye model. The new thermo-elastic library is benchmarked against a set of 74 experimentally characterized systems to pinpoint a robust computational methodology for the evaluation of bulk and shear moduli, Poisson ratios, Debye temperatures, Gr{\\\"u}neisen parameters, and thermal conductivities of a wide variety of materials. The effect of different choices of equations of state is examined and the optimum combination of properties for the Leibfried-Schl{\\\"o}mann prediction of thermal conductivity is identified, leading to improved agreement with experimental results than the {\\small GIBBS}-only approach."
+            "latex":"Thorough characterization of the thermo-mechanical properties of materials requires difficult and time-consuming experiments. This severely limits the availability of data and it is one of the main obstacles for the development of effective accelerated materials design strategies. The rapid screening of new potential systems requires highly integrated, sophisticated and robust computational approaches. We tackled the challenge by surveying more than 3,000 crystalline solids within the {\\small AFLOW} framework with the newly developed ``Automatic Elasticity Library'' combined with the previously implemented {\\small GIBBS} method. The first extracts the mechanical properties from automatic self-consistent stress-strain calculations, while the latter employs those mechanical properties to evaluate the thermodynamics within the Debye model. The new thermo-elastic library is benchmarked against a set of 74 experimentally characterized systems to pinpoint a robust computational methodology for the evaluation of bulk and shear moduli, Poisson ratios, Debye temperatures, Gr{\\\"u}neisen parameters, and thermal conductivities of a wide variety of materials. The effect of different choices of equations of state is examined and the optimum combination of properties for the Leibfried-Schl{\\\"o}mann prediction of thermal conductivity is identified, leading to improved agreement with experimental results than the {\\small GIBBS}-only approach."
         },
         "highlights":
         [
@@ -509,7 +513,7 @@
     "coses:art0007":
     {
         "status":"submitted",
-        "title":"High throughput thermal conductivity of high temperature solid phases: The case of oxide and fluoride perovskites",
+        "title":"High Throughput Thermal Conductivity of High Temperature Solid Phases: The Case of Oxide and Fluoride Perovskites",
         "authors":
         {
             "avanroekeghem":
@@ -567,7 +571,6 @@
     "coses:art0008":
     {
         "status":"submitted",
-        "show_abstract":true,
         "title":"Universal Fragment Descriptors for Predicting Electronic Properties of Inorganic Crystals",
         "authors":
         {
@@ -613,7 +616,7 @@
         "doi":"",
         "arxiv":"1608.04782",
         "abstract":{
-            "latex":"Historically, materials discovery is driven by a laborious trial-and-error process. The growth of materials databases and emerging informatics approaches finally offer the opportunity to transform this practice into data- and knowledge-driven rational design-accelerating discovery of novel materials exhibiting desired properties. By using data from the \\textsc{Aflow} repository for high-throughput ab-initio calculations, we have generated \\underline{Q}uantitative \\underline{M}aterials \\underline{S}tructure-\\underline{P}roperty \\underline{R}elationship (QMSPR) models to predict three critical material properties, namely the metal/insulator classification, Fermi energy, and band gap energy. The prediction accuracy obtained with these QMSPR models approaches training data for virtually any stoichiometric inorganic crystalline material. We attribute the success and universality of these models to the construction of new material descriptors-referred to as the universal \\underline{p}roperty-\\underline{l}abeled \\underline{m}aterial \\underline{f}ragments (PLMF). This representation affords straightforward model interpretation in terms of simple heuristic design rules that could guide rational materials design. This proof-of-concept study demonstrates the power of materials informatics to dramatically accelerate the search for new materials."
+            "latex":"Historically, materials discovery is driven by a laborious trial-and-error process. The growth of materials databases and emerging informatics approaches finally offer the opportunity to transform this practice into data- and knowledge-driven rational design-accelerating discovery of novel materials exhibiting desired properties. By using data from the \\textsc{Aflow} repository for high-throughput ab-initio calculations, we have generated \\underline{Q}uantitative \\underline{M}aterials \\underline{S}tructure-\\underline{P}roperty \\underline{R}elationship (QMSPR) models to predict three critical material properties, namely the metal / insulator classification, Fermi energy, and band gap energy. The prediction accuracy obtained with these QMSPR models approaches training data for virtually any stoichiometric inorganic crystalline material. We attribute the success and universality of these models to the construction of new material descriptors-referred to as the universal \\underline{p}roperty-\\underline{l}abeled \\underline{m}aterial \\underline{f}ragments (PLMF). This representation affords straightforward model interpretation in terms of simple heuristic design rules that could guide rational materials design. This proof-of-concept study demonstrates the power of materials informatics to dramatically accelerate the search for new materials."
         },
         "highlights":
         [
@@ -623,8 +626,9 @@
     "coses:art0009":
     {
         "status":"draft",
-        "show_abstract":false,
-        "title":"The statistics of 6A non-metal binary and ternary structures --- what can we learn from nature?",
+        "title":{
+            "latex":"The Statistics of 6A Non-Metal Binary and Ternary Structures --- What Can We Learn from Nature?"
+        },
         "authors":
         {
             "ahever":
@@ -682,7 +686,64 @@
         "doi":"",
         "arxiv":"",
         "abstract":{
-            "latex":"The fundamental principles underlying the arrangement of the elements into solid compounds with an enormous variety of crystal structures are still largely unknown. In this study we obtain a general overview of the structure types appearing in an important subset of the solid compounds, i.e. binary and ternary compounds of the 6A column non-metals, oxides, sulfides and selenides. We present an analysis of these compounds, including the prevalence of various structure types, their symmetry properties, compositions, stoichiometries and unit cell sizes. We demonstrate that there are preferred stoichiometries and structure types. We further show that some structure types and stoichiometries have highly specific atomic compositions which may reflect both the chemistry and research bias."
+            "latex":"The fundamental principles underlying the arrangement of the elements into solid compounds with an enormous variety of crystal structures are still largely unknown. In this study we obtain a general overview of the structure types appearing in an important subset of the solid compounds, \\textit{i.e.} binary and ternary compounds of the 6A column non-metals, oxides, sulfides and selenides. We present an analysis of these compounds, including the prevalence of various structure types, their symmetry properties, compositions, stoichiometries and unit cell sizes. We demonstrate that there are preferred stoichiometries and structure types. We further show that some structure types and stoichiometries have highly specific atomic compositions which may reflect both the chemistry and research bias."
+        },
+        "highlights":
+        [
+            ""
+        ]
+    },
+    "coses:art0010":
+    {
+        "status":"draft",
+        "title":{
+            "latex":"{\\small AFLOW} Platform for Low-Temperature Thermodynamic Phase Stability Analyses"
+        },
+        "authors":
+        {
+            "coses":
+            {
+                "order":1,
+                "institution":
+                [
+                    "center_materials_genomics"
+                ]
+            },
+            "eperim":
+            {
+                "order":2,
+                "institution":
+                [
+                    "center_materials_genomics"
+                ]
+            },
+            "egossett":
+            {
+                "order":3,
+                "institution":
+                [
+                    "center_materials_genomics"
+                ]
+            },
+            "scurtarolo":
+            {
+                "order":4,
+                "institution":
+                [
+                    "center_materials_genomics",
+                    "stefano_duke"
+                ]
+            }
+        },
+        "journal":"",
+        "volume":"",
+        "number":"",
+        "pages":"",
+        "year":2016,
+        "doi":"",
+        "arxiv":"",
+        "abstract":{
+            "latex":"Determination of thermodynamic stability plays a crucial role in any materials design initiative. We explore some of the analyses that are of particular importance to the high-throughput \\textit{ab-initio} community and present a new module for performing these calculations within the software platform {\\small AFLOW}. Leveraging the {\\small AFLOW} RESTful API, this module goes beyond the standard convex hull plot interface with tools and options that enable users to rapidly create and interact with thermodynamic stability data. In addition to the creation of fully functional documents, \\small{AFLOW Hull} powers an online graphical interface available via the \\href{http://aflow.org}{{\\small AFLOW} Online Portal}. We hope that the adoption of such rapid post-processing frameworks will lead to the development of novel materials descriptors and, correspondingly, new functional materials."
         },
         "highlights":
         [

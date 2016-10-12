@@ -5,6 +5,12 @@
         "zipcode":"27708",
         "country":"United States"
     },
+    "duke2":{
+        "city":"Durham",
+        "state":"North Carolina",
+        "zipcode":"27705",
+        "country":"United States"
+    },
     "cornell":{
         "city":"Ithaca",
         "state":"New York",
@@ -111,6 +117,36 @@
         "city":"Brooklyn",
         "state":"New York",
         "zipcode":"11201",
+        "country":"United States"
+    },
+    "bhs":{
+        "city":"Bloomfield",
+        "state":"New Jersey",
+        "zipcode":"07003",
+        "country":"United States"
+    },
+    "montclair_u_nj":{
+        "city":"Montclair",
+        "state":"New Jersey",
+        "zipcode":"07043",
+        "country":"United States"
+    },
+    "nsf":{
+        "city":"Arlington",
+        "state":"Virginia",
+        "zipcode":"22230",
+        "country":"United States"
+    },
+    "gem":{
+        "city":"Alexandria",
+        "state":"Virginia",
+        "zipcode":"22314",
+        "country":"United States"
+    },
+    "henaac":{
+        "city":"Monterey Park",
+        "state":"California",
+        "zipcode":"91754",
         "country":"United States"
     }
 }

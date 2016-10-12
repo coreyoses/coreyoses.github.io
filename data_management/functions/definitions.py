@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-standard_label_prefix="coses:art"
+journal_label_prefix="coses:art"
+book_label_prefix="coses:book"
 VIEWS={}
 MODE_HTML=1
 VIEWS[MODE_HTML]="html"
@@ -35,7 +36,8 @@ SECTION_WORK_SKILLS=order_count_sections; SECTIONS_ORDERED.append(order_count_se
 SECTION_ACTIVITIES=order_count_sections; SECTIONS_ORDERED.append(order_count_sections); order_count_sections+=1
 SECTION_PRESS=order_count_sections; SECTIONS_ORDERED.append(order_count_sections); order_count_sections+=1
 SECTION_AWARDS=order_count_sections; SECTIONS_ORDERED.append(order_count_sections); order_count_sections+=1
-SECTION_PUBLICATIONS=order_count_sections; SECTIONS_ORDERED.append(order_count_sections); order_count_sections+=1
+SECTION_JOURNAL_PUBLICATIONS=order_count_sections; SECTIONS_ORDERED.append(order_count_sections); order_count_sections+=1
+SECTION_BOOK_PUBLICATIONS=order_count_sections; SECTIONS_ORDERED.append(order_count_sections); order_count_sections+=1
 
 SECTION_HEADERS={}
 SECTION_HEADERS[SECTION_PERSONAL_INFO]="Personal Information"
@@ -46,6 +48,7 @@ SECTION_HEADERS[SECTION_TEACHING]="Teaching Experience"
 SECTION_HEADERS[SECTION_PRESS]="Press and News Releases"
 SECTION_HEADERS[SECTION_WORK_SKILLS]="Work Experience and Skills"
 SECTION_HEADERS[SECTION_ACTIVITIES]="Activities and Outreach"
-SECTION_HEADERS[SECTION_PUBLICATIONS]="Publications"
+SECTION_HEADERS[SECTION_JOURNAL_PUBLICATIONS]="Journal Publications"
+SECTION_HEADERS[SECTION_BOOK_PUBLICATIONS]="Book Publications"
 SECTION_HEADERS[SECTION_AWARDS]="Honors and Awards"
    

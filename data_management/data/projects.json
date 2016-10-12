@@ -55,7 +55,7 @@
             "jbrock"
         ],
         "description":[
-            "Developed and supported a model that characterizes the conductivity of annealed Strontium Titanate samples.",
+            "Verified a model that characterizes the conductivity of annealed Strontium Titanate samples.",
             "Further investigated conductivity behavior of annealed Strontium Titanate samples under varying electric potentials."
         ],
         "duration":{
@@ -79,7 +79,7 @@
             "rhuang"
         ],
         "description":[
-            "Designed and implemented a beam stop assembly to eliminate parasitic X-Ray beams and improve focusing capabilities of the ellipsoidal glass capillary optic."
+            "Designed a beam stop assembly to eliminate parasitic X-Ray beams and improve focusing capabilities of the ellipsoidal glass capillary optic."
         ],
         "duration":{
             "latex":"Summer 2012"
@@ -100,7 +100,7 @@
             "jbrock"
         ],
         "description":[
-            "Developed a robust, three-dimensional Monte-Carlo simulation of the Pulsed Laser Deposition material growth technique used at the Cornell High Energy Synchrotron Source."
+            "Developed a three-dimensional Monte-Carlo simulation of the Pulsed Laser Deposition material growth technique used at the Cornell High Energy Synchrotron Source."
         ],
         "duration":{
             "latex":"Fall 2012--Spring 2013"
@@ -146,7 +146,8 @@
             "scurtarolo"
         ],
         "description":[
-            "Developed and implemented a robust framework for modeling off-stoichiometry and aperiodic materials in a high-throughput fashion."
+            "Developed and implemented a robust framework for modeling off-stoichiometry and aperiodic materials in a high-throughput fashion.",
+            "Collaborative effort between UCSD and Duke University."
         ],
         "duration":{
             "latex":"2014--2016"

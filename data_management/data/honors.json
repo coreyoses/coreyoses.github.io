@@ -1,7 +1,12 @@
 {
     "yale_book_club_2008":{
         "title":"Yale Book Club Award",
-        "organization":"Yale Club of Montclair",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "Yale Club of Montclair, New Jersey"
+        ],
         "order":1,
         "type":"Award",
         "date":"2008",
@@ -11,7 +16,12 @@
     },
     "ventures_scholar_2008":{
         "title":"National Ventures Scholar Program",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":2,
         "type":"Honor",
         "date":"2008",
@@ -20,8 +30,13 @@
         ]
     },
     "bhs_academic_excellent":{
-        "title":"Bloomfield High School Academic Excellence",
-        "organization":"",
+        "title":"Academic Excellence",
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
         "order":3,
         "type":"Honor",
         "date":"2006--2009",
@@ -30,8 +45,13 @@
         ]
     },
     "bhs_scholar_athlete":{
-        "title":"Bloomfield High School Scholar Athlete",
-        "organization":"",
+        "title":"Scholar Athlete",
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
         "order":4,
         "type":"Honor",
         "date":"2008--2009",
@@ -41,7 +61,12 @@
     },
     "honor_society":{
         "title":"National Honor Society",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":6,
         "type":"Honor",
         "date":"2008--2009",
@@ -51,7 +76,12 @@
     },
     "dar_good_citizen_2009":{
         "title":"Good Citizen Award",
-        "organization":"The Daughters of the American Revolution",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "The Daughters of the American Revolution"
+        ],
         "order":8,
         "type":"Scholarship",
         "date":"2009",
@@ -63,7 +93,12 @@
         "title":{
             "latex":"\\textcolor{NavyBlue}{First Place Impromptu Essay}"
         },
-        "organization":"New Jersey District Key Club Convention",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "New Jersey Key Club Convention"
+        ],
         "order":9,
         "type":"Award",
         "date":"2009",
@@ -75,7 +110,12 @@
         "title":{
             "latex":"\\textcolor{NavyBlue}{Outstanding Student Citizen} for Youth Week"
         },
-        "organization":"Bloomfield High School",
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
         "order":10,
         "type":"Award",
         "date":"2009",
@@ -87,7 +127,12 @@
         "title":{
             "latex":"\\textcolor{NavyBlue}{Superintendent's Bengal Pride Award} for Excellence in Academics and Citizenship"
         },
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":11,
         "type":"Scholarship",
         "date":"2009",
@@ -97,7 +142,12 @@
     },
     "oakeside_cultural_scholarship_2009":{
         "title":"Jean Doswell Oakes Scholarship",
-        "organization":"Oakeside Cultural Center",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "Oakeside Cultural Center"
+        ],
         "order":12,
         "type":"Scholarship",
         "date":"2009",
@@ -107,7 +157,12 @@
     },
     "harold_brotherhood_2009":{
         "title":"The Harold Brotherhood Award",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":13,
         "type":"Scholarship",
         "date":"2009",
@@ -117,7 +172,12 @@
     },
     "blfd_kiwanis_special_2009":{
         "title":"Special Recognition Award",
-        "organization":"Bloomfield Kiwanis",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "Bloomfield Kiwanis"
+        ],
         "order":14,
         "type":"Scholarship",
         "date":"2009",
@@ -127,7 +187,12 @@
     },
     "blfd_education_2009":{
         "title":"Bloomfield Education Association Scholarship",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":15,
         "type":"Scholarship",
         "date":"2009",
@@ -137,7 +202,12 @@
     },
     "investors_savings_bank_2009":{
         "title":"Investors Savings Bank Scholarship",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":16,
         "type":"Scholarship",
         "date":"2009",
@@ -147,7 +217,12 @@
     },
     "bloustein_2009":{
         "title":"Edward J. Bloustein Distinguished Scholar",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":17,
         "type":"Scholarship",
         "date":"2009",
@@ -157,7 +232,12 @@
     },
     "nj_principals_2009":{
         "title":"New Jersey Principals and Supervisors Association Scholarship",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":18,
         "type":"Scholarship",
         "date":"2009",
@@ -169,7 +249,12 @@
         "title":{
             "latex":"\\textcolor{NavyBlue}{Gold Medallion Winner in Engineering and Mathematics}"
         },
-        "organization":"Hispanic Heritage Youth Awards",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "Hispanic Heritage Youth Awards"
+        ],
         "order":19,
         "type":"Scholarship",
         "date":"2009",
@@ -181,27 +266,42 @@
         "title":{
             "latex":"\\textit{Men of Principle} Award"
         },
-        "organization":"Beta Delta Chapter of Beta Theta Pi",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "Beta Theta Pi"
+        ],
         "order":20,
         "type":"Scholarship",
         "date":"2009",
         "description":[
-            ""
+            "Beta Delta Chapter"
         ]
     },
     "meinig":{
         "title":"Meinig Family Cornell National Scholars",
-        "organization":"Awarded by Peter Meinig (Past Chairman of the Board of Trustees at Cornell University)",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":21,
         "type":"Scholarship",
         "date":"2009--2013",
         "description":[
-            ""
+            "Awarded by Peter Meinig (Past Chairman of the Board of Trustees at Cornell University)"
         ]
     },
     "lulac":{
         "title":"GE Foundation / LULAC Scholarship",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":22,
         "type":"Scholarship",
         "date":"2010--2013",
@@ -211,7 +311,12 @@
     },
     "intel_cornell":{
         "title":"Intel Academic Award",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":23,
         "type":"Scholarship",
         "date":{
@@ -223,7 +328,12 @@
     },
     "xerox_cornell":{
         "title":"Xerox Corporation Scholarship",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":24,
         "type":"Scholarship",
         "date":{
@@ -235,7 +345,12 @@
     },
     "lsamp_cornell":{
         "title":"Louis Stokes Alliance for Minority Participation (LSAMP) Scholar",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":25,
         "type":"Honor",
         "date":"2010--2013",
@@ -245,7 +360,12 @@
     },
     "shell_cornell":{
         "title":"Shell Incentive Fund Scholarship",
-        "organization":"",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
         "order":26,
         "type":"Scholarship",
         "date":"2011--2013",
@@ -254,8 +374,13 @@
         ]
     },
     "college_bowl_henaac_2011":{
-        "title":"HENAAC College Bowl Winner",
-        "organization":"",
+        "title":"College Bowl Winner",
+        "institution":[
+            "henaac"
+        ],
+        "organization":[
+            ""
+        ],
         "order":27,
         "type":"Award",
         "date":"October 8, 2011",
@@ -265,7 +390,12 @@
     },
     "nycki_governor_citation":{
         "title":"New York City Citation as Circle K Governor",
-        "organization":"Council Member Fernando Cabrera",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "Council Member Fernando Cabrera"
+        ],
         "order":28,
         "type":"City Citation",
         "date":"March 21, 2013",
@@ -274,8 +404,13 @@
         ]
     },
     "gem_duke":{
-        "title":"GEM Associate Fellowship",
-        "organization":"The National GEM Consortium",
+        "title":"Associate Fellow",
+        "institution":[
+            "gem"
+        ],
+        "organization":[
+            ""
+        ],
         "order":29,
         "type":"Fellowship",
         "date":"2013-2015",
@@ -284,8 +419,13 @@
         ]
     },
     "nsf_duke":{
-        "title":"NSF Graduate Research Fellowship",
-        "organization":"National Science Foundation",
+        "title":"Graduate Research Fellowship",
+        "institution":[
+            "nsf"
+        ],
+        "organization":[
+            ""
+        ],
         "order":30,
         "type":"Fellowship",
         "date":"2013-2016",
