@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 OCT 2016 19:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 OCT 2016 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,271 +461,784 @@ LaTeX Info: Redefining \nameref on input line 22.
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
-LaTeX Font Info:    Try loading font information for U+eur on input line 32.
+LaTeX Font Info:    Try loading font information for U+eur on input line 33.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 32.
+(Font)              <10.95> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 32.
+(Font)              <8> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 32.
-LaTeX Font Info:    Try loading font information for U+euf on input line 32.
+(Font)              <6> on input line 33.
+LaTeX Font Info:    Try loading font information for U+euf on input line 33.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-LaTeX Font Info:    Try loading font information for U+eus on input line 32.
+LaTeX Font Info:    Try loading font information for U+eus on input line 33.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-LaTeX Font Info:    Try loading font information for U+euex on input line 32.
+LaTeX Font Info:    Try loading font information for U+euex on input line 33.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 79.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 79.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 79.
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 33--39
+[][] 
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 40--46
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 47--53
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 60--66
+[][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 76.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 76.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 76.
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 73--79
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 82--88
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 91--97
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []|\T1/ppl/m/n/10.95 Advanced Tech-niques in High-Throughput
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 117.
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 104--110
+[][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 116.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
-[]|\T1/ppl/m/it/10 Fall 2012--
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 113--119
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
-[]|\T1/ppl/m/n/10.95 Plume Prop-a-ga-tion Sim-u-la-tion for Pulsed Laser
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 122--128
+[][] 
  []
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 1231) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]|\T1/ppl/m/it/10 Fall 2012--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]|\T1/ppl/m/n/10.95 Plume Prop-a-ga-tion Sim-u-la-tion for Pulsed Laser
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 131--137
+[][] 
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 143--143
 []|\T1/ppl/m/n/10.95 Synchrotron Ra-di-a-tion Fo-cus-ing Op-tics --- Cap-il-lar
 y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 140--146
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []|\T1/ppl/m/it/10 Fall 2011--
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 162--162
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 149--155
+[][] 
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 161--161
 []\T1/ppl/m/n/9 Served as []team's safety of-fi-cer[] and []head sys-tem man-ag
 er[], AU-VSI Stu-dent
  []
 
 
-Underfull \hbox (badness 3657) in paragraph at lines 162--162
+Underfull \hbox (badness 3657) in paragraph at lines 161--161
 [][]\T1/ppl/m/n/9 Won a $1,000 grant[], AU-VSI Stu-dent Un-manned Air Sys-tem (
 SUAS) 2010
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 171--171
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 158--164
+[][] 
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 170--170
 []|\T1/ppl/m/n/9 Collaborated with MFCNS, schol-ar-ship fund di-rec-tor, and th
 e Cor-nell Alumni
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 167--173
+[][] 
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 []|\T1/ppl/m/it/10 Fall 2014--
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 182--182
+Underfull \hbox (badness 1596) in paragraph at lines 183--183
 []|\T1/ppl/m/n/10.95 ME 221: Struc-ture and Prop-er-ties of Solids, Duke
  []
 
-[2]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 281.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 180--186
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 193--199
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 202--208
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 211--217
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 220--226
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 229--235
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 238--244
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 247--253
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 256--262
+[][] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 268.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 1478) in paragraph at lines 314--314
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 265--271
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 278--284
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 287--293
+[][] 
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 299--299
+[]|\T1/ppl/m/n/10.95 Society of His-panic Pro-fes-sional En-gi-neers, Duke
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 296--302
+[][] 
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 308--308
 []|\T1/ppl/b/n/9 Positions\T1/ppl/m/n/9 : New York Dis-trict []Dis-tin-guished 
 Past Gov-er-nor[], New York Dis-trict
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 325--326
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 305--311
+[][] 
+ []
+
+[3]
+Underfull \hbox (badness 4819) in paragraph at lines 317--318
 []|\T1/ppl/m/n/10.95 Meinig Fam-ily Cor-nell Na-tional Schol-ars, Cor-nell
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 314--320
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 323--329
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 332--338
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 341--347
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 350--356
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 359--365
+[][] 
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 371--372
+[]|\T1/ppl/m/n/10.95 New Jer-sey As-tro-nom-i-cal Group, Mont-clair State
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 368--374
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 377--383
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 386--392
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 395--401
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 404--410
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 413--419
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 422--428
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 431--437
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 440--446
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 449--455
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 458--464
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
 [][]\T1/ppl/m/n/9 http://www.compchemhighlights.org/2015/01/materials-cartograp
 hy-representing-
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 471--477
+[][] 
+ []
+
+[4]
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 480--486
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
+[]|[][]\T1/ppl/m/n/9 https://gradschool.duke.edu/professional-development/blog/
+competing-nsf-
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 489--495
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 498--504
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 507--513
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 516--522
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 525--531
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
 []|[][]\T1/ppl/m/n/9 https://www.engineering.cornell.edu/diversity/about/honors
 /students/2011-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--590
-[]|\T1/ppl/m/n/10.95 GEM As-so-ciate Fel-low-ship, The Na-tional GEM
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 534--540
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 600--600
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+[]|\T1/ppl/m/n/10.95 Graduate Re-search Fel-low-ship, Na-tional Sci-ence
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 547--553
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 556--562
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--568
 []|\T1/ppl/m/it/10 March 21,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 611--611
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 565--571
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 []|\T1/ppl/m/it/10 October 8,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--634
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 574--580
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 583--589
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
 []|\T1/ppl/m/n/10.95 Louis Stokes Al-liance for Mi-nor-ity Par-tic-i-pa-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 592--598
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 601--607
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 610--616
+[][] 
+ []
+
+[5]
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 619--625
+[][] 
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 631--631
+[]|\T1/ppl/m/n/9 Awarded by Pe-ter Meinig (Past Chair-man of the Board of Trust
+ees at Cor-nell
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 628--634
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 637--643
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
 []|[]\T1/ppl/m/n/10.95 Gold Medal-lion Win-ner in En-gi-neer-ing and
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 710--711
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 646--652
+[][] 
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 658--659
 []|\T1/ppl/m/n/10.95 New Jer-sey Prin-ci-pals and Su-per-vi-sors As-so-ci-a-tio
 n
  []
 
-[4]
-Underfull \hbox (badness 1509) in paragraph at lines 776--777
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 655--661
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 664--670
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 673--679
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 682--688
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 691--697
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 700--706
+[][] 
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 712--713
 []|\T1/ppl/m/n/10.95 Jean Doswell Oakes Schol-ar-ship, Oake-side Cul-tural
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--799
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 709--715
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 718--724
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--731
 []|[]\T1/ppl/m/n/10.95 Outstanding Stu-dent Cit-i-zen[] for Youth Week,
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 899--899
-[]|\T1/ppl/m/it/10.95 Universal Frag-ment De-scrip-tors for Pre-dict-ing Elec-t
-ronic Prop-er-ties of
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 727--733
+[][] 
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 899--899
-\T1/ppl/m/n/9 mod-els to pre-dict three crit-i-cal ma-te-rial prop-er-ties, nam
-ely the metal/insulator
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 736--742
+[][] 
  []
 
-[5]
-Underfull \hbox (badness 4229) in paragraph at lines 908--908
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 745--751
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 754--760
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 763--769
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 772--778
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 781--787
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 790--796
+[][] 
+ []
+
+[6]
+Underfull \hbox (badness 7888) in paragraph at lines 810--810
+[]|\T1/ppl/m/it/10 AFLOW \T1/ppl/m/it/10.95 Plat-form for Low-Temperature Ther-
+mo-dy-namic Phase
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 807--813
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 816--822
+[][] 
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 825--831
+[][] 
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 837--837
 \T1/ppl/b/n/9 Abstract\T1/ppl/m/n/9 : Us-ing finite-temperature phonon cal-cu-l
 a-tions and machine-learning
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 917--917
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 834--840
+[][] 
+ []
+
+[7]
+Underfull \hbox (badness 1888) in paragraph at lines 846--846
 \T1/ppl/m/n/9 of data and it is one of the main ob-sta-cles for the de-vel-op-m
 ent of ef-fec-tive
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 917--917
+Underfull \hbox (badness 1881) in paragraph at lines 846--846
 \T1/ppl/m/n/10 AFLOW \T1/ppl/m/n/9 frame-work with the newly de-vel-oped ``Au-t
 o-matic Elas-tic-ity Li-brary''
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 917--917
+Underfull \hbox (badness 1132) in paragraph at lines 846--846
 \T1/ppl/m/n/9 the lat-ter em-ploys those me-chan-i-cal prop-er-ties to eval-u-a
 te the ther-mo-dy-nam-ics
  []
 
-[6]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 926.
 
-Underfull \hbox (badness 3291) in paragraph at lines 926--926
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 843--849
+[][] 
+ []
+
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 855.
+
+Underfull \hbox (badness 10000) in paragraph at lines 855--855
+[]|\T1/ppl/m/it/10.95 A Com-pu-ta-tional High-Throughput Search for New Ternary
+
+ []
+
+
+Underfull \hbox (badness 3291) in paragraph at lines 855--855
 \T1/ppl/m/n/9 prop-er-ties bet-ter than some con-ven-tional nickel-based su-per
 -al-loys. As with
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 935--935
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 852--858
+[][] 
+ []
+
+[8]
+Underfull \hbox (badness 1210) in paragraph at lines 864--864
 \T1/ppl/m/n/9 con-trary, the use of quasir-an-dom ap-prox-i-mants, al-though ve
 ry com-pu-ta-tion-ally
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 935--935
+Underfull \hbox (badness 1259) in paragraph at lines 864--864
 \T1/ppl/m/n/9 at a high-throughput (HT) level. To max-i-mize ef-fi-ciency and a
 c-ces-si-bil-ity, we
  []
 
-[7]
-Underfull \hbox (badness 1077) in paragraph at lines 944--944
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 861--867
+[][] 
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 873--873
 []|\T1/ppl/b/n/9 Authors\T1/ppl/m/n/9 : Ste-fano San-vito, []Corey Oses[], Junk
 ai Xue, Anurag Ti-wari, Mario Zic,
  []
 
 
-Underfull \hbox (badness 6741) in paragraph at lines 955--955
-\T1/ppl/b/n/9 Abstract\T1/ppl/m/n/9 : The Automatic-Flow (AFLOW) stan-dard for 
-the high-throughput
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 870--876
+[][] 
  []
 
-[8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 968.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 968.
+[9]
+Underfull \hbox (badness 4366) in paragraph at lines 886--886
+[]|\T1/ppl/m/it/10.95 The \T1/ppl/m/it/10 AFLOW \T1/ppl/m/it/10.95 Stan-dard fo
+r High-Throughput Ma-te-ri-als Sci-ence
+ []
+
+
+Underfull \hbox (badness 5161) in paragraph at lines 886--886
+\T1/ppl/b/n/9 Abstract\T1/ppl/m/n/9 : The Automatic-Flow (\T1/ppl/m/n/10 AFLOW\
+T1/ppl/m/n/9 ) stan-dard for the high-throughput
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 883--889
+[][] 
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 895--895
+\T1/ppl/m/n/9 and elec-tronic ma-te-ri-als fin-ger-prints. The frame-work is em
+-ployed to \T1/ppl/m/it/9 (i) \T1/ppl/m/n/9 query
+ []
+
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 892--898
+[][] 
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 912--912
+[]|\T1/ppl/m/n/10.95 Automated High-Throughput Com-pu-ta-tion of Ma-te-rial
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 912--912
+\T1/ppl/b/n/9 Abstract\T1/ppl/m/n/9 : Ma-te-ri-als in-for-mat-ics of-fers a pro
+mis-ing path-way to-wards ra-tio-nal
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 912--912
+\T1/ppl/m/n/9 ren-dered pro-gram-mat-i-cally ac-ces-si-ble for use in sta-tis-t
+i-cal learn-ing ap-pli-ca-tions.
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 915.
+
+Overfull \hbox (16.99995pt too wide) in paragraph at lines 909--915
+[][] 
+ []
+
+[11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 915.
  (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 968.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 968.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 915.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 915.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 968.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 915.
  ) 
 Here is how much of TeX's memory you used:
  6698 strings out of 493089
- 97226 string characters out of 6134842
- 220724 words of memory out of 5000000
- 10078 multiletter control sequences out of 15000+600000
+ 97221 string characters out of 6134842
+ 206724 words of memory out of 5000000
+ 10076 multiletter control sequences out of 15000+600000
  38565 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,18n,35p,2070b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,18n,35p,2074b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on resume.pdf (9 pages, 119307 bytes).
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on resume.pdf (11 pages, 125911 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

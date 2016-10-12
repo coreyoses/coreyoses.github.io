@@ -465,5 +465,27 @@
         [
             "chess"
         ]
+    },
+    "eperim":
+    {
+        "first_name":"Eric",
+        "middle_name":"",
+        "last_name":"Perim",
+        "institution":
+        [
+            "center_materials_genomics",
+            "duke_mems"
+        ]
+    },
+    "egossett":
+    {
+        "first_name":"Eric",
+        "middle_name":"",
+        "last_name":"Gossett",
+        "institution":
+        [
+            "center_materials_genomics",
+            "duke_mems"
+        ]
     }
 }

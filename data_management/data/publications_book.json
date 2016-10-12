@@ -1,0 +1,50 @@
+{
+    "coses:book0001":
+    {
+        "status":"draft",
+        "title":"Automated High-Throughput Computation of Material Properties",
+        "booktitle":"Materials Informatics. Methods, Tools and Applications",
+        "type":"chapter",
+        "authors":
+        {
+            "chtoher":
+            {
+                "order":1,
+                "institution":[
+                    "duke_mems"
+                ]
+            },
+            "coses":
+            {
+                "order":2,
+                "institution":
+                [
+                    "duke_mems",
+                    "center_materials_genomics"
+                ]
+            },
+            "scurtarolo":
+            {
+                "order":3,
+                "institution":
+                [
+                    "duke_mems",
+                    "center_materials_genomics"
+                ]
+            }
+        },
+        "pages":"",
+        "year":2016,
+        "publisher":"",
+        "city":"",
+        "doi":"",
+        "url":"",
+        "abstract":{
+            "latex":"Materials informatics offers a promising pathway towards rational materials design, replacing the current trial-and-error approach and accelerating the development of new functional materials. Through the use of sophisticated data analysis techniques, underlying property trends can be identified, facilitating the formulation of new design rules. Such methods require large sets of consistently generated, programmatically accessible materials data. Computational materials design frameworks using standardized parameter sets such as {\\small AFLOW}, MPWorks, and OQMD are the ideal tools for producing such data. Here, we review the state-of-the-art in computational materials design, with a focus on these automated high-throughput frameworks.  We discuss how features such as structural prototyping and automated error correction enable rapid generation of large datasets. Moreover, we demonstrate how integrated workflows can simplify the calculation of complex properties, such as thermal conductivity and mechanical stability. We also describe how large datasets composed of high-throughput calculations are organized and rendered programmatically accessible for use in statistical learning applications. Finally, we survey recent advances in leveraging existing data to predict novel functional materials such as entropy stabilized ceramics and bulk metallic glasses."
+        },
+        "highlights":
+        [
+            ""
+        ]
+    }
+}

@@ -138,7 +138,7 @@ class Data_Obj:
         except:
             generateError("Unable to write to "+str(destination))
 
-def getCountFromLabel(label,prefix=standard_label_prefix):
+def getCountFromLabel(label,prefix=journal_label_prefix):
     try:
         return int(label.replace(prefix,""))
     except:

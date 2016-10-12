@@ -1,6 +1,12 @@
 {
     "tkd":{
         "title":"Tae Kwon Do",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "USMA in Clifton, New Jersey"
+        ],
         "order":1,
         "duration":"2002--2006",
         "positions":[
@@ -18,6 +24,12 @@
     },
     "bowling":{
         "title":"Bowling Team",
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
         "order":2,
         "duration":"2005--2006",
         "positions":[
@@ -35,6 +47,12 @@
     },
     "latin_club":{
         "title":"Latin Club",
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
         "order":3,
         "duration":"2005--2008",
         "positions":[
@@ -50,9 +68,39 @@
             ""
         ]
     },
+    "boys_state":{
+        "title":"American Legion Jersey Boys State",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
+        "order":4,
+        "duration":"2008",
+        "positions":[
+            "County Freeholder",
+            "City Councilman"
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ],
+        "notes":[
+            ""
+        ]
+    },
     "library_tutor":{
         "title":"Tutor at the Library",
-        "order":4,
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":5,
         "duration":"2006--2009",
         "positions":[
             "Tutor"
@@ -69,7 +117,13 @@
     },
     "weight_lifting_team":{
         "title":"Weight Lifting Team",
-        "order":5,
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":6,
         "duration":"2006--2009",
         "positions":[
             "Member"
@@ -86,7 +140,13 @@
     },
     "track_field":{
         "title":"Spring Track and Field",
-        "order":6,
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":7,
         "duration":"2006--2009",
         "positions":[
             "Athlete"
@@ -103,7 +163,13 @@
     },
     "science_club":{
         "title":"Science Club",
-        "order":7,
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":8,
         "duration":"2006--2009",
         "positions":[
             "Member"
@@ -121,7 +187,13 @@
     },
     "math_team":{
         "title":"Math Team",
-        "order":8,
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":9,
         "duration":"2006--2009",
         "positions":[
             "Treasurer"
@@ -138,7 +210,13 @@
     },
     "model_un":{
         "title":"Model United Nations",
-        "order":9,
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":10,
         "duration":"2006--2009",
         "positions":[
             "Secretary",
@@ -154,9 +232,84 @@
             ""
         ]
     },
+    "njag":{
+        "title":"New Jersey Astronomical Group",
+        "institution":[
+            "montclair_u_nj"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":11,
+        "duration":"2009",
+        "positions":[
+            "Member"
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ],
+        "notes":[
+            "Presented ``The Cold Sky Above Cornell'' on January 13, 2009, url:  www.csam.montclair.edu/~west/njag.html"
+        ]
+    },
+    "uacnj":{
+        "title":"United Astronomy Clubs of New Jersey",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
+        "order":12,
+        "duration":"2009",
+        "positions":[
+            "Member"
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ],
+        "notes":[
+            ""
+        ]
+    },
+    "astronomy_club":{
+        "title":"Astronomy Club",
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":13,
+        "duration":"2008--2009",
+        "positions":[
+            "\\textcolor{NavyBlue}{President}"
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ],
+        "notes":[
+            ""
+        ]
+    },
     "youth_group":{
-        "title":"Saint Thomas the Apostle Youth Group",
-        "order":10,
+        "title":"Youth Group",
+        "institution":[
+            ""
+        ],
+        "organization":[
+            "Saint Thomas the Apostle Church"
+        ],
+        "order":14,
         "duration":"2005--2009",
         "positions":[
             "Retreat Team",
@@ -177,7 +330,13 @@
     },
     "key_club":{
         "title":"Key Club",
-        "order":11,
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":15,
         "duration":"2005--2009",
         "positions":[
             "Membership Director",
@@ -195,7 +354,13 @@
     },
     "fbla":{
         "title":"Future Business Leaders of America",
-        "order":12,
+        "institution":[
+            "bhs"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":16,
         "duration":"2005--2009",
         "positions":[
             "\\textcolor{NavyBlue}{President}",
@@ -211,60 +376,15 @@
             ""
         ]
     },
-    "astronomy_club":{
-        "title":"Astronomy Club",
-        "order":13,
-        "duration":"2008--2009",
-        "positions":[
-            "\\textcolor{NavyBlue}{President}"
-        ],
-        "description":[
-            ""
-        ],
-        "highlights":[
-            ""
-        ],
-        "notes":[
-            ""
-        ]
-    },
-    "njag":{
-        "title":"New Jersey Astronomical Group",
-        "order":14,
-        "duration":"2009",
-        "positions":[
-            "Member"
-        ],
-        "description":[
-            ""
-        ],
-        "highlights":[
-            ""
-        ],
-        "notes":[
-            "Presented ``The Cold Sky Above Cornell'' on January 13, 2009, url:  www.csam.montclair.edu/~west/njag.html"
-        ]
-    },
-    "uacnj":{
-        "title":"United Astronomy Clubs of New Jersey",
-        "order":15,
-        "duration":"2009",
-        "positions":[
-            "Member"
-        ],
-        "description":[
-            ""
-        ],
-        "highlights":[
-            ""
-        ],
-        "notes":[
-            ""
-        ]
-    },
     "meinig":{
-        "title":"Meinig Family Cornell National Scholars, Cornell Commitment",
-        "order":16,
+        "title":"Meinig Family Cornell National Scholars",
+        "institution":[
+            "cornell_commitment"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":17,
         "duration":"2009--2013",
         "positions":[
             "Member"
@@ -280,9 +400,15 @@
         ]
     },
     "circlek":{
-        "title":"Circle K, International",
-        "order":17,
-        "duration":"2009--2013",
+        "title":"Circle K",
+        "institution":[
+            "cornell"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":18,
+        "duration":"2010--2013",
         "positions":[
             "New York District \\textcolor{NavyBlue}{Distinguished Past Governor}",
             "New York District \\textcolor{NavyBlue}{Distinguished Past Treasurer}",
@@ -300,7 +426,14 @@
     },
     "shpe":{
         "title":"Society of Hispanic Professional Engineers",
-        "order":18,
+        "institution":[
+            "duke",
+            "cornell"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":19,
         "duration":"2009--Present",
         "positions":[
             "Graduate Student Advisor",
@@ -320,10 +453,39 @@
     },
     "aps":{
         "title":"American Physical Society",
-        "order":19,
+        "institution":[
+            ""
+        ],
+        "organization":[
+            ""
+        ],
+        "order":20,
         "duration":"2014--Present",
         "positions":[
             "Member"
+        ],
+        "description":[
+            ""
+        ],
+        "highlights":[
+            ""
+        ],
+        "notes":[
+            ""
+        ]
+    },
+    "council_presidents_grad_duke":{
+        "title":"Council of Presidents",
+        "institution":[
+            "duke_grad"
+        ],
+        "organization":[
+            ""
+        ],
+        "order":21,
+        "duration":"2015--Present",
+        "positions":[
+            "Graduate Representative"
         ],
         "description":[
             ""

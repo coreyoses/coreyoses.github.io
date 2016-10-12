@@ -13,12 +13,15 @@ _ARXIV_PREFIX_="http://arxiv.org/abs/"
 #HIGHLIGHT_COLOR="NavyBlue"
 _PAGE_WIDTH_=8.5
 _DEBUG_HLINES=False
+_SPACING_BETWEEN_SECTIONS_="0.5cm"
+_SPACING_BETWEEN_ENTRIES_="0.25cm"
 
 _ENTRY_COL_1=1.00#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*0.75/6.0
 _ENTRY_COL_2=0.25#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*0.25/6.0
 _ENTRY_COL_3=0.85#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*0.85/6.0
+_ENTRY_COL_3_SMALL=0.3
 _ENTRY_COL_4=0.15#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*0.15/6.0
-_ENTRY_COL_5=(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)-(_ENTRY_COL_1+_ENTRY_COL_2+_ENTRY_COL_3+_ENTRY_COL_4)#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*4.00/6.0
+#_ENTRY_COL_5=(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)-(_ENTRY_COL_1+_ENTRY_COL_2+_ENTRY_COL_3+_ENTRY_COL_4)#(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)*4.00/6.0
 
 def keepStringTogether(in_string):
     return "".join(["\\mbox{",in_string,"}"])
@@ -114,14 +117,21 @@ def getResumeContent():
         output.append("\\noindent\\hspace{")
         output.append(indent)
         output.append("}")
-        output.append("{\\Large")
+        output.append("{\\Large ")
         output.append(str(year))
         output.append("}")
         return "".join(output)
 
     def getEntry(margin="",date="",title="",description="",large_title=False):
         output=[]
-        output.append("\\begin{center}")
+        #output.append("\\begin{table}[h]")
+        #output.append("\\begin{center}")
+        #calculate dynamic column dimensions, leave global alone (speed)
+        if large_title:
+            entry_col_3=_ENTRY_COL_3_SMALL
+        else:
+            entry_col_3=_ENTRY_COL_3
+        entry_col_5=(_PAGE_WIDTH_-2.0*LEFT_RIGHT_MARGIN)-(_ENTRY_COL_1+_ENTRY_COL_2+entry_col_3+_ENTRY_COL_4)
         #if margin:
         if _DEBUG_HLINES:
             output.append("\\begin{tabular}{|m{"+str(_ENTRY_COL_1)+"in}|m{"+str(_ENTRY_COL_2)+"in}|c|}")
@@ -132,16 +142,16 @@ def getResumeContent():
         row.append(" & & ")
         output.append("".join(row))
         if _DEBUG_HLINES:
-            output.append("\\begin{tabular}{|m{"+str(_ENTRY_COL_3)+"in}|m{"+str(_ENTRY_COL_4)+"in}|m{"+str(_ENTRY_COL_5)+"in}|}")
+            output.append("\\begin{tabular}{|m{"+str(entry_col_3)+"in}|m{"+str(_ENTRY_COL_4)+"in}|m{"+str(entry_col_5)+"in}|}")
         else:
-            output.append("\\begin{tabular}{m{"+str(_ENTRY_COL_3)+"in}m{"+str(_ENTRY_COL_4)+"in}m{"+str(_ENTRY_COL_5)+"in}}")
+            output.append("\\begin{tabular}{m{"+str(entry_col_3)+"in}m{"+str(_ENTRY_COL_4)+"in}m{"+str(entry_col_5)+"in}}")
         row=[]
         if title or date:
-            if large_title:
+            if large_title and not date:
                 if _DEBUG_HLINES:
-                    row.append("".join(["\\multicolumn{3}{|p{",str(_ENTRY_COL_3+_ENTRY_COL_4+_ENTRY_COL_5),"in}|}{",title,"} \\\\ "]))
+                    row.append("".join(["\\multicolumn{3}{|p{",str(entry_col_3+_ENTRY_COL_4+entry_col_5),"in}|}{",title,"} \\\\ "]))
                 else:
-                    row.append("".join(["\\multicolumn{3}{p{",str(_ENTRY_COL_3+_ENTRY_COL_4+_ENTRY_COL_5),"in}}{",title,"} \\\\ "]))
+                    row.append("".join(["\\multicolumn{3}{p{",str(entry_col_3+_ENTRY_COL_4+entry_col_5),"in}}{",title,"} \\\\ "]))
             else:
                 if date:
                     row.append("".join(["\\textit{\\small{",date,"}}"]))
@@ -149,13 +159,14 @@ def getResumeContent():
                 row.append(" ".join([title,"\\\\ "]))
         if description:
             if _DEBUG_HLINES:
-                row.append("".join(["\\multicolumn{3}{|p{"+str(_ENTRY_COL_3+_ENTRY_COL_4+_ENTRY_COL_5)+"in}|}{\\footnotesize{",description,"}} "]))
+                row.append("".join(["\\multicolumn{3}{|p{"+str(entry_col_3+_ENTRY_COL_4+entry_col_5)+"in}|}{\\footnotesize{",description,"}} "]))
             else:
-                row.append("".join(["\\multicolumn{3}{p{"+str(_ENTRY_COL_3+_ENTRY_COL_4+_ENTRY_COL_5)+"in}}{\\footnotesize{",description,"}} "]))
+                row.append("".join(["\\multicolumn{3}{p{"+str(entry_col_3+_ENTRY_COL_4+entry_col_5)+"in}}{\\footnotesize{",description,"}} "]))
         output.append("".join(row))
         output.append("\\end{tabular} \\\\ ")
         output.append("\\end{tabular}")
-        output.append("\\end{center}")
+        #output.append("\\end{center}")
+        #output.append("\\end{table}")
         
         return "\n".join(output)
 
@@ -164,34 +175,26 @@ def getResumeContent():
         content.append(getSectionHeader(" ".join([ data_obj["personal_info"].getNodeData(name,MODE_LATEX).upper() for name in ["first_name","last_name"] if data_obj["personal_info"].getNodeData(name,MODE_LATEX) ]),color="Maroon",large=True))
         content.append("")
         
-        #content.append("\\vspace{0.15cm}")
-        #%content.append("")
         titles=data_obj["personal_info"].getNodeData("titles")
         for title in titles:
             content.append("\\noindent\\hspace{"+_DEFAULT_INDENTATION_+"}\\textit{"+getViewSpecificNode(title["title"],MODE_LATEX)+\
                            ",} "+getViewSpecificNode(title["location"],MODE_LATEX))
         content.append("")
-        content.append("\\vspace{0.5cm}")
+        content.append("\\vspace{"+_SPACING_BETWEEN_SECTIONS_+"}")
         content.append("")
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_PERSONAL_INFO]))
         content.append("")
-        #content.append("\\vspace{-0.2cm}")
-        #content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
+        content.append("")
         
         _content=[]
         
         entry_date="email"
         entry_title=getLatexHyperlink("mailto:"+data_obj["personal_info"].getNodeData("email",MODE_LATEX),data_obj["personal_info"].getNodeData("email",MODE_LATEX))
         _content.append(getEntry(date=entry_date,title=entry_title))
-        #content.append("")
-        #content.append("\\vspace{-0.75cm}")
-        #content.append("")
         entry_date="website"
         entry_title=getLatexHyperlink(data_obj["personal_info"].getNodeData("homepage",MODE_LATEX))
         _content.append(getEntry(date=entry_date,title=entry_title))
-        #content.append("")
-        #content.append("\\vspace{-0.75cm}")
-        #content.append("")
         entry_date="phone"
         entry_title=""
         #add flag for mobile
@@ -205,7 +208,7 @@ def getResumeContent():
         entry_title+=getPhoneNumber(work_phone)
         _content.append(getEntry(date=entry_date,title=entry_title))
        
-        d_list=["","\\vspace{-0.75cm}",""]
+        d_list=[""]
         content+=joinLists(_content,d_list)
 
         return content
@@ -214,8 +217,8 @@ def getResumeContent():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_OBJECTIVE]))
         content.append("")
-        #content.append("\\vspace{-0.75cm}")
-        #content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
+        content.append("")
         
         #make flag for type of resume
         if True:
@@ -238,6 +241,8 @@ def getResumeContent():
     def getEducation():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_EDUCATION]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
         content.append("")
         
         schools=sorted(data_obj["education"].data.keys(),key=lambda school: data_obj["education"].getNodeData([school,'order']),reverse=True)
@@ -278,7 +283,7 @@ def getResumeContent():
             _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
             #content.append("")
 
-        d_list=[""]
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
         content+=joinLists(_content,d_list)
 
         return content
@@ -286,6 +291,8 @@ def getResumeContent():
     def getResearchExperience():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_RESEARCH]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
         content.append("")
         
         experiences=sorted(data_obj["projects"].data.keys(),key=lambda experience: data_obj["projects"].getNodeData([experience,'order']),reverse=True)
@@ -321,7 +328,7 @@ def getResumeContent():
                 _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
             #content.append("")
         
-        d_list=[""]
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
         content+=joinLists(_content,d_list)
 
         return content
@@ -329,6 +336,8 @@ def getResumeContent():
     def getTeachingExperience():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_TEACHING]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
         content.append("")
 
         experiences=sorted(data_obj["teaching"].data.keys(),key=lambda experience: data_obj["teaching"].getNodeData([experience,'order']),reverse=True)
@@ -348,7 +357,7 @@ def getResumeContent():
             _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" ".join(entry_description)))
             #content.append("")
         
-        d_list=[""]
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
         content+=joinLists(_content,d_list)
 
         return content
@@ -356,6 +365,8 @@ def getResumeContent():
     def getPress():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_PRESS]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
         content.append("")
 
         releases=sorted(data_obj["press"].data.keys(),key=lambda release: data_obj["press"].getNodeData([release,'order']),reverse=True)
@@ -376,7 +387,7 @@ def getResumeContent():
             _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
             #content.append("")
 
-        d_list=["","\\vspace{-0.75cm}",""]
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
         content+=joinLists(_content,d_list)
 
         return content
@@ -384,6 +395,8 @@ def getResumeContent():
     def getWorkExperienceAndSkills():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_WORK_SKILLS]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
         content.append("")
 
         experiences=sorted(data_obj["work_skills"].data.keys(),key=lambda experience: data_obj["work_skills"].getNodeData([experience,'order']),reverse=True)
@@ -393,9 +406,6 @@ def getResumeContent():
             entry_margin=data_obj["work_skills"].getNodeData([experience,"title"],MODE_LATEX)
             entry_date=data_obj["work_skills"].getNodeData([experience,"duration"],MODE_LATEX)
             entry_title=data_obj["work_skills"].getNodeData([experience,"organization"],MODE_LATEX)
-            #if not entry_title:
-            #    entry_title=entry_margin
-            #    entry_margin=""
             entry_description=[]
             misc=[]
             descriptions=[ getViewSpecificNode(description,MODE_LATEX) for description in data_obj["work_skills"].getNodeData([experience,"description"],MODE_LATEX) if description ]
@@ -416,7 +426,7 @@ def getResumeContent():
                 _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
             #content.append("")
 
-        d_list=["","\\vspace{-0.75cm}",""]
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
         content+=joinLists(_content,d_list)
 
         return content
@@ -425,6 +435,8 @@ def getResumeContent():
     def getActivities():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_ACTIVITIES]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
         content.append("")
 
         activities=sorted(data_obj["activities"].data.keys(),key=lambda activity: data_obj["activities"].getNodeData([activity,'order']),reverse=True)
@@ -440,6 +452,14 @@ def getResumeContent():
                     entry_margin="\\textcolor{NavyBlue}{Distinguished Past Governor}"
             entry_date=data_obj["activities"].getNodeData([activity,"duration"],MODE_LATEX)
             entry_title=data_obj["activities"].getNodeData([activity,"title"],MODE_LATEX)
+            institutions=[ institution for institution in data_obj["activities"].getNodeData([activity,"institution"]) if institution ]
+            organizations=[ organization for organization in data_obj["activities"].getNodeData([activity,"organization"]) if organization ]
+            if institutions and organizations:
+                generateError("Both institution and organization in activity: "+entry_title)
+            if institutions:
+                entry_title+=", "+uniqueEndingJoin([ data_obj["institutions"].getNodeData([institution,"name"],MODE_LATEX) for institution in institutions ],", "," \\& ")
+            elif organizations:
+                entry_title+=", "+uniqueEndingJoin(organizations,", "," \\& ")
             entry_description=[]
             misc=[]
             descriptions=[ getViewSpecificNode(description,MODE_LATEX) for description in data_obj["activities"].getNodeData([activity,"description"],MODE_LATEX) if description ]
@@ -459,7 +479,7 @@ def getResumeContent():
                 _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description)))
             #content.append("")
 
-        d_list=["","\\vspace{-0.75cm}",""]
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
         content+=joinLists(_content,d_list)
 
         return content
@@ -467,6 +487,8 @@ def getResumeContent():
     def getAwards():
         content=[]
         content.append(getSectionHeader(SECTION_HEADERS[SECTION_AWARDS]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
         content.append("")
 
         honors=sorted(data_obj["honors"].data.keys(),key=lambda honor: data_obj["honors"].getNodeData([honor,'order']),reverse=True)
@@ -476,88 +498,91 @@ def getResumeContent():
             entry_margin=data_obj["honors"].getNodeData([honor,"type"],MODE_LATEX)
             entry_date=data_obj["honors"].getNodeData([honor,"date"],MODE_LATEX)
             entry_title=data_obj["honors"].getNodeData([honor,"title"],MODE_LATEX)
-            organization=data_obj["honors"].getNodeData([honor,"organization"],MODE_LATEX)
-            if organization:
-                entry_title=", ".join([entry_title,organization])
+            institutions=[ institution for institution in data_obj["honors"].getNodeData([honor,"institution"]) if institution ]
+            organizations=[ organization for organization in data_obj["honors"].getNodeData([honor,"organization"]) if organization ]
+            if institutions and organizations:
+                generateError("Both institution and organization in honor: "+entry_title)
+            if institutions:
+                entry_title+=", "+uniqueEndingJoin([ data_obj["institutions"].getNodeData([institution,"name"],MODE_LATEX) for institution in institutions ],", "," \\& ")
+            elif organizations:
+                entry_title+=", "+uniqueEndingJoin(organizations,", "," \\& ")
             entry_description=""
             descriptions=[ getViewSpecificNode(description,MODE_LATEX) for description in data_obj["honors"].getNodeData([honor,"description"],MODE_LATEX) if description ]
             if descriptions:
                 entry_description+=_DOT_DELIMITER_.join(descriptions)
-                #entry_description+="\\newline "
             _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=entry_description))
             #content.append("")
 
-        d_list=["","\\vspace{-0.75cm}",""]
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
         content+=joinLists(_content,d_list)
 
         return content
 
-    def getPublications():
+    def getJournalPublications():
         content=[]
-        content.append(getSectionHeader(SECTION_HEADERS[SECTION_PUBLICATIONS]))
+        content.append(getSectionHeader(SECTION_HEADERS[SECTION_JOURNAL_PUBLICATIONS]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
         content.append("")
 
         current_year=0
 
-        pubs=sorted(data_obj["publications"].data.keys(),key=lambda pub: getCountFromLabel(pub),reverse=True)
+        pubs=sorted(data_obj["publications_journal"].data.keys(),key=lambda pub: getCountFromLabel(pub),reverse=True)
         
         _content=[]
         for pub in pubs:
             #figure out date stuff first
-            date=data_obj["publications"].getNodeData([pub,"year"],MODE_LATEX)
+            date=data_obj["publications_journal"].getNodeData([pub,"year"],MODE_LATEX)
             if date!=current_year:
-                #content.append("")
-                if not current_year:
-                    _content.append("\\vspace{0.5cm}")
                 _content.append(getYearHeader(date))
-                #content.append("")
                 current_year=date
-            status=data_obj["publications"].getNodeData([pub,"status"],MODE_LATEX)
-            entry_title="\\textit{"+data_obj["publications"].getNodeData([pub,"title"],MODE_LATEX)+"}"
+            status=data_obj["publications_journal"].getNodeData([pub,"status"],MODE_LATEX)
+            entry_title="\\textit{"+data_obj["publications_journal"].getNodeData([pub,"title"],MODE_LATEX)+"}"
             entry_description=[]
             misc=[]     
             misc2=[]    #need to join authors, abstract, highlights with " ", not newline
-            _authors=[ " ".join( [ data_obj["people"].getNodeData([author,name],MODE_LATEX) for name in ["first_name","middle_name","last_name"] if data_obj["people"].getNodeData([author,name],MODE_LATEX) ] ) for author in sorted(data_obj["publications"].getNodeData([pub,"authors"]).keys(),key=lambda a: data_obj["publications"].getNodeData([pub,"authors",a,"order"])) if author ]
+            _authors=[ " ".join( [ data_obj["people"].getNodeData([author,name],MODE_LATEX) for name in ["first_name","middle_name","last_name"] if data_obj["people"].getNodeData([author,name],MODE_LATEX) ] ) for author in sorted(data_obj["publications_journal"].getNodeData([pub,"authors"]).keys(),key=lambda a: data_obj["publications_journal"].getNodeData([pub,"authors",a,"order"])) if author ]
             authors=[]
             for a in _authors:
                 if a=="Corey Oses":
                     a="\\textcolor{NavyBlue}{Corey Oses}"
                 authors.append(a)
             if status=="published" or status=="press":
-                entry_margin=data_obj["journals"].getNodeData([data_obj["publications"].getNodeData([pub,"journal"]),"name"],MODE_LATEX)
+                entry_margin=data_obj["journals"].getNodeData([data_obj["publications_journal"].getNodeData([pub,"journal"]),"name"],MODE_LATEX)
                 entry_title+=" \\newline "
                 #entry_title+="\\small{"+getAdvisors(authors,title="Author",show_title=False)+"} \\newline "
                 entry_title+=getFormattedPublication(\
-                        data_obj["journals"].getNodeData([data_obj["publications"].getNodeData([pub,"journal"]),"abbreviation"],MODE_LATEX),\
-                        data_obj["publications"].getNodeData([pub,"volume"],MODE_LATEX),\
-                        data_obj["publications"].getNodeData([pub,"number"],MODE_LATEX),\
-                        data_obj["publications"].getNodeData([pub,"pages"],MODE_LATEX),\
-                        data_obj["publications"].getNodeData([pub,"year"],MODE_LATEX),\
+                        data_obj["journals"].getNodeData([data_obj["publications_journal"].getNodeData([pub,"journal"]),"abbreviation"],MODE_LATEX),\
+                        data_obj["publications_journal"].getNodeData([pub,"volume"],MODE_LATEX),\
+                        data_obj["publications_journal"].getNodeData([pub,"number"],MODE_LATEX),\
+                        data_obj["publications_journal"].getNodeData([pub,"pages"],MODE_LATEX),\
+                        data_obj["publications_journal"].getNodeData([pub,"year"],MODE_LATEX),\
                         MODE_LATEX,\
                         pub_status=status)+" "#+" \\newline "+\
             elif status=="submitted":
                 entry_margin="Submitted"
             else:
                 entry_margin="In Preparation"
-            entry_date=""#str(data_obj["publications"].getNodeData([pub,"year"],MODE_LATEX))
+            entry_date=str(getCountFromLabel(pub))#""#str(data_obj["publications_journal"].getNodeData([pub,"year"],MODE_LATEX))
             if authors:
                 misc.append(getAdvisors(authors,title="Author"))
-            abstract=data_obj["publications"].getNodeData([pub,"abstract"],MODE_LATEX)
-            arxiv=data_obj["publications"].getNodeData([pub,"arxiv"],MODE_LATEX)
-            if True or arxiv:
+            abstract=data_obj["publications_journal"].getNodeData([pub,"abstract"],MODE_LATEX)
+            doi=data_obj["publications_journal"].getNodeData([pub,"doi"],MODE_LATEX)
+            arxiv=data_obj["publications_journal"].getNodeData([pub,"arxiv"],MODE_LATEX)
+            if True and (True or doi or arxiv):
+            #if True and ( doi or arxiv):
                 misc.append("\\textbf{Abstract}: "+abstract)
             if misc:
                 misc2.append(" \\newline ".join(misc))
             misc=[]
-            highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["publications"].getNodeData([pub,"highlights"],MODE_LATEX) if highlight ]
+            highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["publications_journal"].getNodeData([pub,"highlights"],MODE_LATEX) if highlight ]
             if highlights:
                 misc2.append(createBullets(highlights))
             if misc2:
                 entry_description.append(" ".join(misc2))
             if status=="published":
-                doi=data_obj["publications"].getNodeData([pub,"doi"],MODE_LATEX)
                 if not doi:
-                    generateError("No doi found for "+data_obj["publications"].getNodeData([pub,"title"],MODE_LATEX))
+                    generateError("No doi found for "+data_obj["publications_journal"].getNodeData([pub,"title"],MODE_LATEX))
                 misc.append("\\textbf{DOI}: "+getLatexHyperlink(_DOI_PREFIX_+doi,display=fixStringLatex(doi)))
             elif arxiv:
                 misc.append("\\textbf{arXiv}: "+getLatexHyperlink(_ARXIV_PREFIX_+arxiv,display=fixStringLatex("arxiv:"+arxiv)))
@@ -569,10 +594,98 @@ def getResumeContent():
                 _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description),large_title=True))
             #content.append("")
 
-        d_list=[""]
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
         content+=joinLists(_content,d_list)
 
         return content
+
+    def getBookPublications():
+        content=[]
+        content.append(getSectionHeader(SECTION_HEADERS[SECTION_BOOK_PUBLICATIONS]))
+        content.append("")
+        content.append("\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}")
+        content.append("")
+
+        current_year=0
+
+        pubs=sorted(data_obj["publications_book"].data.keys(),key=lambda pub: getCountFromLabel(pub,prefix=book_label_prefix),reverse=True)
+        
+        _content=[]
+        for pub in pubs:
+            #figure out date stuff first
+            date=data_obj["publications_book"].getNodeData([pub,"year"],MODE_LATEX)
+            if date!=current_year:
+                _content.append(getYearHeader(date))
+                current_year=date
+            status=data_obj["publications_book"].getNodeData([pub,"status"],MODE_LATEX)
+            pub_type=data_obj["publications_book"].getNodeData([pub,"status"],MODE_LATEX)
+            title=data_obj["publications_book"].getNodeData([pub,"title"],MODE_LATEX)   #book title only if type=="book", otherwise name of chapter/section/etc.
+            misc=[]
+            if pub_type!="book":
+                book_title=data_obj["publications_book"].getNodeData([pub,"booktitle"],MODE_LATEX)
+                if not book_title:
+                    generateError("Need a book title: "+title)
+                misc.append(title)
+                misc.append("".join(["\\textit{",book_title,"}"]))
+            else:
+                misc.append("".join("\\textit{",title,"}"))
+            entry_title=", ".join(misc)
+            entry_description=[]
+            misc=[]     
+            misc2=[]    #need to join authors, abstract, highlights with " ", not newline
+            _authors=[ " ".join( [ data_obj["people"].getNodeData([author,name],MODE_LATEX) for name in ["first_name","middle_name","last_name"] if data_obj["people"].getNodeData([author,name],MODE_LATEX) ] ) for author in sorted(data_obj["publications_book"].getNodeData([pub,"authors"]).keys(),key=lambda a: data_obj["publications_book"].getNodeData([pub,"authors",a,"order"])) if author ]
+            authors=[]
+            for a in _authors:
+                if a=="Corey Oses":
+                    a="\\textcolor{NavyBlue}{Corey Oses}"
+                authors.append(a)
+            if status=="published" or status=="press":
+                if data_obj["publications_book"].getNodeData([pub,"type"])=="book":
+                    entry_margin=="Book"
+                elif data_obj["publications_book"].getNodeData([pub,"type"])=="chapter":
+                    entry_margin=="Book Chapter"
+                elif data_obj["publications_book"].getNodeData([pub,"type"])=="section":
+                    entry_margin=="Book Section"
+                else:
+                    generateError("Book type ("+data_obj["publications_book"].getNodeData([pub,"type"])+") unknown")
+            #not really applicable
+            #elif status=="submitted":
+            #    entry_margin="Submitted"
+            else:
+                entry_margin="In Preparation"
+            entry_date=str(getCountFromLabel(pub,prefix=book_label_prefix))#""#str(data_obj["publications_book"].getNodeData([pub,"year"],MODE_LATEX))
+            if authors:
+                misc.append(getAdvisors(authors,title="Author"))
+            abstract=data_obj["publications_book"].getNodeData([pub,"abstract"],MODE_LATEX)
+            if True:
+                misc.append("\\textbf{Abstract}: "+abstract)
+            if misc:
+                misc2.append(" \\newline ".join(misc))
+            misc=[]
+            highlights=[ getViewSpecificNode(highlight,MODE_LATEX) for highlight in data_obj["publications_book"].getNodeData([pub,"highlights"],MODE_LATEX) if highlight ]
+            if highlights:
+                misc2.append(createBullets(highlights))
+            if misc2:
+                entry_description.append(" ".join(misc2))
+            doi=data_obj["publications_book"].getNodeData([pub,"doi"],MODE_LATEX)
+            url=data_obj["publications_book"].getNodeData([pub,"url"],MODE_LATEX)
+            if doi:
+                misc.append("\\textbf{DOI}: "+getLatexHyperlink(_DOI_PREFIX_+doi,display=fixStringLatex(doi)))
+            elif url:
+                misc.append("\\textbf{URL}: "+getLatexHyperlink(url,display=fixStringLatex(url)))
+            if misc:
+                entry_description.append(" ".join(misc))
+            if highlights:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" ".join(entry_description),large_title=True))
+            else:
+                _content.append(getEntry(margin=entry_margin,date=entry_date,title=entry_title,description=" \\newline ".join(entry_description),large_title=True))
+            #content.append("")
+
+        d_list=["","\\vspace{"+_SPACING_BETWEEN_ENTRIES_+"}",""]
+        content+=joinLists(_content,d_list)
+
+        return content
+
 
     spacing=0
 
@@ -585,7 +698,8 @@ def getResumeContent():
     section_generator[SECTION_PRESS]=getPress
     section_generator[SECTION_WORK_SKILLS]=getWorkExperienceAndSkills
     section_generator[SECTION_ACTIVITIES]=getActivities
-    section_generator[SECTION_PUBLICATIONS]=getPublications
+    section_generator[SECTION_JOURNAL_PUBLICATIONS]=getJournalPublications
+    section_generator[SECTION_BOOK_PUBLICATIONS]=getBookPublications
     section_generator[SECTION_AWARDS]=getAwards
     
 
@@ -593,6 +707,7 @@ def getResumeContent():
     content+=getHeader()
     content.append("")
     content.append("\\begin{document}")
+    
     for i,section in enumerate(SECTIONS_ORDERED):
         if not SECTION_SHOW[section]:
             continue
@@ -602,6 +717,12 @@ def getResumeContent():
         #    content.append("\\vspace{"+str(spacing)+"em}")
         if i<(len(SECTIONS_ORDERED)-1):
             content.append("")
+            content.append("\\vspace{"+_SPACING_BETWEEN_SECTIONS_+"}")
+            content.append("")
+
+
+    #d_list=["","\\vspace{"+_SPACING_BETWEEN_SECTIONS_+"}",""]
+    #content+=joinLists(_content,d_list)
 
     content.append("\\end{document}")
     return content
