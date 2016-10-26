@@ -328,6 +328,8 @@ user clicks on the dropdown button) */
     margin-bottom:30px;
     padding-top: 0px; /*15px;*/
     padding-bottom: 15px;
+    padding-right:15px;
+    padding-left:15px;
     /*height: 500px;*/
     background-color: #fff;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
@@ -359,16 +361,17 @@ user clicks on the dropdown button) */
     margin-left:0px;
     margin-right:0px;
     padding-left:0px;
-    padding-right:15px;
+    padding-right:0px;/*15px;*/
 }
 
 .main-content .entry .entry-margin {
     font-style: italic;
     text-align:left;
+    padding-right:10px;
 }
 
 .main-content .entry .entry-date {
-
+    padding-right:10px;
 }
 
 .main-content .entry .entry-title {
