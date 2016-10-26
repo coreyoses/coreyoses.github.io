@@ -1,4 +1,15 @@
 /* Give the body a width */
+/* Grad1                #333465
+ * Grad2                #3D6CA0    
+ * Primary              #4B93B7
+ * Secondary            #EBEDFF
+ * Accent               #B0C6D2
+ * Grey                 #D4D4D4   
+ * Off-White            #FAFCFD
+ * White                #fff
+ * Light-grey for dot   #EEE
+ */
+
 html {
     min-width: 300px; /* suppose you want minimun width of 1000px */
     width: auto !important;  /* Firefox will set width as auto */
@@ -9,7 +20,7 @@ body {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     width: 100%;
     line-height: 0; /*this fixes space between objects*/
-    background-color: #80C3E8;
+    background-color: #EBEDFF;
     /*max-width: 960px;*/
     /*margin: 0 auto;*/
 }
@@ -88,20 +99,18 @@ nav a {
     /*display: block;*/
     width: 100%; 
     text-align: center;
-    color: #FAFCFD;
-}
-
-nav .currentlink {
-    color: #80C3E8;
+    color: #fff;/*#FAFCFD;*/
 }
 
 nav a:hover {
-    color: #B0C6D2;
+    color: #B0C6D2;/*#B0C6D2;*/
 }
 
 /*nav a:active :not(.inactive) {*/
-nav a:active {
-    color: #80C3E8;
+nav .currentlink,
+nav a:active,
+nav a:focus {
+    color: #EBEDFF;
 }
 
 .nL2 {
@@ -111,11 +120,11 @@ nav a:active {
 @media screen and (max-width:800px) {
     .nL1 {
         display: none;
-}
+    }
 
-.nL2 {
-    display: block;
-}
+    .nL2 {
+        display: block;
+    }
 }
 
 /* -----------------------------    END: Navigation Bar    ------------------------------*/
@@ -260,7 +269,7 @@ user clicks on the dropdown button) */
 
 /* Caption text */
 .text {
-    color: #f2f2f2;
+    color: #D4D4D4;/*#f2f2f2;*/
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -323,6 +332,11 @@ user clicks on the dropdown button) */
     background-color: #fff;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
     border-radius: 10px;
+    line-height:1;
+}
+
+.main-content a {
+    color: blue;
 }
 
 .main-content h1 {
@@ -331,13 +345,14 @@ user clicks on the dropdown button) */
 }
 
 .main-content .entry {
-    background-color:red;
+    /*background-color:red;*/
+    text-align:justify;
+    padding-top:10px;
 }
 
 .main-content .entry .row {
     margin-left:0px;
     margin-right:0px;
-    padding-top:10px;
 }
 
 .main-content .entry .table-entry {
@@ -348,6 +363,8 @@ user clicks on the dropdown button) */
 }
 
 .main-content .entry .entry-margin {
+    font-style: italic;
+    text-align:left;
 }
 
 .main-content .entry .entry-date {
@@ -393,12 +410,18 @@ footer h1 {
 }
 
 footer .news-dates {
-    font-size: 125%;
-    padding: 15px 12px;
+    font-size:125%;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 footer .news-press {
-    padding: 3px 24px;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:30px;
+    padding-right:30px;
 }
 
 footer .twitter {
