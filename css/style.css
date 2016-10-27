@@ -58,6 +58,12 @@ a:active {
     /*transform: translateY(-50%);*/
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 .container {
     padding-left: 0px;
     padding-right: 0px;
@@ -347,40 +353,48 @@ user clicks on the dropdown button) */
 }
 
 .main-content .entry {
-    /*background-color:red;*/
-    text-align:justify;
     padding-top:10px;
 }
 
 .main-content .entry .row {
+    /*background-color:red;*/
+    text-align:justify;
     margin-left:0px;
     margin-right:0px;
 }
 
-.main-content .entry .table-entry {
+.main-content .entry .row .container-fluid {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.main-content .entry .row .table-entry {
     margin-left:0px;
     margin-right:0px;
     padding-left:0px;
     padding-right:0px;/*15px;*/
 }
 
-.main-content .entry .entry-margin {
+.main-content .entry .row .entry-margin {
     font-style: italic;
     text-align:left;
-    padding-right:10px;
+    /*padding-right:10px;*/
+    font-size:110%;
 }
 
-.main-content .entry .entry-date {
+.main-content .entry .row .entry-date {
     padding-right:20px;
     text-align:right;
+    font-size:110%;
 }
 
-.main-content .entry .entry-title {
-
+.main-content .entry .row .entry-title {
+    font-size:110%;
 }
 
-.main-content .entry .entry-description {
+.main-content .entry .row .entry-description {
     /*list-style-position: inside;*/
+    padding-top:5px;
 }
 
 
