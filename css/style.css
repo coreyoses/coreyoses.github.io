@@ -343,6 +343,11 @@ user clicks on the dropdown button) */
     line-height:1;
 }
 
+.main-content .personal-pic img {
+    padding-top:15px;
+    /*padding-bottom:15px;*/
+}
+
 .main-content a {
     color: blue;
 }
