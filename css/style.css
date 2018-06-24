@@ -123,7 +123,11 @@ nav a:focus {
     display: none;
 }
 
-@media screen and (max-width:800px) {
+/*
+ * not sure what I was planning here, but turn this on
+ * if I get the hamburger working (top nav bar)
+*/
+/*@media screen and (max-width:800px) {
     .nL1 {
         display: none;
     }
@@ -131,7 +135,7 @@ nav a:focus {
     .nL2 {
         display: block;
     }
-}
+}*/
 
 /* -----------------------------    END: Navigation Bar    ------------------------------*/
 
