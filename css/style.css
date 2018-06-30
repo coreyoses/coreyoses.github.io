@@ -468,9 +468,9 @@ footer .twitter {
 footer .copywrite {
     color: #fff;
     margin-top: 30px;
+    text-align: center;
     /*position: absolute;
     bottom: 30px;*/
-text-align: center;
-width: 100%
+    /*width: 100%*/
 }
 /* ---------------------------------    END: Footer    ----------------------------------*/
