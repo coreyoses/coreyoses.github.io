@@ -397,6 +397,15 @@ user clicks on the dropdown button) */
     font-size:110%;
 }
 
+/*phone transition width*/
+@media screen and (max-width: 992px) {
+  .main-content .entry .row .entry-date {
+    padding-right:20px;
+    text-align:left;
+    font-size:110%;
+  }
+}
+
 .main-content .entry .row .entry-title {
     font-size:110%;
 }
