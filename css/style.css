@@ -359,6 +359,7 @@ user clicks on the dropdown button) */
 .main-content h1 {
     margin:0px;
     padding-top:10pt;
+    padding-bottom:5pt;
 }
 
 .main-content .entry {
