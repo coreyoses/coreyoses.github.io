@@ -362,6 +362,11 @@ user clicks on the dropdown button) */
     padding-bottom:5pt;
 }
 
+.main-content h2 {
+    margin:0px;
+    padding-top:10pt;
+}
+
 .main-content .entry {
     padding-top:10px;
 }
