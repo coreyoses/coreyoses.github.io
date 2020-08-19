@@ -429,7 +429,16 @@ user clicks on the dropdown button) */
 
 
 .main-content .entry .entry-description ul {
-    padding-left:1em;
+    /*padding-left:1em;*/
+  margin-left: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.main-content .entry .entry-description ol {
+    /*padding-left:1em;*/
+  margin-left: 0;
+  padding-left: 16px;
 }
 
 /* ---------------------------------   START: Footer   ----------------------------------*/
