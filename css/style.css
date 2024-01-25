@@ -391,7 +391,7 @@ user clicks on the dropdown button) */
 }
 
 .main-content .entry .row .entry-margin {
-    font-style: italic;
+    /*font-style: italic;*/
     text-align:left;
     /*padding-right:10px;*/
     font-size:110%;
