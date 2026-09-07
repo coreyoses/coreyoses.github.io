@@ -110,3 +110,9 @@ details.bibtex .bibtex-more a{text-decoration:underline}
 details.bibtex{position:relative}
 .bibtex-copy{position:absolute;right:.5rem;top:1.95rem;padding:.1rem .5rem;border:1px solid var(--line-2);border-radius:4px;background:#fff;color:var(--navy);font:inherit;font-size:.72rem;font-weight:600;cursor:pointer}
 .bibtex-copy:hover{border-color:var(--navy)}
+/* Publication links as chips, matching the group site's Publications page */
+.pub-chip{display:inline-block;margin:.15rem .3rem .15rem 0;padding:.05rem .55rem;border:1px solid var(--navy);border-radius:999px;font-size:.78rem;font-weight:600;line-height:1.5;white-space:nowrap}
+.pub-chip a{color:var(--navy)}
+.pub-chip:hover{background:var(--navy)}
+.pub-chip:hover a,.pub-chip:hover b{color:#fff}
+.pub-chip:hover a{text-decoration:none}
