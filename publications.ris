@@ -1,0 +1,1255 @@
+TY  - JOUR
+AU  - Tseng, Shao-Yu
+AU  - Han, Guangshuai
+AU  - Li, Tianhao
+AU  - Xu, Xiao
+AU  - Hu, Jiayue
+AU  - Qiu, Gengyao
+AU  - Oses, Corey
+TI  - Structural benchmarks overlook density-of-states errors in machine-learned interatomic potentials
+JO  - APL Machine Learning
+JF  - APL Machine Learning
+VL  - 4
+PY  - 2026
+DO  - 10.1063/5.0339982
+UR  - https://doi.org/10.1063/5.0339982
+ER  -
+
+TY  - JOUR
+AU  - Xu, Xiao
+AU  - Han, Guangshuai
+AU  - Li, Tianhao
+AU  - Hu, Jiayue
+AU  - Qiu, Guotao
+AU  - Tseng, Shao-Yu
+AU  - Han, Gyeong H.
+AU  - Dupuy, Alexander
+AU  - Hall, A. Shoji
+AU  - Oses, Corey
+TI  - Stabilizing Iodine in Pyrochlore: Toward New Nuclear Waste Forms
+JO  - Precision Chemistry
+JF  - Precision Chemistry
+VL  - 4
+IS  - 8
+SP  - 1211
+EP  - 1224
+PY  - 2026
+DO  - 10.1021/prechem.5c00467
+UR  - https://doi.org/10.1021/prechem.5c00467
+ER  -
+
+TY  - JOUR
+AU  - Han, Guangshuai
+AU  - Li, Tianhao
+AU  - Xu, Xiao
+AU  - Lee, Jaehyung
+AU  - Sequeira, Sabrina
+AU  - Ajith, Akshaya
+AU  - Oses, Corey
+TI  - The search for high-entropy fuel-cell catalysts using disorder descriptors
+JO  - Nano Futures
+JF  - Nano Futures
+VL  - 9
+SP  - 045001
+PY  - 2025
+DO  - 10.1088/2399-1984/ae19b0
+UR  - https://doi.org/10.1088/2399-1984/ae19b0
+ER  -
+
+TY  - JOUR
+AU  - Oses, Corey
+AU  - Li, Tianhao
+AU  - Xu, Xiao
+AU  - Han, Guangshuai
+AU  - Qiu, Guotao
+AU  - Owens, Jonathan R.
+TI  - Beyond the four core effects: revisiting thermoelectrics with a high-entropy design
+JO  - Materials Horizons
+JF  - Materials Horizons
+VL  - 12
+IS  - 16
+SP  - 5946
+EP  - 5956
+PY  - 2025
+DO  - 10.1039/D5MH00356C
+UR  - https://doi.org/10.1039/D5MH00356C
+ER  -
+
+TY  - JOUR
+AU  - Qiu, Guotao
+AU  - Li, Tianhao
+AU  - Xu, Xiao
+AU  - Liu, Yuxiang
+AU  - Niyogi, Maya
+AU  - Cariaga, Katie
+AU  - Oses, Corey
+TI  - High entropy powering green energy: hydrogen, batteries, electronics, and catalysis
+JO  - npj Computational Materials
+JF  - npj Computational Materials
+VL  - 11
+SP  - 145
+PY  - 2025
+DO  - 10.1038/s41524-025-01594-6
+UR  - https://doi.org/10.1038/s41524-025-01594-6
+ER  -
+
+TY  - JOUR
+AU  - Gong, Tianyao
+AU  - Qiu, Guotao
+AU  - He, Mo-Rigen
+AU  - Safonova, Olga V.
+AU  - Yang, Wei-Chang
+AU  - Raciti, David
+AU  - Oses, Corey
+AU  - Hall, A. Shoji
+TI  - Atomic Ordering-Induced Ensemble Variation in Alloys Governs Electrocatalyst On/Off States
+JO  - Journal of the American Chemical Society
+JF  - Journal of the American Chemical Society
+VL  - 147
+IS  - 1
+SP  - 510
+EP  - 518
+PY  - 2024
+DO  - 10.1021/jacs.4c11753
+UR  - https://doi.org/10.1021/jacs.4c11753
+ER  -
+
+TY  - JOUR
+AU  - Vecchio, Kenneth S.
+AU  - Curtarolo, Stefano
+AU  - Kaufmann, Kevin
+AU  - Harrington, Tyler J.
+AU  - Oses, Corey
+AU  - Toher, Cormac
+TI  - Fermi energy engineering of enhanced plasticity in high-entropy carbides
+JO  - Acta Materialia
+JF  - Acta Materialia
+VL  - 276
+SP  - 120117
+PY  - 2024
+DO  - 10.1016/j.actamat.2024.120117
+UR  - https://doi.org/10.1016/j.actamat.2024.120117
+ER  -
+
+TY  - JOUR
+AU  - Evans, Matthew L.
+AU  - Bergsma, Johan
+AU  - Merkys, Andrius
+AU  - Andersen, Casper W.
+AU  - Andersson, Oskar B.
+AU  - Beltrán, Daniel
+AU  - Blokhin, Evgeny
+AU  - Boland, Tara M.
+AU  - Castañeda Balderas, Rubén
+AU  - Choudhary, Kamal
+AU  - Díaz Díaz, Alberto
+AU  - Domínguez García, Rodrigo
+AU  - Eckert, Hagen
+AU  - Eimre, Kristjan
+AU  - Fuentes-Montero, Maria Elena
+AU  - Krajewski, Adam M.
+AU  - Mortensen, Jens Jørgen
+AU  - Nápoles-Duarte, José Manuel
+AU  - Pietryga, Jacob
+AU  - Qi, Ji
+AU  - Trejo Carrillo, Felipe de Jesús
+AU  - Vaitkus, Antanas
+AU  - Yu, Jusong
+AU  - Zettel, Adam C.
+AU  - Baptista de Castro, Pedro
+AU  - Carlsson, Johan
+AU  - Cerqueira, Tiago F. T.
+AU  - Divilov, Simon
+AU  - Hajiyani, Hamidreza
+AU  - Hanke, Felix
+AU  - Jose, Kevin
+AU  - Oses, Corey
+AU  - Riebesell, Janosh
+AU  - Schmidt, Jonathan
+AU  - Winston, Donald
+AU  - Xie, Christen
+AU  - Yang, Xiaoyu
+AU  - Bonella, Sara
+AU  - Botti, Silvana
+AU  - Curtarolo, Stefano
+AU  - Draxl, Claudia
+AU  - Fuentes Cobas, Luis Edmundo
+AU  - Hospital, Adam
+AU  - Liu, Zi-Kui
+AU  - Marques, Miguel A. L.
+AU  - Marzari, Nicola
+AU  - Morris, Andrew J.
+AU  - Ong, Shyue Ping
+AU  - Orozco, Modesto
+AU  - Persson, Kristin A.
+AU  - Thygesen, Kristian S.
+AU  - Wolverton, Chris
+AU  - Scheidgen, Markus
+AU  - Toher, Cormac
+AU  - Conduit, Gareth J.
+AU  - Pizzi, Giovanni
+AU  - Gražulis, Saulius
+AU  - Rignanese, Gian-Marco
+AU  - Armiento, Rickard
+TI  - Developments and applications of the OPTIMADE API for materials discovery, design, and data exchange
+JO  - Digital Discovery
+JF  - Digital Discovery
+VL  - 3
+SP  - 1509
+EP  - 1533
+PY  - 2024
+DO  - 10.1039/D4DD00039K
+UR  - https://doi.org/10.1039/D4DD00039K
+ER  -
+
+TY  - JOUR
+AU  - Divilov, Simon
+AU  - Eckert, Hagen
+AU  - Hicks, David
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Friedrich, Rico
+AU  - Esters, Marco
+AU  - Mehl, Michael J.
+AU  - Zettel, Adam C.
+AU  - Lederer, Yoav
+AU  - Zurek, Eva
+AU  - Maria, Jon-Paul
+AU  - Brenner, Donald W.
+AU  - Campilongo, Xiomara
+AU  - Filipović, Suzana
+AU  - Fahrenholtz, William G.
+AU  - Ryan, Caillin J.
+AU  - DeSalle, Christopher M.
+AU  - Crealese, Ryan J.
+AU  - Wolfe, Douglas E.
+AU  - Calzolari, Arrigo
+AU  - Curtarolo, Stefano
+TI  - Disordered enthalpy-entropy descriptor for high-entropy ceramics discovery
+JO  - Nature
+JF  - Nature
+VL  - 625
+SP  - 66
+EP  - 73
+PY  - 2024
+DO  - 10.1038/s41586-023-06786-y
+UR  - https://doi.org/10.1038/s41586-023-06786-y
+ER  -
+
+TY  - JOUR
+AU  - Peters, Adam B.
+AU  - Zhang, Dajie
+AU  - Chen, Samuel
+AU  - Ott, Catherine
+AU  - Oses, Corey
+AU  - Curtarolo, Stefano
+AU  - McCue, Ian
+AU  - Pollock, Tresa
+AU  - Prameela, Suhas Eswarappa
+TI  - Materials Design for Hypersonics
+JO  - Nature Communications
+JF  - Nature Communications
+VL  - 15
+SP  - 3328
+PY  - 2024
+DO  - 10.1038/s41467-024-46753-3
+UR  - https://doi.org/10.1038/s41467-024-46753-3
+ER  -
+
+TY  - JOUR
+AU  - Wolfe, Douglas E.
+AU  - DeSalle, Christopher M.
+AU  - Ryan, Caillin J.
+AU  - Slapikas, Robert E.
+AU  - Sweny, Ryan T.
+AU  - Crealese, Ryan J.
+AU  - Kolonin, Petr A.
+AU  - Stepanoff, Sergei P.
+AU  - Haque, Aman
+AU  - Divilov, Simon
+AU  - Eckert, Hagen
+AU  - Oses, Corey
+AU  - Esters, Marco
+AU  - Brenner, Donald W.
+AU  - Fahrenholtz, William G.
+AU  - Maria, Jon-Paul
+AU  - Toher, Cormac
+AU  - Zurek, Eva
+AU  - Curtarolo, Stefano
+TI  - Influence of Processing on the Microstructural Evolution and Multiscale Hardness in Titanium Carbonitrides (TiCN) Produced via Field Assisted Sintering Technology
+JO  - Materialia
+JF  - Materialia
+VL  - 27
+SP  - 101682
+PY  - 2023
+DO  - 10.1016/j.mtla.2023.101682
+UR  - https://doi.org/10.1016/j.mtla.2023.101682
+ER  -
+
+TY  - JOUR
+AU  - Oses, Corey
+AU  - Esters, Marco
+AU  - Hicks, David
+AU  - Divilov, Simon
+AU  - Eckert, Hagen
+AU  - Friedrich, Rico
+AU  - Mehl, Michael J.
+AU  - Smolyanyuk, Andriy
+AU  - Campilongo, Xiomara
+AU  - van de Walle, Axel
+AU  - Schroers, Jan
+AU  - Kusne, Aaron Gilad
+AU  - Takeuchi, Ichiro
+AU  - Zurek, Eva
+AU  - Buongiorno Nardelli, Marco
+AU  - Fornari, Marco
+AU  - Lederer, Yoav
+AU  - Levy, Ohad
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - aflow++: a C++ framework for autonomous materials design
+JO  - Computational Materials Science
+JF  - Computational Materials Science
+VL  - 217
+SP  - 111889
+PY  - 2023
+DO  - 10.1016/j.commatsci.2022.111889
+UR  - https://doi.org/10.1016/j.commatsci.2022.111889
+ER  -
+
+TY  - JOUR
+AU  - Esters, Marco
+AU  - Oses, Corey
+AU  - Divilov, Simon
+AU  - Eckert, Hagen
+AU  - Friedrich, Rico
+AU  - Hicks, David
+AU  - Mehl, Michael J.
+AU  - Rose, Frisco
+AU  - Smolyanyuk, Andriy
+AU  - Calzolari, Arrigo
+AU  - Campilongo, Xiomara
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - aflow.org: a web ecosystem of databases, software and tools
+JO  - Computational Materials Science
+JF  - Computational Materials Science
+VL  - 216
+SP  - 111808
+PY  - 2023
+DO  - 10.1016/j.commatsci.2022.111808
+UR  - https://doi.org/10.1016/j.commatsci.2022.111808
+ER  -
+
+TY  - JOUR
+AU  - Esters, Marco
+AU  - Smolyanyuk, Andriy
+AU  - Oses, Corey
+AU  - Hicks, David
+AU  - Divilov, Simon
+AU  - Eckert, Hagen
+AU  - Campilongo, Xiomara
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - QH-POCC: taming tiling entropy in thermal expansion calculations of disordered materials
+JO  - Acta Materialia
+JF  - Acta Materialia
+VL  - 245
+SP  - 118594
+PY  - 2023
+DO  - 10.1016/j.actamat.2022.118594
+UR  - https://doi.org/10.1016/j.actamat.2022.118594
+ER  -
+
+TY  - JOUR
+AU  - Calzolari, Arrigo
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Esters, Marco
+AU  - Campilongo, Xiomara
+AU  - Stepanoff, Sergei P.
+AU  - Wolfe, Douglas E.
+AU  - Curtarolo, Stefano
+TI  - Plasmonic high-entropy carbides
+JO  - Nature Communications
+JF  - Nature Communications
+VL  - 13
+SP  - 5993
+PY  - 2022
+DO  - 10.1038/s41467-022-33497-1
+UR  - https://doi.org/10.1038/s41467-022-33497-1
+ER  -
+
+TY  - JOUR
+AU  - Wang, Xiaoyu
+AU  - Proserpio, Davide M.
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+AU  - Zurek, Eva
+TI  - The Microscopic Diamond Anvil Cell: Stabilization of Superhard, Superconducting Carbon Allotropes at Ambient Pressure
+JO  - Angewandte Chemie
+JF  - Angewandte Chemie
+VL  - 61
+IS  - 32
+SP  - e202205129
+PY  - 2022
+DO  - 10.1002/anie.202205129
+UR  - https://doi.org/10.1002/anie.202205129
+ER  -
+
+TY  - JOUR
+AU  - Kulik, Heather J.
+AU  - Hammerschmidt, Thomas
+AU  - Schmidt, Jonathan
+AU  - Botti, Silvana
+AU  - Marques, Miguel A. L.
+AU  - Boley, Mario
+AU  - Scheffler, Matthias
+AU  - Todorović, Milica
+AU  - Rinke, Patrick
+AU  - Oses, Corey
+AU  - Smolyanyuk, Andriy
+AU  - Curtarolo, Stefano
+AU  - Tkatchenko, Alexandre
+AU  - Bartók, Albert P.
+AU  - Manzhos, Sergei
+AU  - Ihara, Manabu
+AU  - Carrington, Tucker
+AU  - Behler, Jörg
+AU  - Isayev, Olexandr
+AU  - Veit, Max
+AU  - Grisafi, Andrea
+AU  - Nigam, Jigyasa
+AU  - Ceriotti, Michele
+AU  - Schütt, Kristof T.
+AU  - Westermayr, Julia
+AU  - Gastegger, Michael
+AU  - Maurer, Reinhard J.
+AU  - Kalita, Bhupalee
+AU  - Burke, Kieron
+AU  - Nagai, Ryo
+AU  - Akashi, Ryosuke
+AU  - Sugino, Osamu
+AU  - Hermann, Jan
+AU  - Noé, Frank
+AU  - Pilati, Sebastiano
+AU  - Draxl, Claudia
+AU  - Kuban, Martin
+AU  - Rigamonti, Santiago
+AU  - Scheidgen, Markus
+AU  - Esters, Marco
+AU  - Hicks, David
+AU  - Toher, Cormac
+AU  - Balachandran, Prasanna V.
+AU  - Tamblyn, Isaac
+AU  - Whitelam, Steven
+AU  - Bellinger, Colin
+AU  - Ghiringhelli, Luca M.
+TI  - Roadmap on Machine Learning in Electronic Structure
+JO  - Electronic Structure
+JF  - Electronic Structure
+VL  - 4
+IS  - 2
+SP  - 023004
+PY  - 2022
+DO  - 10.1088/2516-1075/ac572f
+UR  - https://doi.org/10.1088/2516-1075/ac572f
+ER  -
+
+TY  - JOUR
+AU  - Kusne, Aaron Gilad
+AU  - McDannald, Austin
+AU  - DeCost, Brian
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+AU  - Mehta, Apurva
+AU  - Takeuchi, Ichiro
+TI  - Physics in the Machine: Integrating Physical Knowledge in Autonomous Phase-Mapping
+JO  - Frontiers in Physics
+JF  - Frontiers in Physics
+VL  - 10
+SP  - 815863
+PY  - 2022
+DO  - 10.3389/fphy.2022.815863
+UR  - https://doi.org/10.3389/fphy.2022.815863
+ER  -
+
+TY  - JOUR
+AU  - Toher, Cormac
+AU  - Oses, Corey
+AU  - Esters, Marco
+AU  - Hicks, David
+AU  - Kotsonis, George N.
+AU  - Rost, Christina M.
+AU  - Brenner, Donald W.
+AU  - Maria, Jon-Paul
+AU  - Curtarolo, Stefano
+TI  - High-entropy ceramics: Propelling applications through disorder
+JO  - MRS Bulletin
+JF  - MRS Bulletin
+VL  - 47
+SP  - 194
+EP  - 202
+PY  - 2022
+DO  - 10.1557/s43577-022-00281-x
+UR  - https://doi.org/10.1557/s43577-022-00281-x
+ER  -
+
+TY  - JOUR
+AU  - Esters, Marco
+AU  - Oses, Corey
+AU  - Hicks, David
+AU  - Mehl, Michael J.
+AU  - Jahnátek, Michal
+AU  - Hossain, Mohammad Delower
+AU  - Maria, Jon-Paul
+AU  - Brenner, Donald W.
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - Settling the matter of the role of vibrations in the stability of high-entropy carbides
+JO  - Nature Communications
+JF  - Nature Communications
+VL  - 12
+SP  - 5747
+PY  - 2021
+DO  - 10.1038/s41467-021-25979-5
+UR  - https://doi.org/10.1038/s41467-021-25979-5
+ER  -
+
+TY  - JOUR
+AU  - Hossain, Mohammad Delower
+AU  - Borman, Trent
+AU  - Oses, Corey
+AU  - Esters, Marco
+AU  - Toher, Cormac
+AU  - Feng, Lun
+AU  - Kumar, Abinash
+AU  - Fahrenholtz, William G.
+AU  - Curtarolo, Stefano
+AU  - Brenner, Donald W.
+AU  - LeBeau, James M.
+AU  - Maria, Jon-Paul
+TI  - Entropy Landscaping of High-Entropy Carbides
+JO  - Advanced Materials
+JF  - Advanced Materials
+VL  - 33
+IS  - 42
+SP  - 2102904
+PY  - 2021
+DO  - 10.1002/adma.202102904
+UR  - https://doi.org/10.1002/adma.202102904
+ER  -
+
+TY  - JOUR
+AU  - Andersen, Casper W.
+AU  - Armiento, Rickard
+AU  - Blokhin, Evgeny
+AU  - Conduit, Gareth J.
+AU  - Dwaraknath, Shyam
+AU  - Evans, Matthew L.
+AU  - Fekete, Ádám
+AU  - Gopakumar, Abhijith
+AU  - Gražulis, Saulius
+AU  - Merkys, Andrius
+AU  - Mohamed, Fawzi
+AU  - Oses, Corey
+AU  - Pizzi, Giovanni
+AU  - Rignanese, Gian-Marco
+AU  - Scheidgen, Markus
+AU  - Talirz, Leopold
+AU  - Toher, Cormac
+AU  - Winston, Donald
+AU  - Aversa, Rossella
+AU  - Choudhary, Kamal
+AU  - Colinet, Pauline
+AU  - Curtarolo, Stefano
+AU  - Di Stefano, Davide
+AU  - Draxl, Claudia
+AU  - Er, Suleyman
+AU  - Esters, Marco
+AU  - Fornari, Marco
+AU  - Giantomassi, Matteo
+AU  - Govoni, Marco
+AU  - Hautier, Geoffroy
+AU  - Hegde, Vinay
+AU  - Horton, Matthew K.
+AU  - Huck, Patrick
+AU  - Huhs, Georg
+AU  - Hummelshøj, Jens
+AU  - Kariryaa, Ankit
+AU  - Kozinsky, Boris
+AU  - Kumbhar, Snehal
+AU  - Liu, Mohan
+AU  - Marzari, Nicola
+AU  - Morris, Andrew J.
+AU  - Mostofi, Arash
+AU  - Persson, Kristin A.
+AU  - Petretto, Guido
+AU  - Purcell, Thomas
+AU  - Ricci, Francesco
+AU  - Rose, Frisco
+AU  - Scheffler, Matthias
+AU  - Speckhard, Daniel
+AU  - Uhrin, Martin
+AU  - Vaitkus, Antanas
+AU  - Villars, Pierre
+AU  - Waroquiers, David
+AU  - Wolverton, Chris
+AU  - Wu, Michael
+AU  - Yang, Xiaoyu
+TI  - OPTIMADE: an API for exchanging materials data
+JO  - Scientific Data
+JF  - Scientific Data
+VL  - 8
+SP  - 217
+PY  - 2021
+DO  - 10.1038/s41597-021-00974-z
+UR  - https://doi.org/10.1038/s41597-021-00974-z
+ER  -
+
+TY  - JOUR
+AU  - Friedrich, Rico
+AU  - Esters, Marco
+AU  - Oses, Corey
+AU  - Ki, Stuart
+AU  - Brenner, Max J.
+AU  - Hicks, David
+AU  - Mehl, Michael J.
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - Automated coordination corrected enthalpies with AFLOW-CCE
+JO  - Physical Review Materials
+JF  - Physical Review Materials
+VL  - 5
+SP  - 043803
+PY  - 2021
+DO  - 10.1103/PhysRevMaterials.5.043803
+UR  - https://doi.org/10.1103/PhysRevMaterials.5.043803
+ER  -
+
+TY  - JOUR
+AU  - Hicks, David
+AU  - Mehl, Michael J.
+AU  - Esters, Marco
+AU  - Oses, Corey
+AU  - Levy, Ohad
+AU  - Hart, Gus L. W.
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - The AFLOW Library of Crystallographic Prototypes: Part 3
+JO  - Computational Materials Science
+JF  - Computational Materials Science
+VL  - 199
+SP  - 110450
+PY  - 2021
+DO  - 10.1016/j.commatsci.2021.110450
+UR  - https://doi.org/10.1016/j.commatsci.2021.110450
+ER  -
+
+TY  - JOUR
+AU  - Mehl, Michael J.
+AU  - Ronquillo, Mateo
+AU  - Hicks, David
+AU  - Esters, Marco
+AU  - Oses, Corey
+AU  - Friedrich, Rico
+AU  - Smolyanyuk, Andriy
+AU  - Gossett, Eric
+AU  - Finkenstadt, Daniel
+AU  - Curtarolo, Stefano
+TI  - Tin-pest problem as a test of density functionals using high-throughput calculations
+JO  - Physical Review Materials
+JF  - Physical Review Materials
+VL  - 5
+SP  - 083608
+PY  - 2021
+DO  - 10.1103/PhysRevMaterials.5.083608
+UR  - https://doi.org/10.1103/PhysRevMaterials.5.083608
+ER  -
+
+TY  - JOUR
+AU  - Hossain, Mohammad Delower
+AU  - Borman, Trent
+AU  - Kumar, Abinash
+AU  - Chen, Xi
+AU  - Khosravani, Ali
+AU  - Kalidindi, Surya R.
+AU  - Paisley, Elizabeth A.
+AU  - Esters, Marco
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+AU  - LeBeau, James M.
+AU  - Brenner, Donald W.
+AU  - Maria, Jon-Paul
+TI  - Carbon Stoichiometry and Mechanical Properties of High Entropy Carbides
+JO  - Acta Materialia
+JF  - Acta Materialia
+VL  - 215
+SP  - 117051
+PY  - 2021
+DO  - 10.1016/j.actamat.2021.117051
+UR  - https://doi.org/10.1016/j.actamat.2021.117051
+ER  -
+
+TY  - JOUR
+AU  - Kusne, Aaron Gilad
+AU  - Yu, Heshan
+AU  - Wu, Changming
+AU  - Zhang, Huairuo
+AU  - Hattrick-Simpers, Jason
+AU  - DeCost, Brian
+AU  - Sarker, Suchismita
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+AU  - Davydov, Albert V.
+AU  - Agarwal, Ritesh
+AU  - Bendersky, Leonid A.
+AU  - Li, Mo
+AU  - Mehta, Apurva
+AU  - Takeuchi, Ichiro
+TI  - On-the-fly Closed-loop Autonomous Materials Discovery via Bayesian Active Learning
+JO  - Nature Communications
+JF  - Nature Communications
+VL  - 11
+SP  - 5966
+PY  - 2020
+DO  - 10.1038/s41467-020-19597-w
+UR  - https://doi.org/10.1038/s41467-020-19597-w
+ER  -
+
+TY  - JOUR
+AU  - Kaufmann, Kevin
+AU  - Maryanovsky, Daniel
+AU  - Mellor, William M.
+AU  - Zhu, Chaoyi
+AU  - Rosengarten, Alexander S.
+AU  - Harrington, Tyler J.
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+AU  - Vecchio, Kenneth S.
+TI  - Discovery of novel high-entropy ceramics via machine learning
+JO  - npj Computational Materials
+JF  - npj Computational Materials
+VL  - 6
+SP  - 42
+PY  - 2020
+DO  - 10.1038/s41524-020-0317-6
+UR  - https://doi.org/10.1038/s41524-020-0317-6
+ER  -
+
+TY  - JOUR
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - High-entropy ceramics
+JO  - Nature Reviews Materials
+JF  - Nature Reviews Materials
+VL  - 5
+SP  - 295
+EP  - 309
+PY  - 2020
+DO  - 10.1038/s41578-019-0170-8
+UR  - https://doi.org/10.1038/s41578-019-0170-8
+ER  -
+
+TY  - JOUR
+AU  - Ford, Denise C.
+AU  - Hicks, David
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - Metallic glasses for biodegradable implants
+JO  - Acta Materialia
+JF  - Acta Materialia
+VL  - 176
+SP  - 297
+EP  - 305
+PY  - 2019
+DO  - 10.1016/j.actamat.2019.07.008
+UR  - https://doi.org/10.1016/j.actamat.2019.07.008
+ER  -
+
+TY  - JOUR
+AU  - Avery, Patrick
+AU  - Wang, Xiaoyu
+AU  - Oses, Corey
+AU  - Gossett, Eric
+AU  - Proserpio, Davide M.
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+AU  - Zurek, Eva
+TI  - Predicting Superhard Materials via a Machine Learning Informed Evolutionary Structure Search
+JO  - npj Computational Materials
+JF  - npj Computational Materials
+VL  - 5
+SP  - 89
+PY  - 2019
+DO  - 10.1038/s41524-019-0226-8
+UR  - https://doi.org/10.1038/s41524-019-0226-8
+ER  -
+
+TY  - JOUR
+AU  - Toher, Cormac
+AU  - Oses, Corey
+AU  - Hicks, David
+AU  - Curtarolo, Stefano
+TI  - Unavoidable disorder and entropy in multi-component systems
+JO  - npj Computational Materials
+JF  - npj Computational Materials
+VL  - 5
+SP  - 69
+PY  - 2019
+DO  - 10.1038/s41524-019-0206-z
+UR  - https://doi.org/10.1038/s41524-019-0206-z
+ER  -
+
+TY  - JOUR
+AU  - Friedrich, Rico
+AU  - Usanmaz, Demet
+AU  - Oses, Corey
+AU  - Supka, Andrew R.
+AU  - Fornari, Marco
+AU  - Buongiorno Nardelli, Marco
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - Coordination corrected ab initio formation enthalpies
+JO  - npj Computational Materials
+JF  - npj Computational Materials
+VL  - 5
+SP  - 59
+PY  - 2019
+DO  - 10.1038/s41524-019-0192-1
+UR  - https://doi.org/10.1038/s41524-019-0192-1
+ER  -
+
+TY  - JOUR
+AU  - Nath, Pinku
+AU  - Usanmaz, Demet
+AU  - Hicks, David
+AU  - Oses, Corey
+AU  - Fornari, Marco
+AU  - Buongiorno Nardelli, Marco
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - AFLOW-QHA3P: Robust and automated method to compute thermodynamic properties of solids
+JO  - Physical Review Materials
+JF  - Physical Review Materials
+VL  - 3
+SP  - 073801
+PY  - 2019
+DO  - 10.1103/PhysRevMaterials.3.073801
+UR  - https://doi.org/10.1103/PhysRevMaterials.3.073801
+ER  -
+
+TY  - JOUR
+AU  - Oses, Corey
+AU  - Gossett, Eric
+AU  - Hicks, David
+AU  - Rose, Frisco
+AU  - Mehl, Michael J.
+AU  - Perim, Eric
+AU  - Takeuchi, Ichiro
+AU  - Sanvito, Stefano
+AU  - Scheffler, Matthias
+AU  - Lederer, Yoav
+AU  - Levy, Ohad
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - AFLOW-CHULL: Cloud-oriented platform for autonomous phase stability analysis
+JO  - Journal of Chemical Information and Modeling
+JF  - Journal of Chemical Information and Modeling
+VL  - 58
+IS  - 12
+SP  - 2477
+EP  - 2490
+PY  - 2018
+DO  - 10.1021/acs.jcim.8b00393
+UR  - https://doi.org/10.1021/acs.jcim.8b00393
+ER  -
+
+TY  - JOUR
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Curtarolo, Stefano
+TI  - Data-driven design of inorganic materials with the Automatic Flow Framework for Materials Discovery
+JO  - MRS Bulletin
+JF  - MRS Bulletin
+VL  - 43
+IS  - 9
+SP  - 670
+EP  - 675
+PY  - 2018
+DO  - 10.1557/mrs.2018.207
+UR  - https://doi.org/10.1557/mrs.2018.207
+ER  -
+
+TY  - JOUR
+AU  - Sarker, Pranab
+AU  - Harrington, Tyler J.
+AU  - Toher, Cormac
+AU  - Oses, Corey
+AU  - Samiee, Mojtaba
+AU  - Maria, Jon-Paul
+AU  - Brenner, Donald W.
+AU  - Vecchio, Kenneth S.
+AU  - Curtarolo, Stefano
+TI  - High-entropy high-hardness metal carbides discovered by entropy descriptors
+JO  - Nature Communications
+JF  - Nature Communications
+VL  - 9
+SP  - 4980
+PY  - 2018
+DO  - 10.1038/s41467-018-07160-7
+UR  - https://doi.org/10.1038/s41467-018-07160-7
+ER  -
+
+TY  - JOUR
+AU  - Stanev, Valentin
+AU  - Oses, Corey
+AU  - Kusne, Aaron Gilad
+AU  - Rodriguez, Efrain
+AU  - Paglione, Johnpierre
+AU  - Curtarolo, Stefano
+AU  - Takeuchi, Ichiro
+TI  - Machine learning modeling of superconducting critical temperature
+JO  - npj Computational Materials
+JF  - npj Computational Materials
+VL  - 4
+SP  - 29
+PY  - 2018
+DO  - 10.1038/s41524-018-0085-8
+UR  - https://doi.org/10.1038/s41524-018-0085-8
+ER  -
+
+TY  - JOUR
+AU  - Gossett, Eric
+AU  - Toher, Cormac
+AU  - Oses, Corey
+AU  - Isayev, Olexandr
+AU  - Legrain, Fleur
+AU  - Rose, Frisco
+AU  - Zurek, Eva
+AU  - Carrete, Jesús
+AU  - Mingo, Natalio
+AU  - Tropsha, Alexander
+AU  - Curtarolo, Stefano
+TI  - AFLOW-ML: A RESTful API for machine-learning prediction of materials properties
+JO  - Computational Materials Science
+JF  - Computational Materials Science
+VL  - 152
+SP  - 134
+EP  - 145
+PY  - 2018
+DO  - 10.1016/j.commatsci.2018.03.075
+UR  - https://doi.org/10.1016/j.commatsci.2018.03.075
+ER  -
+
+TY  - JOUR
+AU  - Hicks, David
+AU  - Oses, Corey
+AU  - Gossett, Eric
+AU  - Gomez, Geena
+AU  - Taylor, Richard H.
+AU  - Toher, Cormac
+AU  - Mehl, Michael J.
+AU  - Levy, Ohad
+AU  - Curtarolo, Stefano
+TI  - AFLOW-SYM: platform for the complete, automatic and self-consistent symmetry analysis of crystals
+JO  - Acta Crystallographica Section A
+JF  - Acta Crystallographica Section A
+VL  - 74
+SP  - 184
+EP  - 203
+PY  - 2018
+DO  - 10.1107/S2053273318003066
+UR  - https://doi.org/10.1107/S2053273318003066
+ER  -
+
+TY  - JOUR
+AU  - Hever, Alon
+AU  - Oses, Corey
+AU  - Curtarolo, Stefano
+AU  - Levy, Ohad
+AU  - Natan, Amir
+TI  - The structure and composition statistics of 6A binary and ternary structures
+JO  - Inorganic Chemistry
+JF  - Inorganic Chemistry
+VL  - 57
+IS  - 2
+SP  - 653
+EP  - 667
+PY  - 2017
+DO  - 10.1021/acs.inorgchem.7b02462
+UR  - https://doi.org/10.1021/acs.inorgchem.7b02462
+ER  -
+
+TY  - JOUR
+AU  - Rose, Frisco
+AU  - Toher, Cormac
+AU  - Gossett, Eric
+AU  - Oses, Corey
+AU  - Buongiorno Nardelli, Marco
+AU  - Fornari, Marco
+AU  - Curtarolo, Stefano
+TI  - AFLUX: The LUX materials search API for the AFLOW data repositories
+JO  - Computational Materials Science
+JF  - Computational Materials Science
+VL  - 137
+SP  - 362
+EP  - 370
+PY  - 2017
+DO  - 10.1016/j.commatsci.2017.04.036
+UR  - https://doi.org/10.1016/j.commatsci.2017.04.036
+ER  -
+
+TY  - JOUR
+AU  - Isayev, Olexandr
+AU  - Oses, Corey
+AU  - Toher, Cormac
+AU  - Gossett, Eric
+AU  - Curtarolo, Stefano
+AU  - Tropsha, Alexander
+TI  - Universal Fragment Descriptors for Predicting Properties of Inorganic Crystals
+JO  - Nature Communications
+JF  - Nature Communications
+VL  - 8
+SP  - 15679
+PY  - 2017
+DO  - 10.1038/ncomms15679
+UR  - https://doi.org/10.1038/ncomms15679
+ER  -
+
+TY  - JOUR
+AU  - Toher, Cormac
+AU  - Oses, Corey
+AU  - Plata, Jose J.
+AU  - Hicks, David
+AU  - Rose, Frisco
+AU  - Levy, Ohad
+AU  - de Jong, Maarten
+AU  - Asta, Mark
+AU  - Fornari, Marco
+AU  - Buongiorno Nardelli, Marco
+AU  - Curtarolo, Stefano
+TI  - Combining the AFLOW GIBBS and elastic libraries to efficiently and robustly screen thermomechanical properties of solids
+JO  - Physical Review Materials
+JF  - Physical Review Materials
+VL  - 1
+SP  - 015401
+PY  - 2017
+DO  - 10.1103/PhysRevMaterials.1.015401
+UR  - https://doi.org/10.1103/PhysRevMaterials.1.015401
+ER  -
+
+TY  - JOUR
+AU  - Nyshadham, Chandramouli
+AU  - Oses, Corey
+AU  - Hansen, Jacob E.
+AU  - Takeuchi, Ichiro
+AU  - Curtarolo, Stefano
+AU  - Hart, Gus L. W.
+TI  - A Computational High-Throughput Search for New Ternary Superalloys
+JO  - Acta Materialia
+JF  - Acta Materialia
+VL  - 122
+SP  - 438
+EP  - 447
+PY  - 2017
+DO  - 10.1016/j.actamat.2016.09.017
+UR  - https://doi.org/10.1016/j.actamat.2016.09.017
+ER  -
+
+TY  - JOUR
+AU  - Sanvito, Stefano
+AU  - Oses, Corey
+AU  - Xue, Junkai
+AU  - Tiwari, Anurag
+AU  - Žic, Mario
+AU  - Archer, Thomas
+AU  - Tozman, Pelin
+AU  - Venkatesan, Munuswamy
+AU  - Coey, J. Michael D.
+AU  - Curtarolo, Stefano
+TI  - Accelerated Discovery of New Magnets in the Heusler Alloy Family
+JO  - Science Advances
+JF  - Science Advances
+VL  - 3
+IS  - 4
+SP  - e1602241
+PY  - 2017
+DO  - 10.1126/sciadv.1602241
+UR  - https://doi.org/10.1126/sciadv.1602241
+ER  -
+
+TY  - JOUR
+AU  - van Roekeghem, Ambroise
+AU  - Carrete, Jesús
+AU  - Oses, Corey
+AU  - Curtarolo, Stefano
+AU  - Mingo, Natalio
+TI  - High-Throughput Computation of Thermal Conductivity of High-Temperature Solid Phases: The Case of Oxide and Fluoride Perovskites
+JO  - Physical Review X
+JF  - Physical Review X
+VL  - 6
+IS  - 4
+SP  - 041061
+PY  - 2016
+DO  - 10.1103/PhysRevX.6.041061
+UR  - https://doi.org/10.1103/PhysRevX.6.041061
+ER  -
+
+TY  - JOUR
+AU  - Yang, Kesong
+AU  - Oses, Corey
+AU  - Curtarolo, Stefano
+TI  - Modeling Off-Stoichiometry Materials with a High-Throughput Ab-Initio Approach
+JO  - Chemistry of Materials
+JF  - Chemistry of Materials
+VL  - 28
+IS  - 18
+SP  - 6484
+EP  - 6492
+PY  - 2016
+DO  - 10.1021/acs.chemmater.6b01449
+UR  - https://doi.org/10.1021/acs.chemmater.6b01449
+ER  -
+
+TY  - JOUR
+AU  - Calderon, Camilo E.
+AU  - Plata, Jose J.
+AU  - Toher, Cormac
+AU  - Oses, Corey
+AU  - Levy, Ohad
+AU  - Fornari, Marco
+AU  - Natan, Amir
+AU  - Mehl, Michael J.
+AU  - Hart, Gus L. W.
+AU  - Buongiorno Nardelli, Marco
+AU  - Curtarolo, Stefano
+TI  - The AFLOW Standard for High-Throughput Materials Science Calculations
+JO  - Computational Materials Science
+JF  - Computational Materials Science
+VL  - 108A
+SP  - 233
+EP  - 238
+PY  - 2015
+DO  - 10.1016/j.commatsci.2015.07.019
+UR  - https://doi.org/10.1016/j.commatsci.2015.07.019
+ER  -
+
+TY  - JOUR
+AU  - Isayev, Olexandr
+AU  - Fourches, Denis
+AU  - Muratov, Eugene N.
+AU  - Oses, Corey
+AU  - Rasch, Kevin M.
+AU  - Tropsha, Alexander
+AU  - Curtarolo, Stefano
+TI  - Materials Cartography: Representing and Mining Materials Space Using Structural and Electronic Fingerprints
+JO  - Chemistry of Materials
+JF  - Chemistry of Materials
+VL  - 27
+IS  - 3
+SP  - 735
+EP  - 743
+PY  - 2015
+DO  - 10.1021/cm503507h
+UR  - https://doi.org/10.1021/cm503507h
+ER  -
+
+TY  - CHAP
+AU  - Toher, Cormac
+AU  - Oses, Corey
+AU  - Curtarolo, Stefano
+TI  - Automated computation of materials properties
+T2  - Materials Informatics: Methods, Tools and Applications
+PB  - WILEY-VCH
+SE  - 7
+SP  - 181
+EP  - 222
+PY  - 2019
+DO  - 10.1002/9783527802265.ch7
+UR  - https://doi.org/10.1002/9783527802265.ch7
+ER  -
+
+TY  - CHAP
+AU  - Sanvito, Stefano
+AU  - Žic, Mario
+AU  - Nelson, James
+AU  - Archer, Thomas
+AU  - Oses, Corey
+AU  - Curtarolo, Stefano
+TI  - Machine learning and high-throughput approaches to magnetism
+T2  - Handbook of Materials Modeling. Volume 2 Applications: Current and Emerging Materials
+PB  - Springer
+PY  - 2018
+DO  - 10.1007/978-3-319-50257-1_108-1
+UR  - https://doi.org/10.1007/978-3-319-50257-1_108-1
+ER  -
+
+TY  - CHAP
+AU  - Toher, Cormac
+AU  - Oses, Corey
+AU  - Hicks, David
+AU  - Gossett, Eric
+AU  - Rose, Frisco
+AU  - Nath, Pinku
+AU  - Usanmaz, Demet
+AU  - Ford, Denise C.
+AU  - Perim, Eric
+AU  - Calderon, Camilo E.
+AU  - Plata, Jose J.
+AU  - Lederer, Yoav
+AU  - Jahnátek, Michal
+AU  - Setyawan, Wahyu
+AU  - Wang, Shidong
+AU  - Xue, Junkai
+AU  - Rasch, Kevin M.
+AU  - Chepulskii, Roman V.
+AU  - Taylor, Richard H.
+AU  - Gomez, Geena
+AU  - Shi, Harvey
+AU  - Supka, Andrew R.
+AU  - Al Rahal Al Orabi, Rabih
+AU  - Gopal, Priya
+AU  - Cerasoli, Frank T.
+AU  - Liyanage, Laalitha
+AU  - Wang, Haihang
+AU  - Siloi, Ilaria
+AU  - Agapito, Luis A.
+AU  - Nyshadham, Chandramouli
+AU  - Hart, Gus L. W.
+AU  - Carrete, Jesús
+AU  - Legrain, Fleur
+AU  - Mingo, Natalio
+AU  - Zurek, Eva
+AU  - Isayev, Olexandr
+AU  - Tropsha, Alexander
+AU  - Sanvito, Stefano
+AU  - Hanson, Robert M.
+AU  - Takeuchi, Ichiro
+AU  - Mehl, Michael J.
+AU  - Kolmogorov, Aleksey N.
+AU  - Yang, Kesong
+AU  - D'Amico, Pino
+AU  - Calzolari, Arrigo
+AU  - Costa, Marcio
+AU  - De Gennaro, Riccardo
+AU  - Buongiorno Nardelli, Marco
+AU  - Fornari, Marco
+AU  - Levy, Ohad
+AU  - Curtarolo, Stefano
+TI  - The AFLOW Fleet for Materials Discovery
+T2  - Handbook of Materials Modeling. Volume 1 Methods: Theory and Modeling
+PB  - Springer
+SP  - 1
+EP  - 28
+PY  - 2018
+DO  - 10.1007/978-3-319-42913-7_63-2
+UR  - https://doi.org/10.1007/978-3-319-42913-7_63-2
+ER  -

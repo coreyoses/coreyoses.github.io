@@ -97,19 +97,21 @@ h1+.entry,h2+.entry{border-top:0}
   .entry-date{font-size:.8rem;padding-top:0}
 }
 /* BibTeX record under a publication: collapsed by default, summary styled as a small chip */
-details.bibtex{margin:.25rem 0 .1rem}
-details.bibtex summary{display:inline-block;padding:.05rem .55rem;border:1px solid var(--navy);border-radius:999px;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;cursor:pointer;list-style:none;user-select:none}
-details.bibtex summary::-webkit-details-marker{display:none}
-details.bibtex summary:hover{background:var(--navy);color:#fff}
-details.bibtex pre{margin:.4rem 0 0;padding:.55rem .7rem;background:var(--surface-2);border:1px solid var(--line-2);border-radius:6px;font-size:.78rem;line-height:1.4;overflow-x:auto;white-space:pre}
-details.bibtex .bibtex-more{margin:.25rem 0 0;color:var(--muted);font-size:.8rem}
-details.bibtex .bibtex-more a{text-decoration:underline}
-.cites{margin-left:.4rem;color:var(--muted);font-size:.82rem}
-.honors{display:flex;flex-wrap:wrap;gap:.3rem;margin:.15rem 0 .3rem}
-.honor{background:#fff4d6;border-radius:999px;color:#7a4b00;font-size:.75rem;font-weight:600;padding:.1rem .6rem;line-height:1.5}
-details.bibtex{position:relative}
-.bibtex-copy{position:absolute;right:.5rem;top:1.95rem;padding:.1rem .5rem;border:1px solid var(--line-2);border-radius:4px;background:#fff;color:var(--navy);font:inherit;font-size:.72rem;font-weight:600;cursor:pointer}
-.bibtex-copy:hover{border-color:var(--navy)}
+details.cite{margin:.25rem 0 .1rem}
+details.cite summary{display:inline-block;padding:.05rem .55rem;border:1px solid var(--navy);border-radius:999px;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;cursor:pointer;list-style:none;user-select:none}
+details.cite summary::-webkit-details-marker{display:none}
+details.cite summary:hover{background:var(--navy);color:#fff}
+details.cite pre{margin:.4rem 0 0;padding:.55rem .7rem;background:var(--surface-2);border:1px solid var(--line-2);border-radius:6px;font-size:.78rem;line-height:1.4;overflow-x:auto;white-space:pre}
+details.cite .cite-more{margin:.25rem 0 0;color:var(--muted);font-size:.8rem}
+details.cite .cite-more a{text-decoration:underline}
+/* format switcher: BibTeX for LaTeX, RIS for EndNote/Mendeley/Zotero/Word, CSL-JSON
+   for Zotero and Pandoc, .enw for EndNote's own format */
+.cite-tabs{display:flex;flex-wrap:wrap;gap:.3rem;align-items:center;margin-top:.45rem}
+.cite-tab{padding:.1rem .5rem;border:1px solid var(--line-2);border-radius:999px;background:#fff;color:var(--muted);font:inherit;font-size:.72rem;font-weight:600;cursor:pointer}
+.cite-tab:hover{border-color:var(--navy);color:var(--navy)}
+.cite-tab.is-on{border-color:var(--navy);background:var(--navy);color:#fff}
+.cite-copy{margin-left:auto;padding:.1rem .5rem;border:1px solid var(--line-2);border-radius:4px;background:#fff;color:var(--navy);font:inherit;font-size:.72rem;font-weight:600;cursor:pointer}
+.cite-copy:hover{border-color:var(--navy)}
 /* Publication links as chips, matching the group site's Publications page */
 /* first-page snapshot beside a publication, the shape the group site uses. the
    image is the canonical assets/publications/<id>.png, so both sites show the
