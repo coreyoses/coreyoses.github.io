@@ -98,12 +98,15 @@ h1+.entry,h2+.entry{border-top:0}
 }
 /* BibTeX record under a publication: collapsed by default, summary styled as a small chip */
 details.cite{margin:.25rem 0 .1rem}
-details.cite summary{display:inline-block;padding:.05rem .55rem;border:1px solid var(--navy);border-radius:999px;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;cursor:pointer;list-style:none;user-select:none}
+/* the same box as the link chips beside it: block with max-content width, so it
+   takes no inline strut from the parent's line height */
+details.cite summary{display:block;width:max-content;padding:.1rem .65rem;border:1px solid var(--navy);border-radius:999px;color:var(--navy);font:inherit;font-size:.8rem;font-weight:600;line-height:1.4;cursor:pointer;list-style:none;user-select:none}
 details.cite summary::-webkit-details-marker{display:none}
 details.cite summary:hover{background:var(--navy);color:#fff}
-details.cite pre{margin:.4rem 0 0;padding:.55rem .7rem;background:var(--surface-2);border:1px solid var(--line-2);border-radius:6px;font-size:.78rem;line-height:1.4;overflow-x:auto;white-space:pre}
-details.cite .cite-more{margin:.25rem 0 0;color:var(--muted);font-size:.8rem}
-details.cite .cite-more a{text-decoration:underline}
+details.cite pre{margin:0;padding:.6rem .75rem;background:#f4f6fa;border:1px solid var(--line-2);border-radius:6px;font-size:.78rem;line-height:1.4;overflow-x:auto;white-space:pre}
+details.cite .cite-more{display:flex;flex-wrap:wrap;gap:.3rem;align-items:center;margin:.4rem 0 0;color:var(--muted);font-size:.8rem}
+details.cite .cite-more a{padding:.1rem .5rem;border:1px solid var(--line-2);border-radius:999px;color:var(--muted);font-size:.72rem;font-weight:600;text-decoration:none}
+details.cite .cite-more a:hover{border-color:var(--navy);color:var(--navy)}
 /* format switcher: BibTeX for LaTeX, RIS for EndNote/Mendeley/Zotero/Word, CSL-JSON
    for Zotero and Pandoc, .enw for EndNote's own format */
 .cite-tabs{display:flex;flex-wrap:wrap;gap:.3rem;align-items:center;margin-top:.45rem}
@@ -116,11 +119,16 @@ details.cite .cite-more a{text-decoration:underline}
 /* first-page snapshot beside a publication, the shape the group site uses. the
    image is the canonical assets/publications/<id>.png, so both sites show the
    same picked page. */
+/* publication awards, and the OpenAlex citation count js/citations.js fills in.
+   Both are emitted by the CV and were unstyled here; these match the group site. */
+.honors{display:flex;flex-wrap:wrap;gap:.3rem;margin:.35rem 0 .1rem}
+.honor{padding:.1rem .6rem;border-radius:999px;background:#fff4d6;color:#7a4b00;font-size:.75rem;font-weight:600}
+.cites{margin-left:.25rem;color:var(--muted);font-size:.8rem}
 .pub-thumb{width:100%;margin:.15rem 0 0}
 .pub-thumb img{display:block;width:100%;aspect-ratio:348/225;object-fit:cover;object-position:top center;border:1px solid var(--line);border-radius:6px;background:#fff}
 .pub-thumb a:hover img{border-color:var(--navy)}
 .pub-kind{margin-top:.3rem;color:var(--muted);font-size:.78rem;font-weight:600}
-.pub-chip{display:inline-block;margin:.15rem .3rem .15rem 0;padding:.05rem .55rem;border:1px solid var(--navy);border-radius:999px;font-size:.78rem;font-weight:600;line-height:1.5;white-space:nowrap}
+.pub-chip{display:inline-block;margin:.15rem .4rem .15rem 0;padding:.1rem .65rem;border:1px solid var(--navy);border-radius:999px;font-size:.8rem;font-weight:600;line-height:1.4;white-space:nowrap}
 .pub-chip a{color:var(--navy)}
 .pub-chip:hover{background:var(--navy)}
 .pub-chip:hover a,.pub-chip:hover b{color:#fff}
