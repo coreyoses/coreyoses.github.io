@@ -3,6 +3,7 @@
 :root{--navy:#002d72;--navy-strong:#001a45;--sky:#68ace5;--ink:#1a1510;--muted:#6a635b;--line:#e6e2dc;--line-2:#d8d3cc;--surface-2:#f6f8fc;--paper:#fff;--max:1320px;--pad:1.5rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+h2[id]{scroll-margin-top:4em}
 body{margin:0;font-family:Lato,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15.5px;line-height:1.38;color:var(--ink);background:var(--paper)}
 a{color:var(--navy);text-decoration:none}a:hover{text-decoration:underline}
 p{margin:0 0 .3rem}
@@ -121,6 +122,11 @@ details.cite .cite-more a:hover{border-color:var(--navy);color:var(--navy)}
    same picked page. */
 /* publication awards, and the OpenAlex citation count js/citations.js fills in.
    Both are emitted by the CV and were unstyled here; these match the group site. */
+/* year jump bar above the long sections, the same pill row the group site puts on
+   its Publications page */
+.jump-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0 .9rem}
+.jump-nav a{padding:.2rem .75rem;border:1px solid var(--line-2);border-radius:999px;color:var(--navy);font-size:.85rem;font-weight:600;text-decoration:none}
+.jump-nav a:hover{background:rgba(0,45,114,.06);text-decoration:none}
 .honors{display:flex;flex-wrap:wrap;gap:.3rem;margin:.35rem 0 .1rem}
 .honor{padding:.1rem .6rem;border-radius:999px;background:#fff4d6;color:#7a4b00;font-size:.75rem;font-weight:600}
 .cites{margin-left:.25rem;color:var(--muted);font-size:.8rem}

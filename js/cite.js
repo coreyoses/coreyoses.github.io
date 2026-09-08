@@ -11,8 +11,18 @@
       for (const t of tabs) t.classList.toggle('is-on', t.dataset.fmt === fmt);
       for (const p of texts) p.hidden = p.dataset.fmt !== fmt;
     };
+    // The tabs are a radio group: one format is always the visible one. Clicking the
+    // format that is ALREADY showing closes the panel instead, so a second click on
+    // the same button undoes the first, which is what it looks like it should do.
     for (const tab of tabs) {
-      tab.addEventListener('click', () => show(tab.dataset.fmt));
+      tab.addEventListener('click', () => {
+        const details = panel.closest('details');
+        if (tab.classList.contains('is-on') && details) {
+          details.open = false;
+          return;
+        }
+        show(tab.dataset.fmt);
+      });
     }
 
     if (!navigator.clipboard) continue;
