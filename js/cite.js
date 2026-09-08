@@ -1,6 +1,10 @@
 // The Cite panel: switch between BibTeX, RIS, CSL-JSON and EndNote, and copy the one
 // on screen. Every record is plain <pre> text in the page, so without this script the
 // panel still shows BibTeX and can be selected by hand.
+// dataset['fmt'], never dataset.fmt: the group site compiles this with Closure at
+// -O ADVANCED, which renames a dotted custom property. It renamed fmt to g, so every
+// read came back undefined, every tab matched and nothing hid. citations.js uses
+// dataset['doi'] for the same reason.
 (() => {
   for (const panel of document.querySelectorAll('details.cite .cite-body')) {
     const tabs = [...panel.querySelectorAll('.cite-tab')];
@@ -8,8 +12,8 @@
     if (!tabs.length || !texts.length) continue;
 
     const show = (fmt) => {
-      for (const t of tabs) t.classList.toggle('is-on', t.dataset.fmt === fmt);
-      for (const p of texts) p.hidden = p.dataset.fmt !== fmt;
+      for (const t of tabs) t.classList.toggle('is-on', t.dataset['fmt'] === fmt);
+      for (const p of texts) p.hidden = p.dataset['fmt'] !== fmt;
     };
     // The tabs are a radio group: one format is always the visible one. Clicking the
     // format that is ALREADY showing closes the panel instead, so a second click on
@@ -21,7 +25,7 @@
           details.open = false;
           return;
         }
-        show(tab.dataset.fmt);
+        show(tab.dataset['fmt']);
       });
     }
 

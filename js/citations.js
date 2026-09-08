@@ -5,7 +5,7 @@
 (() => {
   const spans = [...document.querySelectorAll('.cites[data-doi]')];
   if (!spans.length || !window.fetch) return;
-  const byDoi = new Map(spans.map((el) => [el.dataset.doi.toLowerCase(), el]));
+  const byDoi = new Map(spans.map((el) => [el.dataset['doi'].toLowerCase(), el]));
   const dois = [...byDoi.keys()];
   // OpenAlex sometimes holds two records for one DOI (a preprint duplicate);
   // keep the larger count.
