@@ -3,7 +3,10 @@
 :root{--navy:#002d72;--navy-strong:#001a45;--sky:#68ace5;--ink:#1a1510;--muted:#6a635b;--line:#e6e2dc;--line-2:#d8d3cc;--surface-2:#f6f8fc;--paper:#fff;--max:1320px;--pad:1.5rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-h2[id]{scroll-margin-top:4em}
+/* the section bar is sticky, so anything that can be linked to (a heading, a
+   publication, a year) has to stop below it; sections.js keeps --secnav-h in
+   step with the bar, which wraps to two or three rows as the window narrows */
+[id]{scroll-margin-top:calc(var(--secnav-h, 3.2rem) + .55rem)}
 body{margin:0;font-family:Lato,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15.5px;line-height:1.38;color:var(--ink);background:var(--paper)}
 a{color:var(--navy);text-decoration:none}a:hover{text-decoration:underline}
 p{margin:0 0 .3rem}
@@ -39,7 +42,8 @@ sup{font-size:.7em}
 
 /* section navigation */
 .secnav{position:sticky;top:0;z-index:5;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line-2);margin:0 calc(-1 * var(--pad))}
-.secnav-in{max-width:var(--max);margin:0 auto;padding:0 calc(var(--pad) - .8rem);display:flex;flex-wrap:wrap}
+.secnav-in{max-width:var(--max);margin:0 auto;padding:0 calc(var(--pad) - .8rem);display:flex;align-items:center;gap:.5rem}
+.secnav-links{display:flex;flex-wrap:wrap;min-width:0}
 .secnav a{padding:.6rem .8rem;font-size:.86rem;font-weight:600;color:var(--muted);border-bottom:2px solid transparent}
 .secnav a:hover{color:var(--navy);text-decoration:none;border-bottom-color:var(--navy)}
 
@@ -56,7 +60,7 @@ sup{font-size:.7em}
 .paper:hover img{border-color:var(--navy)}
 
 /* sections */
-.main-content h1:not(.hero-name){font-size:1.3rem;font-weight:700;color:var(--navy);margin:1.9rem 0 .4rem;padding-bottom:.25rem;border-bottom:2px solid var(--navy);scroll-margin-top:3.2rem}
+.main-content h1:not(.hero-name){font-size:1.3rem;font-weight:700;color:var(--navy);margin:1.9rem 0 .4rem;padding-bottom:.25rem;border-bottom:2px solid var(--navy);scroll-margin-top:calc(var(--secnav-h, 3.2rem) + .55rem)}
 .main-content h2{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:.9rem 0 .1rem}
 
 /* entries: margin | date | body (the generator's row/col markup is left as is) */
@@ -87,6 +91,11 @@ h1+.entry,h2+.entry{border-top:0}
   .secnav a{padding:.55rem .6rem;font-size:.84rem}
 }
 @media (max-width:760px){
+  /* three wrapped rows of links ate a seventh of a phone screen, and the bar is
+     sticky, so the row scrolls sideways instead */
+  .secnav-links{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 1.4rem),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 1.4rem),transparent)}
+  .secnav-links::-webkit-scrollbar{display:none}
+  .secnav a{white-space:nowrap}
   .topbar-links{gap:.9rem}
   .entry>.row:has(> .col-md-1:first-child){grid-template-columns:2rem minmax(0,1fr);gap:0 .6rem}
   .hero{grid-template-columns:1fr;gap:1rem;padding-top:1.4rem}
@@ -97,6 +106,23 @@ h1+.entry,h2+.entry{border-top:0}
   .entry-margin{font-size:.88rem}
   .entry-date{font-size:.8rem;padding-top:0}
 }
+/* collapsible sections: the summary carries the heading rule, so a closed and
+   an open section present the same bar. The count sits beside the title and the
+   chevron at the right edge. */
+.cv-section>summary{display:flex;align-items:baseline;gap:.55rem;cursor:pointer;list-style:none;margin:1.9rem 0 .4rem;padding-bottom:.25rem;border-bottom:2px solid var(--navy);scroll-margin-top:calc(var(--secnav-h, 3.2rem) + .55rem)}
+.cv-section>summary::-webkit-details-marker{display:none}
+.main-content .cv-section>summary h1{margin:0;padding:0;border-bottom:0}
+.cv-section>summary:hover h1{color:var(--navy-strong)}
+.cv-section-count{color:var(--muted);font-size:.85rem;font-weight:600}
+.cv-section>summary::after{content:"";margin-left:auto;align-self:center;width:.48rem;height:.48rem;border-right:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:translateY(-.12rem) rotate(45deg);transition:transform .15s ease}
+.cv-section[open]>summary::after{transform:translateY(.04rem) rotate(225deg)}
+.cv-section[open]>summary{margin-bottom:.1rem}
+.cv-section-body>.entry:first-child{border-top:0}
+.secnav-toggle{margin-left:auto;flex:0 0 auto;padding:.2rem .7rem;background:none;border:1px solid var(--line-2);border-radius:999px;color:var(--muted);font:inherit;font-size:.8rem;font-weight:600;cursor:pointer}
+.secnav-toggle:hover{border-color:var(--navy);color:var(--navy)}
+
+@media print{.cv-section>summary::after,.secnav-toggle{display:none}}
+
 /* BibTeX record under a publication: collapsed by default, summary styled as a small chip */
 details.cite{margin:.25rem 0 .1rem}
 /* the same box as the link chips beside it: block with max-content width, so it
