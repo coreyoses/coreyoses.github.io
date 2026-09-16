@@ -60,8 +60,8 @@ sup{font-size:.7em}
 .paper:hover img{border-color:var(--navy)}
 
 /* sections */
-.main-content h1:not(.hero-name){font-size:1.3rem;font-weight:700;color:var(--navy);margin:1.9rem 0 .4rem;padding-bottom:.25rem;border-bottom:2px solid var(--navy);scroll-margin-top:calc(var(--secnav-h, 3.2rem) + .55rem)}
-.main-content h2{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:.9rem 0 .1rem}
+.main-content h2{font-size:1.3rem;font-weight:700;color:var(--navy);margin:1.9rem 0 .4rem;padding-bottom:.25rem;border-bottom:2px solid var(--navy);scroll-margin-top:calc(var(--secnav-h, 3.2rem) + .55rem)}
+.main-content h3{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:.9rem 0 .1rem}
 
 /* entries: margin | date | body (the generator's row/col markup is left as is) */
 .entry{padding:.4rem 0;border-top:1px solid var(--line)}
@@ -71,7 +71,7 @@ sup{font-size:.7em}
 .entry .container-fluid{padding:0}
 .entry .container-fluid>.row{display:block}
 .entry-title p{margin:0}
-h1+.entry,h2+.entry{border-top:0}
+h2+.entry,h3+.entry{border-top:0}
 .entry-margin{font-weight:600;color:var(--navy);font-size:.9rem;line-height:1.35}
 .entry-margin p{margin:0}
 .entry-date{color:var(--muted);font-size:.84rem;line-height:1.38;padding-top:.05rem}
@@ -111,8 +111,8 @@ h1+.entry,h2+.entry{border-top:0}
    chevron at the right edge. */
 .cv-section>summary{display:flex;align-items:baseline;gap:.55rem;cursor:pointer;list-style:none;margin:1.9rem 0 .4rem;padding-bottom:.25rem;border-bottom:2px solid var(--navy);scroll-margin-top:calc(var(--secnav-h, 3.2rem) + .55rem)}
 .cv-section>summary::-webkit-details-marker{display:none}
-.main-content .cv-section>summary h1{margin:0;padding:0;border-bottom:0}
-.cv-section>summary:hover h1{color:var(--navy-strong)}
+.main-content .cv-section>summary h2{margin:0;padding:0;border-bottom:0}
+.cv-section>summary:hover h2{color:var(--navy-strong)}
 .cv-section-count{color:var(--muted);font-size:.85rem;font-weight:600}
 .cv-section>summary::after{content:"";margin-left:auto;align-self:center;width:.48rem;height:.48rem;border-right:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:translateY(-.12rem) rotate(45deg);transition:transform .15s ease}
 .cv-section[open]>summary::after{transform:translateY(.04rem) rotate(225deg)}
