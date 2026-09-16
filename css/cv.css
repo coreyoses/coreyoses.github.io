@@ -16,6 +16,15 @@ html{scroll-behavior:smooth}
 [id]{scroll-margin-top:calc(var(--secnav-h, 3.2rem) + .55rem)}
 body{margin:0;font-family:'Work Sans',Tahoma,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15.5px;line-height:1.38;color:var(--ink);background:var(--paper)}
 a{color:var(--navy);text-decoration:none}a:hover{text-decoration:underline}
+/* Navy links on ink body text are 1.4:1 against each other, well under the 3:1
+   that lets color alone mark a link, so links inside running text are
+   underlined. Anything with its own shape (chips, pills, buttons, cards,
+   thumbnails, headings) stays undecorated. */
+.main-content a{text-decoration:underline;text-underline-offset:.15em}
+.main-content .btn,.main-content .paper,.main-content .papers a,
+.main-content .jump-nav a,.main-content .pub-chip a,.main-content .pub-thumb a,
+.main-content .pub-thumb,.main-content .cite-more a,.main-content .entry-title a,
+.main-content .cv-section>summary a,.main-content .secnav a{text-decoration:none}
 p{margin:0 0 .3rem}
 ul{margin:.1rem 0 0;padding-left:1.15rem}
 li{margin:0}
