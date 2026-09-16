@@ -50,14 +50,25 @@
 <script src="js/citations.js" defer></script>
 <script src="js/cite.js" defer></script>
 <script src="js/sections.js" defer></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1874XVDTKR"></script>
+<!-- Google tag (gtag.js). The queue is set up here and the tag
+     itself is fetched after load, so its 159 KB and its main-thread work stay off the
+     critical path. Events recorded before it arrives are replayed. Matches what
+     entropy4energy.ai does, so the two sites behave the same. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-1874XVDTKR');
+  addEventListener('load', function () {
+    var load = function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1874XVDTKR';
+      document.head.appendChild(s);
+    };
+    if (window.requestIdleCallback) { requestIdleCallback(load, {timeout: 3000}); }
+    else { setTimeout(load, 1200); }
+  });
 </script>
 </head>
 <body>
